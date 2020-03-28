@@ -59,16 +59,18 @@ createAFiles () {
           # Write in a-file
           > ${file};
           echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))${LOG_SUFIX}" >> ${file};
-          echo "mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False" >> ${file};
           echo "solver z3" >> ${file}
           echo "vm ${path}FeatureModel.xml" >> ${file};
           echo "all ${csvFile}" >> ${file};
-          echo "nfp Performance" >> ${file};
-          echo "setsampleset ${scriptPath}${OUT_PREFIX}${FILE_NAME}Samples_t$((${twCounter}))${LOG_SUFIX}" >> ${file};
-          echo "learn-splconqueror" >> ${file};
-          echo "analyze-learning" >> ${file};
+          if [ "${SAMPLING_STRATEGY}" = "select-all-measurements true" ]; then
+            echo "${SAMPLING_STRATEGY}" >> ${file};
+          elif [ "${SAMPLING_STRATEGY}" = "binary twise" ]; then
+            echo "${SAMPLING_STRATEGY} t:${twCounter}" >> ${file};
+          else
+            echo "${SAMPLING_STRATEGY} numConfigs:${numConfigs} seed:${seed} ${fromFile}" >> ${file};
+          fi
+          echo "printconfigs ${sampleFile}" >> ${file};
           echo "clean-sampling" >> ${file};
-
         done
 }
 
@@ -120,7 +122,8 @@ if [ $# -eq 5 ]; then
       BEGIN_AT=$4;
       REPETITIONS=$5;
 fi
-
+#save output as samples
+FILE_NAME += "Samples"
 # Mono variables
 MONO_PATH="mono"
 

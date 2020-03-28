@@ -35,18 +35,18 @@ SBATCH_SCRIPT = PREFIX + "runDistributionAware.sh"
 JOB_DIR = HOME + "Jobs/"
 JOB_FILE_PREFIX = "_jobs_"
 JOB_FILE_SUFFIX = ".txt"
-JOB_SCRIPT = PREFIX + "runRandomHundredTimes.sh "
-# JOB_SCRIPT = PREFIX + "benchmarkSamplingHundredTimes.sh "
+JOB_SCRIPT_PREDICTIONS = PREFIX + "runRandomHundredTimes.sh "
+JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
 
 ALLOWED_TYPES = ["semi", "solv", "henard", "binom", "geom", "invgeom", "twogeom", "norm", "rand", "all", "local", "global", "grammar-based", "divDistBased"]
 
 
 def printUsage():
     print("Usage:")
-    print("./JobSubmitter <cluster> <solv/semi/random/grammar-based>")
+    print("./JobSubmitter <cluster> <solv/semi/random/grammar-based> <sampling/predicting>")
     print("cluster\t The cluster to use")
-    print("solv/semi/random/all\t Specifies if distribution-aware (solv) sampling, semi-random sampling, " +
-          " random sampling should be executed or all configurations should be used.")
+    print("solv/semi/random/all\t Specifies if distribution-aware (solv) sampling, semi-random sampling, random sampling should be executed or all configurations should be used.")
+    print("sampling/predicting specifies wheter splconqueror should predict or sample")
 
 
 def executeCommand(command: str) -> str:
@@ -69,7 +69,7 @@ def writeToFile(filePath: str, linesToWrite: List[str]):
 
 def main():
     global SBATCH_OPTIONS
-    if (len(sys.argv) != 3):
+    if (len(sys.argv) != 4):
         printUsage()
         exit(-1)
 
@@ -96,16 +96,24 @@ def main():
     if (not found):
         raise KeyError("Could not find " + cluster + " as cluster.")
 
-    SBATCH_OPTIONS = SBATCH_OPTIONS + " -J " + type;
+    SBATCH_OPTIONS = SBATCH_OPTIONS + " -J " + type
 
     # Construct the jobs for the job-file
     jobs = []
-    for caseStudy in CASE_STUDIES:
-        for run in range(RUNS_FROM, RUNS_TO + 1):
-            jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
-            jobString += JOB_SCRIPT + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + \
-                         " " + str(run)
-            jobs.append(jobString)
+    sampling = sys.argv[3] is "sampling"
+    if sampling:
+        for caseStudy in CASE_STUDIES:
+            for run in range(RUNS_FROM, RUNS_TO + 1):
+                jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
+                jobString += JOB_SCRIPT_SAMPLING + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobs.append(jobString)
+
+    else:
+        for caseStudy in CASE_STUDIES:
+            for run in range(RUNS_FROM, RUNS_TO + 1):
+                jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
+                jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobs.append(jobString)
 
     # Write to the job file
     jobFile = JOB_DIR + "anywhere" + JOB_FILE_PREFIX + str(JOB_ID) + JOB_FILE_SUFFIX
