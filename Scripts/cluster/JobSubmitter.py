@@ -37,13 +37,14 @@ JOB_FILE_PREFIX = "_jobs_"
 JOB_FILE_SUFFIX = ".txt"
 JOB_SCRIPT_PREDICTIONS = PREFIX + "runRandomHundredTimes.sh "
 JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
+JOB_SCRIPT_SAMPLING = PREFIX + "failureRateRandomHundredTimes.sh "
 
 ALLOWED_TYPES = ["semi", "solv", "henard", "binom", "geom", "invgeom", "twogeom", "norm", "rand", "all", "local", "global", "grammar-based", "divDistBased"]
 
 
 def printUsage():
     print("Usage:")
-    print("./JobSubmitter <cluster> <solv/semi/random/grammar-based> <sampling/predicting>")
+    print("./JobSubmitter <cluster> <solv/semi/random/grammar-based> <sampling/predicting/failureRate>")
     print("cluster\t The cluster to use")
     print("solv/semi/random/all\t Specifies if distribution-aware (solv) sampling, semi-random sampling, random sampling should be executed or all configurations should be used.")
     print("sampling/predicting specifies wheter splconqueror should predict or sample")
@@ -101,6 +102,8 @@ def main():
     # Construct the jobs for the job-file
     jobs = []
     sampling = sys.argv[3] is "sampling"
+    failureRate = sys.argv[3] is "failureRate"
+    predicting = sys.argv[3] is "predicting"
     if sampling:
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
@@ -108,12 +111,20 @@ def main():
                 jobString += JOB_SCRIPT_SAMPLING + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
 
-    else:
+    elif failureRate:
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
                 jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
+    elif predicting:
+        for caseStudy in CASE_STUDIES:
+            for run in range(RUNS_FROM, RUNS_TO + 1):
+                jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
+                jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobs.append(jobString)
+    else:
+        raise KeyError("The operation " + sys.argv[3] + " is not allowed!")
 
     # Write to the job file
     jobFile = JOB_DIR + "anywhere" + JOB_FILE_PREFIX + str(JOB_ID) + JOB_FILE_SUFFIX
