@@ -30,7 +30,7 @@ createAFiles () {
         do
           file="${tmp}learn_${FILE_NAME}_t$((${twCounter})).a";
           # VP9 has a csv file
-          if [[ $FILE_NAME == *"VP9"* ]]; then
+          if [[ $caseStudyPath == *"VP9"* ]]; then
             csvFile="${path}measurements.csv";
           else
             csvFile="${path}measurements.xml";
@@ -58,13 +58,13 @@ createAFiles () {
 
           # Write in a-file
           > ${file};
-          echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))${LOG_SUFIX}" >> ${file};
+          echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))Predictions${LOG_SUFIX}" >> ${file};
           echo "mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False" >> ${file};
           echo "solver z3" >> ${file}
           echo "vm ${path}FeatureModel.xml" >> ${file};
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
-          echo "setsampleset ${scriptPath}${OUT_PREFIX}${FILE_NAME}Samples_t$((${twCounter}))${LOG_SUFIX}" >> ${file};
+          echo "setsampleset ${sampleFile}" >> ${file};
           echo "learn-splconqueror" >> ${file};
           echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
@@ -125,12 +125,12 @@ fi
 MONO_PATH="mono"
 
 # SPL Conqueror variables
-SPL_CONQUEROR_PATH="${CURRENT_SOURCE_DIR}/../../SPLConqueror/SPLConqueror/CommandLine/bin/Release/CommandLine.exe"
+SPL_CONQUEROR_PATH="/scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Release/CommandLine.exe"
 
-TMP_PATH="/scratch/kallistos/Grammar-Based/Results/${CASE_STUDY}/"
+TMP_PATH="/scratch/kallistos/Distance-Based_Data/Results/${CASE_STUDY}/"
 
-caseStudyPath="${CURRENT_SOURCE_DIR}/../../Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/${CASE_STUDY}/"
-twisePath="${CURRENT_SOURCE_DIR}/../../Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/${CASE_STUDY}/"
+caseStudyPath="/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/${CASE_STUDY}/"
+twisePath="/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/${CASE_STUDY}/"
 
 for i in `seq ${BEGIN_AT} ${REPETITIONS}`; do
         echo "Run $i out of ${REPETITIONS}.";

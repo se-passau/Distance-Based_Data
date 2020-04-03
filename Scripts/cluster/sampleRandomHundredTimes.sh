@@ -30,7 +30,7 @@ createAFiles () {
         do
           file="${tmp}learn_${FILE_NAME}_t$((${twCounter})).a";
           # VP9 has a csv file
-          if [[ $FILE_NAME == *"VP9"* ]]; then
+          if [[ $caseStudyPath == *"VP9"* ]]; then
             csvFile="${path}measurements.csv";
           else
             csvFile="${path}measurements.xml";
@@ -128,12 +128,12 @@ FILE_NAME += "Samples"
 MONO_PATH="mono"
 
 # SPL Conqueror variables
-SPL_CONQUEROR_PATH="${CURRENT_SOURCE_DIR}/../../SPLConqueror/SPLConqueror/CommandLine/bin/Release/CommandLine.exe"
+SPL_CONQUEROR_PATH="/scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Release/CommandLine.exe"
 
-TMP_PATH="/scratch/kallistos/Grammar-Based/Results/${CASE_STUDY}/"
+TMP_PATH="/scratch/kallistos/Distance-Based_Data/Results/${CASE_STUDY}/"
 
-caseStudyPath="${CURRENT_SOURCE_DIR}/../../Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/${CASE_STUDY}/"
-twisePath="${CURRENT_SOURCE_DIR}/../../Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/${CASE_STUDY}/"
+caseStudyPath="/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/${CASE_STUDY}/"
+twisePath="/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/${CASE_STUDY}/"
 
 for i in `seq ${BEGIN_AT} ${REPETITIONS}`; do
         echo "Run $i out of ${REPETITIONS}.";

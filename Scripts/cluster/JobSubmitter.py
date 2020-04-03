@@ -8,7 +8,7 @@ from typing import List
 RUNS_FROM = 1
 RUNS_TO = 100
 CLUSTERS = [("eku", "i5"), ("kine", ""), ("zeus", "")]
-CASE_STUDIES = [# ("BerkeleyDBC", 1000),
+CASE_STUDIES = [("BerkeleyDBC", 1000),
                 # ("LLVM", 1000),
                 # ("lrzip", 1),
                 # ("x264", 1000),
@@ -17,19 +17,19 @@ CASE_STUDIES = [# ("BerkeleyDBC", 1000),
                 # ("Hipacc", 1000),
                 # ("Polly", 1000),
                 # ("JavaGC", 1000),
-                ("VP9", 1000)
+                # ("VP9", 1000)
                 ]
 
 JOB_ID = int(time.time() * 1000)
 
 HOME = "/scratch/kallistos/"
 # Prefix is to specify where the scripts to execute are located
-PREFIX = HOME + ""
+PREFIX = HOME + "Distance-Based_Data/Scripts/cluster/"
 
 SBATCH = "sbatch"
 # --exclusive --exclude='chimaira[13-17]'
 SBATCH_OPTIONS = " -n 1 -c 1 --mem=20000M --time='24:00:00' " \
-                 "--output=/scratch/kallistos/Grammar-Based/slurm_out.log "
+                 "--output=/scratch/kallistos/Distance-Based_Data/Results/slurm_out.log "
 SBATCH_SCRIPT = PREFIX + "runDistributionAware.sh"
 
 JOB_DIR = HOME + "Jobs/"
@@ -37,7 +37,7 @@ JOB_FILE_PREFIX = "_jobs_"
 JOB_FILE_SUFFIX = ".txt"
 JOB_SCRIPT_PREDICTIONS = PREFIX + "runRandomHundredTimes.sh "
 JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
-JOB_SCRIPT_SAMPLING = PREFIX + "failureRateRandomHundredTimes.sh "
+JOB_SCRIPT_FAILURE_RATE = PREFIX + "failureRateRandomHundredTimes.sh "
 
 ALLOWED_TYPES = ["semi", "solv", "henard", "binom", "geom", "invgeom", "twogeom", "norm", "rand", "all", "local", "global", "grammar-based", "divDistBased"]
 
@@ -101,9 +101,9 @@ def main():
 
     # Construct the jobs for the job-file
     jobs = []
-    sampling = sys.argv[3] is "sampling"
-    failureRate = sys.argv[3] is "failureRate"
-    predicting = sys.argv[3] is "predicting"
+    sampling = str(sys.argv[3]) == "sampling"
+    failureRate = str(sys.argv[3]) == "failureRate"
+    predicting = str(sys.argv[3]) == "predicting"
     if sampling:
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
@@ -115,7 +115,7 @@ def main():
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
-                jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobString += JOB_SCRIPT_FAILURE_RATE + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
     elif predicting:
         for caseStudy in CASE_STUDIES:
