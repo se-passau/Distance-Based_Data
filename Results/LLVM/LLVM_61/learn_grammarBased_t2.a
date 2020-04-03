@@ -1,0 +1,7 @@
+log ./out_grammarBased_t2.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/measurements.xml
+binary grammar-based numConfigs:56 seed:61 
+printconfigs ./sampledConfigurations_grammarBased_t2.csv
+clean-sampling
