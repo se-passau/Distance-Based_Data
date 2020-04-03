@@ -47,7 +47,7 @@ def printUsage():
     print("./JobSubmitter <cluster> <solv/semi/random/grammar-based> <sampling/predicting/failureRate>")
     print("cluster\t The cluster to use")
     print("solv/semi/random/all\t Specifies if distribution-aware (solv) sampling, semi-random sampling, random sampling should be executed or all configurations should be used.")
-    print("sampling/predicting specifies wheter splconqueror should predict or sample")
+    print("sampling/predicting/failureRate specifies wheter splconqueror should predict or sample")
 
 
 def executeCommand(command: str) -> str:

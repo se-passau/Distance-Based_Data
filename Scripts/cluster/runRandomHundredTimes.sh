@@ -36,7 +36,7 @@ createAFiles () {
             csvFile="${path}measurements.xml";
           fi
           allConfigFile="${4}allConfigurations.csv";
-          sampleFile="${scriptPath}${SAMPLED_CONFIGURATION_FILE_PREFIX}${FILE_NAME}_t$((${twCounter})).csv";
+          sampleFile="${tmp}${SAMPLED_CONFIGURATION_FILE_PREFIX}${FILE_NAME}_t$((${twCounter})).csv";
 
           # Write in the super-script
           echo "script ./learn_${FILE_NAME}_t$((${twCounter})).a" >> $scriptFile;
