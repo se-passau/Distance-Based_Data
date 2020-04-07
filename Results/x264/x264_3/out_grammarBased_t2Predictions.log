@@ -1,0 +1,33 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+Configs with too large deviation: 0
+1152 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_3/sampledConfigurations_grammarBased_t2.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:65 NumberOfConfigurationsValidation:65
+Learning progress:
+1;570.952945736433 * no_asm + -296.703400281889 * ref_1;14.0912242180835;14.0912242180835;14.0912242180835;14.0912242180835;0.010131;2;-296.703400281889 * ref_1;1;23.0920680968635;
+2;658.054722222222 * no_asm + -383.805176767677 * ref_1 + -197.125073099415 * ref_5;7.768148435898;7.768148435898;7.768148435898;7.768148435898;0.0312;3;-197.125073099415 * ref_5;1;6.32307578218549;
+3;641.946375503998 * no_asm + -382.340781611475 * ref_1 + -199.668496265451 * ref_5 + 32.2166934364473 * no_mbtree;6.62594205270173;6.62594205270173;6.62594205270173;6.62594205270173;0.065297;4;32.2166934364473 * no_mbtree;1;1.14220638319627;
+4;652.079374501396 * no_asm + -381.423889536382 * ref_1 + -201.915853329428 * ref_5 + 32.1695072650747 * no_mbtree + -18.6635186062359 * no_8x8dct;6.4350348196051;6.4350348196051;6.4350348196051;6.4350348196051;0.115321;5;-18.6635186062359 * no_8x8dct;1;0.190907233096636;
+Elapsed=00:00:00.1163019
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;570.952945736433 * no_asm + -296.703400281889 * ref_1;14.0912242180835;14.0912242180835;14.0912242180835;14.0912242180835;0.010131;2;-296.703400281889 * ref_1;1;23.0920680968635;14.9437916811884
+2;658.054722222222 * no_asm + -383.805176767677 * ref_1 + -197.125073099415 * ref_5;7.768148435898;7.768148435898;7.768148435898;7.768148435898;0.0312;3;-197.125073099415 * ref_5;1;6.32307578218549;9.30640903345898
+3;641.946375503998 * no_asm + -382.340781611475 * ref_1 + -199.668496265451 * ref_5 + 32.2166934364473 * no_mbtree;6.62594205270173;6.62594205270173;6.62594205270173;6.62594205270173;0.065297;4;32.2166934364473 * no_mbtree;1;1.14220638319627;7.75063116940485
+4;652.079374501396 * no_asm + -381.423889536382 * ref_1 + -201.915853329428 * ref_5 + 32.1695072650747 * no_mbtree + -18.6635186062359 * no_8x8dct;6.4350348196051;6.4350348196051;6.4350348196051;6.4350348196051;0.115321;5;-18.6635186062359 * no_8x8dct;1;0.190907233096636;7.18337006160496
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_grammarBased_t3.a
+command: log ./out_grammarBased_t3Predictions.log

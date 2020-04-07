@@ -1,7 +1,7 @@
-log ./out_grammarBased_t3.log
+log ./out_grammarBased_t3FailureReport.log
 solver z3
 vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/FeatureModel.xml
 all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
-binary grammar-based numConfigs:3893 seed:32 
-printconfigs ./sampledConfigurations_grammarBased_t3.csv
+binary grammar-based numConfigs:3893 seed:32  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
 clean-sampling

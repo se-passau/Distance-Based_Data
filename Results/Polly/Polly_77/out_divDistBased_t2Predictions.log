@@ -1,0 +1,32 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
+Configs with too large deviation: 0
+60000 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_77/sampledConfigurations_divDistBased_t2.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:345 NumberOfConfigurationsValidation:345
+Learning progress:
+1;20.615642857143 * polly_vectorizer + 8.47443844367014 * max;29.4992830503344;29.4992830503344;29.4992830503344;29.4992830503344;0.097553;2;8.47443844367014 * max;1;12.6063559232232;
+2;20.033180004104 * polly_vectorizer + 8.85801154201291 * max + 1.85329089603327 * parallel;28.9558341874968;28.9558341874968;28.9558341874968;28.9558341874968;0.367745;3;1.85329089603327 * parallel;1;0.543448862837639;
+3;19.6884173037086 * polly_vectorizer + 9.38363336392716 * max + -1.85544212271671 * parallel + 11.1290016252818 * parallel * polly_no_tiling;26.2545635599992;26.2545635599992;26.2545635599992;26.2545635599992;0.792736;5;11.1290016252818 * parallel * polly_no_tiling;2;1.35063531374879;
+4;19.4168280902729 * polly_vectorizer + 9.79769560736182 * max + -1.75718129025372 * parallel + 3.28682425928567 * parallel * polly_no_tiling + 9.61580964244959 * parallel * polly_no_tiling * min;25.5313132865795;25.5313132865795;25.5313132865795;25.5313132865795;1.493931;8;9.61580964244959 * parallel * polly_no_tiling * min;3;0.241083424473228;
+Elapsed=00:00:01.5013764
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;20.615642857143 * polly_vectorizer + 8.47443844367014 * max;29.4992830503344;29.4992830503344;29.4992830503344;29.4992830503344;0.097553;2;8.47443844367014 * max;1;12.6063559232232;27.958242163738
+2;20.033180004104 * polly_vectorizer + 8.85801154201291 * max + 1.85329089603327 * parallel;28.9558341874968;28.9558341874968;28.9558341874968;28.9558341874968;0.367745;3;1.85329089603327 * parallel;1;0.543448862837639;27.0424952757565
+3;19.6884173037086 * polly_vectorizer + 9.38363336392716 * max + -1.85544212271671 * parallel + 11.1290016252818 * parallel * polly_no_tiling;26.2545635599992;26.2545635599992;26.2545635599992;26.2545635599992;0.792736;5;11.1290016252818 * parallel * polly_no_tiling;2;1.35063531374879;27.0319281704346
+4;19.4168280902729 * polly_vectorizer + 9.79769560736182 * max + -1.75718129025372 * parallel + 3.28682425928567 * parallel * polly_no_tiling + 9.61580964244959 * parallel * polly_no_tiling * min;25.5313132865795;25.5313132865795;25.5313132865795;25.5313132865795;1.493931;8;9.61580964244959 * parallel * polly_no_tiling * min;3;0.241083424473228;24.742284219732
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_divDistBased_t3.a
+command: log ./out_divDistBased_t3Predictions.log

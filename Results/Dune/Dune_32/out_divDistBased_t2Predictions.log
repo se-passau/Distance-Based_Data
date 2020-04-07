@@ -1,0 +1,41 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/measurements.xml
+Configs with too large deviation: 0
+2304 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Dune/Dune_32/sampledConfigurations_divDistBased_t2.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:265 NumberOfConfigurationsValidation:265
+Learning progress:
+1;10031.895150376 * Precon + 5662.91823765496 * post_0;17.0093910452885;17.0093910452885;17.0093910452885;17.0093910452885;0.053217;2;5662.91823765496 * post_0;1;3.42639936139668;
+2;10450.3455465427 * Precon + 5718.08075540665 * post_0 + -1947.07531277571 * cells_50;14.9135244779164;14.9135244779164;14.9135244779164;14.9135244779164;0.158423;3;-1947.07531277571 * cells_50;1;2.09586656737208;
+3;10895.3719573047 * Precon + 5697.76373111639 * post_0 + -2388.94908183748 * cells_50 + -2347.47667557963 * cells_51;14.405815792955;14.405815792955;14.405815792955;14.405815792955;0.34917;4;-2347.47667557963 * cells_51;1;0.507708684961379;
+4;10601.6351429075 * Precon + 5722.54065899159 * post_0 + -2395.31781342046 * cells_50 + -2341.16997709653 * cells_51 + 554.294494063526 * SeqSOR;13.8233203515926;13.8233203515926;13.8233203515926;13.8233203515926;0.64474;5;554.294494063526 * SeqSOR;1;0.582495441362374;
+5;10775.2407295599 * Precon + 5502.12355244204 * post_0 + -2258.80735454999 * cells_50 + -2407.06661080707 * cells_51 + 600.56756489197 * SeqSOR + -1341.3416828509 * post_6;13.3649783558477;13.3649783558477;13.3649783558477;13.3649783558477;1.124164;6;-1341.3416828509 * post_6;1;0.458341995744954;
+6;11245.9293491028 * Precon + 5375.37586928261 * post_0 + -2699.96058507135 * cells_50 + -2866.78306929401 * cells_51 + 626.871061864747 * SeqSOR + -1448.09028446383 * post_6 + -1732.57905614238 * cells_52;12.9596600392688;12.9596600392688;12.9596600392688;12.9596600392688;1.773357;7;-1732.57905614238 * cells_52;1;0.405318316578891;
+7;11546.3348676343 * Precon + 5099.13111233453 * post_0 + -2693.20885953121 * cells_50 + -2943.63754546842 * cells_51 + 624.33857445232 * SeqSOR + -1728.945471273 * post_6 + -1863.79319467988 * cells_52 + -1288.81031170172 * post_5;12.4103413160219;12.4103413160219;12.4103413160219;12.4103413160219;2.625479;8;-1288.81031170172 * post_5;1;0.549318723246861;
+8;11662.7993805763 * Precon + 3169.17248091859 * post_0 + -3325.7665359213 * cells_50 + -2871.01885084187 * cells_51 + 726.441795271851 * SeqSOR + -1654.02224090767 * post_6 + -2194.34910748272 * cells_52 + -1287.06752081816 * post_5 + 14382.7147348743 * post_0 * pre_1;11.959400774213;11.959400774213;11.959400774213;11.959400774213;3.701043;10;14382.7147348743 * post_0 * pre_1;2;0.225470270904492;
+Elapsed=00:00:03.7051815
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;10031.895150376 * Precon + 5662.91823765496 * post_0;17.0093910452885;17.0093910452885;17.0093910452885;17.0093910452885;0.053217;2;5662.91823765496 * post_0;1;3.42639936139668;16.7117411542665
+2;10450.3455465427 * Precon + 5718.08075540665 * post_0 + -1947.07531277571 * cells_50;14.9135244779164;14.9135244779164;14.9135244779164;14.9135244779164;0.158423;3;-1947.07531277571 * cells_50;1;2.09586656737208;15.7837292121316
+3;10895.3719573047 * Precon + 5697.76373111639 * post_0 + -2388.94908183748 * cells_50 + -2347.47667557963 * cells_51;14.405815792955;14.405815792955;14.405815792955;14.405815792955;0.34917;4;-2347.47667557963 * cells_51;1;0.507708684961379;15.1790314435529
+4;10601.6351429075 * Precon + 5722.54065899159 * post_0 + -2395.31781342046 * cells_50 + -2341.16997709653 * cells_51 + 554.294494063526 * SeqSOR;13.8233203515926;13.8233203515926;13.8233203515926;13.8233203515926;0.64474;5;554.294494063526 * SeqSOR;1;0.582495441362374;14.5293627047252
+5;10775.2407295599 * Precon + 5502.12355244204 * post_0 + -2258.80735454999 * cells_50 + -2407.06661080707 * cells_51 + 600.56756489197 * SeqSOR + -1341.3416828509 * post_6;13.3649783558477;13.3649783558477;13.3649783558477;13.3649783558477;1.124164;6;-1341.3416828509 * post_6;1;0.458341995744954;13.9710290357999
+6;11245.9293491028 * Precon + 5375.37586928261 * post_0 + -2699.96058507135 * cells_50 + -2866.78306929401 * cells_51 + 626.871061864747 * SeqSOR + -1448.09028446383 * post_6 + -1732.57905614238 * cells_52;12.9596600392688;12.9596600392688;12.9596600392688;12.9596600392688;1.773357;7;-1732.57905614238 * cells_52;1;0.405318316578891;13.5985608355462
+7;11546.3348676343 * Precon + 5099.13111233453 * post_0 + -2693.20885953121 * cells_50 + -2943.63754546842 * cells_51 + 624.33857445232 * SeqSOR + -1728.945471273 * post_6 + -1863.79319467988 * cells_52 + -1288.81031170172 * post_5;12.4103413160219;12.4103413160219;12.4103413160219;12.4103413160219;2.625479;8;-1288.81031170172 * post_5;1;0.549318723246861;13.1270874221149
+8;11662.7993805763 * Precon + 3169.17248091859 * post_0 + -3325.7665359213 * cells_50 + -2871.01885084187 * cells_51 + 726.441795271851 * SeqSOR + -1654.02224090767 * post_6 + -2194.34910748272 * cells_52 + -1287.06752081816 * post_5 + 14382.7147348743 * post_0 * pre_1;11.959400774213;11.959400774213;11.959400774213;11.959400774213;3.701043;10;14382.7147348743 * post_0 * pre_1;2;0.225470270904492;12.9769682672125
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_divDistBased_t3.a
+command: log ./out_divDistBased_t3Predictions.log

@@ -1,0 +1,37 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/measurements.xml
+Configs with too large deviation: 0
+1024 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_26/sampledConfigurations_grammarBased_t1.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
+Learning progress:
+1;225.207142857143 * time_passes + 33.3495238095238 * licm;3.88784536369695;3.88784536369695;3.88784536369695;3.88784536369695;0.055708;2;33.3495238095238 * licm;1;3.94409632528259;
+2;220.570289855073 * time_passes + 29.8718840579712 * licm + 10.8193236714974 * inline;3.48082288931744;3.48082288931744;3.48082288931744;3.48082288931744;0.063299;3;10.8193236714974 * inline;1;0.407022474379515;
+3;209.312755102041 * time_passes + 25.2364285714288 * licm + 21.8561224489792 * inline + 15.230782312925 * sccp;2.75239189635366;2.75239189635366;2.75239189635366;2.75239189635366;0.072848;4;15.230782312925 * sccp;1;0.728430992963781;
+4;203.298563218391 * time_passes + 21.0264942528739 * licm + 24.8632183908043 * inline + 16.433620689655 * sccp + 14.7347701149425 * gvn;2.01594923701993;2.01594923701993;2.01594923701993;2.01594923701993;0.086879;5;14.7347701149425 * gvn;1;0.736442659333732;
+5;199.763819047619 * time_passes + 17.2708285714287 * licm + 20.2238666666666 * inline + 12.0151904761904 * sccp + 15.0661523809523 * gvn + 12.8134476190475 * instcombine;1.46220255208181;1.46220255208181;1.46220255208181;1.46220255208181;0.103919;6;12.8134476190475 * instcombine;1;0.553746684938119;
+6;206.226666666667 * time_passes + 13.2065635738836 * licm + 9.03048109965604 * inline + -0.310859106529293 * sccp + 19.1970446735393 * gvn + 17.077594501718 * instcombine + 23.3195532646047 * sccp * inline;0.624120419481713;0.624120419481713;0.624120419481713;0.624120419481713;0.126033;8;23.3195532646047 * sccp * inline;2;0.419041066300047;
+Elapsed=00:00:00.1287893
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: abortError
+1;225.207142857143 * time_passes + 33.3495238095238 * licm;3.88784536369695;3.88784536369695;3.88784536369695;3.88784536369695;0.055708;2;33.3495238095238 * licm;1;3.94409632528259;6.07524276802812
+2;220.570289855073 * time_passes + 29.8718840579712 * licm + 10.8193236714974 * inline;3.48082288931744;3.48082288931744;3.48082288931744;3.48082288931744;0.063299;3;10.8193236714974 * inline;1;0.407022474379515;5.23907656654973
+3;209.312755102041 * time_passes + 25.2364285714288 * licm + 21.8561224489792 * inline + 15.230782312925 * sccp;2.75239189635366;2.75239189635366;2.75239189635366;2.75239189635366;0.072848;4;15.230782312925 * sccp;1;0.728430992963781;5.59767532149719
+4;203.298563218391 * time_passes + 21.0264942528739 * licm + 24.8632183908043 * inline + 16.433620689655 * sccp + 14.7347701149425 * gvn;2.01594923701993;2.01594923701993;2.01594923701993;2.01594923701993;0.086879;5;14.7347701149425 * gvn;1;0.736442659333732;5.01819969591345
+5;199.763819047619 * time_passes + 17.2708285714287 * licm + 20.2238666666666 * inline + 12.0151904761904 * sccp + 15.0661523809523 * gvn + 12.8134476190475 * instcombine;1.46220255208181;1.46220255208181;1.46220255208181;1.46220255208181;0.103919;6;12.8134476190475 * instcombine;1;0.553746684938119;3.44802946425534
+6;206.226666666667 * time_passes + 13.2065635738836 * licm + 9.03048109965604 * inline + -0.310859106529293 * sccp + 19.1970446735393 * gvn + 17.077594501718 * instcombine + 23.3195532646047 * sccp * inline;0.624120419481713;0.624120419481713;0.624120419481713;0.624120419481713;0.126033;8;23.3195532646047 * sccp * inline;2;0.419041066300047;3.51886810469589
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_grammarBased_t2.a
+command: log ./out_grammarBased_t2Predictions.log

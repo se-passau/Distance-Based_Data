@@ -1,0 +1,55 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
+216001 configurations loaded.
+command: binary grammar-based numConfigs:3893 seed:92  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 3893; Number of Configurations in Grammar: 216000
+Draw a new random number, cause 54390 is already in drawn.
+Draw a new random number, cause 29633 is already in drawn.
+Draw a new random number, cause 10222 is already in drawn.
+Draw a new random number, cause 182041 is already in drawn.
+Draw a new random number, cause 111266 is already in drawn.
+Draw a new random number, cause 93811 is already in drawn.
+Draw a new random number, cause 107444 is already in drawn.
+Draw a new random number, cause 142063 is already in drawn.
+Draw a new random number, cause 124743 is already in drawn.
+Draw a new random number, cause 184342 is already in drawn.
+Draw a new random number, cause 67586 is already in drawn.
+Draw a new random number, cause 215111 is already in drawn.
+Draw a new random number, cause 36144 is already in drawn.
+Draw a new random number, cause 155106 is already in drawn.
+Draw a new random number, cause 136234 is already in drawn.
+Draw a new random number, cause 35447 is already in drawn.
+Draw a new random number, cause 91415 is already in drawn.
+Draw a new random number, cause 215111 is already in drawn.
+Draw a new random number, cause 101025 is already in drawn.
+Draw a new random number, cause 19003 is already in drawn.
+Draw a new random number, cause 93485 is already in drawn.
+Draw a new random number, cause 180083 is already in drawn.
+Draw a new random number, cause 88156 is already in drawn.
+Draw a new random number, cause 171447 is already in drawn.
+Draw a new random number, cause 105886 is already in drawn.
+Draw a new random number, cause 120898 is already in drawn.
+Draw a new random number, cause 32029 is already in drawn.
+Draw a new random number, cause 158918 is already in drawn.
+Draw a new random number, cause 209103 is already in drawn.
+Draw a new random number, cause 67844 is already in drawn.
+Draw a new random number, cause 36829 is already in drawn.
+Draw a new random number, cause 173780 is already in drawn.
+Draw a new random number, cause 562 is already in drawn.
+Draw a new random number, cause 56561 is already in drawn.
+Draw a new random number, cause 123508 is already in drawn.
+Draw a new random number, cause 60832 is already in drawn.
+Draw a new random number, cause 129490 is already in drawn.
+Draw a new random number, cause 104073 is already in drawn.
+Draw a new random number, cause 11144 is already in drawn.
+Draw a new random number, cause 114353 is already in drawn.
+Draw a new random number, cause 163772 is already in drawn.
+Draw a new random number, cause 165212 is already in drawn.
+Draw a new random number, cause 11765 is already in drawn.
+Draw a new random number, cause 51522 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

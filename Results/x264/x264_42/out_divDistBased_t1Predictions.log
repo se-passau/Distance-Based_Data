@@ -1,0 +1,41 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+Configs with too large deviation: 0
+1152 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_42/sampledConfigurations_divDistBased_t1.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:12 NumberOfConfigurationsValidation:12
+Learning progress:
+1;551.845 * no_asm + -288.286666666666 * ref_1;12.3716855165797;12.3716855165797;12.3716855165797;12.3716855165797;0.044175;2;-288.286666666666 * ref_1;1;27.6430084243742;
+2;472.819166666667 * no_asm + -209.260833333334 * ref_1 + 237.0775 * ref_9;6.73492159649993;6.73492159649993;6.73492159649993;6.73492159649993;0.051744;3;237.0775 * ref_9;1;5.63676392007981;
+3;459.731929824561 * no_asm + -204.898421052631 * ref_1 + 197.815789473684 * ref_9 + 52.3489473684212 * no_mbtree;4.49366311271838;4.49366311271838;4.49366311271838;4.49366311271838;0.061872;4;52.3489473684212 * no_mbtree;1;2.24125848378155;
+4;459.731929824562 * no_asm + -204.898421052632 * ref_1 + 263.729122807017 * ref_9 + 52.3489473684216 * no_mbtree + -131.826666666667 * no_weightb;2.93271969502418;2.93271969502418;2.93271969502418;2.93271969502418;0.075273;5;-131.826666666667 * no_weightb;1;1.5609434176942;
+5;469.134936708861 * no_asm + -210.086286919831 * ref_1 + 267.295780590717 * ref_9 + 51.7004641350212 * no_mbtree + -131.826666666667 * no_weightb + -12.3211814345993 * no_deblock;2.33997972480795;2.33997972480795;2.33997972480795;2.33997972480795;0.092952;6;-12.3211814345993 * no_deblock;1;0.59273997021623;
+6;470.167253521127 * no_asm + -216.280187793427 * ref_1 + 254.563873239437 * ref_9 + 44.1301408450708 * no_mbtree + -131.826666666667 * no_weightb + -20.2356103286383 * no_deblock + 27.1843427230045 * no_fast_pskip;1.68912593378402;1.68912593378402;1.68912593378402;1.68912593378402;0.116932;7;27.1843427230045 * no_fast_pskip;1;0.650853791023926;
+7;453.054901960785 * no_asm + -201.968039215687 * ref_1 + 274.165294117646 * ref_9 + 66.5317647058819 * no_mbtree + -176.007647058822 * no_weightb + -6.85686274509868 * no_deblock + 33.0958823529405 * no_fast_pskip + -44.1809803921554 * rc_lookahead_60;1.09883707665504;1.09883707665504;1.09883707665504;1.09883707665504;0.146939;8;-44.1809803921554 * rc_lookahead_60;1;0.59028885712898;
+8;451.708333333334 * no_asm + -197.928333333334 * ref_1 + 255.313333333332 * ref_9 + 67.8783333333329 * no_mbtree + -166.581666666665 * no_weightb + -9.55000000000052 * no_deblock + 45.2149999999996 * no_fast_pskip + -34.7549999999985 * rc_lookahead_60 + -22.8916666666672 * ref_1 * no_fast_pskip;0.576859190820852;0.576859190820852;0.576859190820852;0.576859190820852;0.182375;10;-22.8916666666672 * ref_1 * no_fast_pskip;2;0.260988942917095;
+Elapsed=00:00:00.1846004
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: abortError
+1;551.845 * no_asm + -288.286666666666 * ref_1;12.3716855165797;12.3716855165797;12.3716855165797;12.3716855165797;0.044175;2;-288.286666666666 * ref_1;1;27.6430084243742;14.5191036064669
+2;472.819166666667 * no_asm + -209.260833333334 * ref_1 + 237.0775 * ref_9;6.73492159649993;6.73492159649993;6.73492159649993;6.73492159649993;0.051744;3;237.0775 * ref_9;1;5.63676392007981;10.8197072750938
+3;459.731929824561 * no_asm + -204.898421052631 * ref_1 + 197.815789473684 * ref_9 + 52.3489473684212 * no_mbtree;4.49366311271838;4.49366311271838;4.49366311271838;4.49366311271838;0.061872;4;52.3489473684212 * no_mbtree;1;2.24125848378155;9.24620787954492
+4;459.731929824562 * no_asm + -204.898421052632 * ref_1 + 263.729122807017 * ref_9 + 52.3489473684216 * no_mbtree + -131.826666666667 * no_weightb;2.93271969502418;2.93271969502418;2.93271969502418;2.93271969502418;0.075273;5;-131.826666666667 * no_weightb;1;1.5609434176942;18.9289070752299
+5;469.134936708861 * no_asm + -210.086286919831 * ref_1 + 267.295780590717 * ref_9 + 51.7004641350212 * no_mbtree + -131.826666666667 * no_weightb + -12.3211814345993 * no_deblock;2.33997972480795;2.33997972480795;2.33997972480795;2.33997972480795;0.092952;6;-12.3211814345993 * no_deblock;1;0.59273997021623;19.1516984528379
+6;470.167253521127 * no_asm + -216.280187793427 * ref_1 + 254.563873239437 * ref_9 + 44.1301408450708 * no_mbtree + -131.826666666667 * no_weightb + -20.2356103286383 * no_deblock + 27.1843427230045 * no_fast_pskip;1.68912593378402;1.68912593378402;1.68912593378402;1.68912593378402;0.116932;7;27.1843427230045 * no_fast_pskip;1;0.650853791023926;18.6630556871506
+7;453.054901960785 * no_asm + -201.968039215687 * ref_1 + 274.165294117646 * ref_9 + 66.5317647058819 * no_mbtree + -176.007647058822 * no_weightb + -6.85686274509868 * no_deblock + 33.0958823529405 * no_fast_pskip + -44.1809803921554 * rc_lookahead_60;1.09883707665504;1.09883707665504;1.09883707665504;1.09883707665504;0.146939;8;-44.1809803921554 * rc_lookahead_60;1;0.59028885712898;24.2418551134051
+8;451.708333333334 * no_asm + -197.928333333334 * ref_1 + 255.313333333332 * ref_9 + 67.8783333333329 * no_mbtree + -166.581666666665 * no_weightb + -9.55000000000052 * no_deblock + 45.2149999999996 * no_fast_pskip + -34.7549999999985 * rc_lookahead_60 + -22.8916666666672 * ref_1 * no_fast_pskip;0.576859190820852;0.576859190820852;0.576859190820852;0.576859190820852;0.182375;10;-22.8916666666672 * ref_1 * no_fast_pskip;2;0.260988942917095;22.5298535732748
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_divDistBased_t2.a
+command: log ./out_divDistBased_t2Predictions.log

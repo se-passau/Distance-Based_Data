@@ -1,0 +1,39 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/measurements.xml
+Configs with too large deviation: 0
+432 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/lrzip/lrzip_15/sampledConfigurations_divDistBased_t1.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:18 NumberOfConfigurationsValidation:18
+Learning progress:
+1;48073.0769230768 * level + 312002.923076923 * compression;24.3992760337784;24.3992760337784;24.3992760337784;24.3992760337784;0.03951;2;312002.923076923 * compression;1;124.244269097605;
+2;48073.076923077 * level + 369909.423076923 * compression + -289532.5 * compressionGzip;17.549370552056;17.549370552056;17.549370552056;17.549370552056;0.049683;3;-289532.5 * compressionGzip;1;6.84990548172236;
+3;48073.0769230772 * level + 780116.923076923 * compression + -699740.000000001 * compressionGzip + -546943.333333334 * compression * encryption;8.59342289785467;8.59342289785467;8.59342289785467;8.59342289785467;0.061569;5;-546943.333333334 * compression * encryption;2;4.47797382710068;
+4;44495.7142857143 * level + 783694.285714286 * compression + -699740 * compressionGzip + -554694.285714286 * compression * encryption + 7750.95238095234 * encryption;5.01289977672746;5.01289977672746;5.01289977672746;5.01289977672746;0.082776;6;7750.95238095234 * encryption;1;3.58052312112721;
+5;44495.7142857144 * level + 783694.285714286 * compression + -699740 * compressionGzip + -589290.952380953 * compression * encryption + 7750.95238095231 * encryption + 103790 * level4;3.40943350843819;3.40943350843819;3.40943350843819;3.40943350843819;0.110766;7;103790 * level4;1;1.60346626828928;
+6;44495.7142857144 * level + 836254.285714286 * compression + -752300 * compressionGzip + -615570.952380953 * compression * encryption + 7750.95238095261 * encryption + 130070 * level4 + -52560.0000000003 * compressionLrzip;2.21197568875421;2.21197568875421;2.21197568875421;2.21197568875421;0.147951;8;-52560.0000000003 * compressionLrzip;1;1.19745781968397;
+7;44086.6666666668 * level + 836663.333333334 * compression + -752300.000000001 * compressionGzip + -615980.000000001 * compression * encryption + 8160.00000000041 * encryption + 130070 * level4 + -52560.0000000006 * compressionLrzip + 2863.33333333343 * level8;1.98523829581177;1.98523829581177;1.98523829581177;1.98523829581177;0.19256;9;2863.33333333343 * level8;1;0.226737392942448;
+Elapsed=00:00:00.1949227
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;48073.0769230768 * level + 312002.923076923 * compression;24.3992760337784;24.3992760337784;24.3992760337784;24.3992760337784;0.03951;2;312002.923076923 * compression;1;124.244269097605;155.124941401655
+2;48073.076923077 * level + 369909.423076923 * compression + -289532.5 * compressionGzip;17.549370552056;17.549370552056;17.549370552056;17.549370552056;0.049683;3;-289532.5 * compressionGzip;1;6.84990548172236;147.508004912876
+3;48073.0769230772 * level + 780116.923076923 * compression + -699740.000000001 * compressionGzip + -546943.333333334 * compression * encryption;8.59342289785467;8.59342289785467;8.59342289785467;8.59342289785467;0.061569;5;-546943.333333334 * compression * encryption;2;4.47797382710068;247.274844756173
+4;44495.7142857143 * level + 783694.285714286 * compression + -699740 * compressionGzip + -554694.285714286 * compression * encryption + 7750.95238095234 * encryption;5.01289977672746;5.01289977672746;5.01289977672746;5.01289977672746;0.082776;6;7750.95238095234 * encryption;1;3.58052312112721;246.263539368013
+5;44495.7142857144 * level + 783694.285714286 * compression + -699740 * compressionGzip + -589290.952380953 * compression * encryption + 7750.95238095231 * encryption + 103790 * level4;3.40943350843819;3.40943350843819;3.40943350843819;3.40943350843819;0.110766;7;103790 * level4;1;1.60346626828928;252.144025063215
+6;44495.7142857144 * level + 836254.285714286 * compression + -752300 * compressionGzip + -615570.952380953 * compression * encryption + 7750.95238095261 * encryption + 130070 * level4 + -52560.0000000003 * compressionLrzip;2.21197568875421;2.21197568875421;2.21197568875421;2.21197568875421;0.147951;8;-52560.0000000003 * compressionLrzip;1;1.19745781968397;270.509066379336
+7;44086.6666666668 * level + 836663.333333334 * compression + -752300.000000001 * compressionGzip + -615980.000000001 * compression * encryption + 8160.00000000041 * encryption + 130070 * level4 + -52560.0000000006 * compressionLrzip + 2863.33333333343 * level8;1.98523829581177;1.98523829581177;1.98523829581177;1.98523829581177;0.19256;9;2863.33333333343 * level8;1;0.226737392942448;270.504757529679
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_divDistBased_t2.a
+command: log ./out_divDistBased_t2Predictions.log

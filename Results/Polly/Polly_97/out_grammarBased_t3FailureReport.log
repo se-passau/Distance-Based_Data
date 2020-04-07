@@ -1,0 +1,56 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
+Configs with too large deviation: 0
+60000 configurations loaded.
+command: binary grammar-based numConfigs:2172 seed:97  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 2172; Number of Configurations in Grammar: 60000
+Draw a new random number, cause 37031 is already in drawn.
+Draw a new random number, cause 48902 is already in drawn.
+Draw a new random number, cause 45058 is already in drawn.
+Draw a new random number, cause 8574 is already in drawn.
+Draw a new random number, cause 36554 is already in drawn.
+Draw a new random number, cause 59571 is already in drawn.
+Draw a new random number, cause 1430 is already in drawn.
+Draw a new random number, cause 11275 is already in drawn.
+Draw a new random number, cause 28983 is already in drawn.
+Draw a new random number, cause 23984 is already in drawn.
+Draw a new random number, cause 31495 is already in drawn.
+Draw a new random number, cause 11304 is already in drawn.
+Draw a new random number, cause 42539 is already in drawn.
+Draw a new random number, cause 18147 is already in drawn.
+Draw a new random number, cause 15899 is already in drawn.
+Draw a new random number, cause 56753 is already in drawn.
+Draw a new random number, cause 1711 is already in drawn.
+Draw a new random number, cause 40098 is already in drawn.
+Draw a new random number, cause 59860 is already in drawn.
+Draw a new random number, cause 23116 is already in drawn.
+Draw a new random number, cause 32928 is already in drawn.
+Draw a new random number, cause 18646 is already in drawn.
+Draw a new random number, cause 18818 is already in drawn.
+Draw a new random number, cause 38042 is already in drawn.
+Draw a new random number, cause 39947 is already in drawn.
+Draw a new random number, cause 51706 is already in drawn.
+Draw a new random number, cause 31719 is already in drawn.
+Draw a new random number, cause 23008 is already in drawn.
+Draw a new random number, cause 9509 is already in drawn.
+Draw a new random number, cause 35088 is already in drawn.
+Draw a new random number, cause 26278 is already in drawn.
+Draw a new random number, cause 5167 is already in drawn.
+Draw a new random number, cause 31310 is already in drawn.
+Draw a new random number, cause 42209 is already in drawn.
+Draw a new random number, cause 59777 is already in drawn.
+Draw a new random number, cause 43716 is already in drawn.
+Draw a new random number, cause 58691 is already in drawn.
+Draw a new random number, cause 27104 is already in drawn.
+Draw a new random number, cause 59777 is already in drawn.
+Draw a new random number, cause 35051 is already in drawn.
+Draw a new random number, cause 21360 is already in drawn.
+Draw a new random number, cause 34676 is already in drawn.
+Draw a new random number, cause 32573 is already in drawn.
+Draw a new random number, cause 53337 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

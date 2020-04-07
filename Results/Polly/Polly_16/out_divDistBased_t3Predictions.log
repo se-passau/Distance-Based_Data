@@ -1,0 +1,32 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
+Configs with too large deviation: 0
+60000 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_16/sampledConfigurations_divDistBased_t3.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:2172 NumberOfConfigurationsValidation:2172
+Learning progress:
+1;23.291236933798 * polly_vectorizer + 6.18805876922768 * max;29.1428944321844;29.1428944321844;29.1428944321844;29.1428944321844;0.500271;2;6.18805876922768 * max;1;5.54577514754968;
+2;21.298714081552 * polly_vectorizer + 5.63779073421014 * max + 4.4329771984076 * polly_no_tiling;27.9024146601006;27.9024146601006;27.9024146601006;27.9024146601006;1.850561;3;4.4329771984076 * polly_no_tiling;1;1.24047977208379;
+3;18.5855907172994 * polly_vectorizer + 10.6514873983833 * max + 10.4691508847676 * polly_no_tiling + -10.0468805961951 * max * polly_no_tiling;20.9858392618201;20.9858392618201;20.9858392618201;20.9858392618201;4.402197;5;-10.0468805961951 * max * polly_no_tiling;2;3.45828769914023;
+4;18.3585491226074 * polly_vectorizer + 10.5501154646487 * max + 10.0691449379555 * polly_no_tiling + -10.1097678553981 * max * polly_no_tiling + 2.11015129184469 * parallel;19.8506695462871;19.8506695462871;19.8506695462871;19.8506695462871;8.544675;6;2.11015129184469 * parallel;1;1.13516971553305;
+5;18.2989739213929 * polly_vectorizer + 10.653290505464 * max + 9.96418428173481 * polly_no_tiling + -9.94335397698129 * max * polly_no_tiling + 1.83000979371992 * parallel + 0.833840427058755 * parallel * min;19.7839550442933;19.7839550442933;19.7839550442933;19.7839550442933;14.146187;8;0.833840427058755 * parallel * min;2;0.0333572509968718;
+Elapsed=00:00:14.1775192
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;23.291236933798 * polly_vectorizer + 6.18805876922768 * max;29.1428944321844;29.1428944321844;29.1428944321844;29.1428944321844;0.500271;2;6.18805876922768 * max;1;5.54577514754968;28.2158372036629
+2;21.298714081552 * polly_vectorizer + 5.63779073421014 * max + 4.4329771984076 * polly_no_tiling;27.9024146601006;27.9024146601006;27.9024146601006;27.9024146601006;1.850561;3;4.4329771984076 * polly_no_tiling;1;1.24047977208379;26.8713319308245
+3;18.5855907172994 * polly_vectorizer + 10.6514873983833 * max + 10.4691508847676 * polly_no_tiling + -10.0468805961951 * max * polly_no_tiling;20.9858392618201;20.9858392618201;20.9858392618201;20.9858392618201;4.402197;5;-10.0468805961951 * max * polly_no_tiling;2;3.45828769914023;20.4427720786941
+4;18.3585491226074 * polly_vectorizer + 10.5501154646487 * max + 10.0691449379555 * polly_no_tiling + -10.1097678553981 * max * polly_no_tiling + 2.11015129184469 * parallel;19.8506695462871;19.8506695462871;19.8506695462871;19.8506695462871;8.544675;6;2.11015129184469 * parallel;1;1.13516971553305;19.7435628324408
+5;18.2989739213929 * polly_vectorizer + 10.653290505464 * max + 9.96418428173481 * polly_no_tiling + -9.94335397698129 * max * polly_no_tiling + 1.83000979371992 * parallel + 0.833840427058755 * parallel * min;19.7839550442933;19.7839550442933;19.7839550442933;19.7839550442933;14.146187;8;0.833840427058755 * parallel * min;2;0.0333572509968718;19.7807210374854
+Analyze finished
+command: clean-sampling
+command: clean-global

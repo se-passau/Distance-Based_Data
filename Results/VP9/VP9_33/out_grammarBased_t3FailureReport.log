@@ -1,0 +1,50 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
+216001 configurations loaded.
+command: binary grammar-based numConfigs:3893 seed:33  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 3893; Number of Configurations in Grammar: 216000
+Draw a new random number, cause 139790 is already in drawn.
+Draw a new random number, cause 67136 is already in drawn.
+Draw a new random number, cause 158518 is already in drawn.
+Draw a new random number, cause 127837 is already in drawn.
+Draw a new random number, cause 85862 is already in drawn.
+Draw a new random number, cause 34505 is already in drawn.
+Draw a new random number, cause 92515 is already in drawn.
+Draw a new random number, cause 74774 is already in drawn.
+Draw a new random number, cause 65931 is already in drawn.
+Draw a new random number, cause 189187 is already in drawn.
+Draw a new random number, cause 111852 is already in drawn.
+Draw a new random number, cause 28204 is already in drawn.
+Draw a new random number, cause 12390 is already in drawn.
+Draw a new random number, cause 96779 is already in drawn.
+Draw a new random number, cause 192520 is already in drawn.
+Draw a new random number, cause 26815 is already in drawn.
+Draw a new random number, cause 140626 is already in drawn.
+Draw a new random number, cause 130364 is already in drawn.
+Draw a new random number, cause 142717 is already in drawn.
+Draw a new random number, cause 12766 is already in drawn.
+Draw a new random number, cause 122072 is already in drawn.
+Draw a new random number, cause 168309 is already in drawn.
+Draw a new random number, cause 161577 is already in drawn.
+Draw a new random number, cause 38721 is already in drawn.
+Draw a new random number, cause 171213 is already in drawn.
+Draw a new random number, cause 130843 is already in drawn.
+Draw a new random number, cause 208687 is already in drawn.
+Draw a new random number, cause 56008 is already in drawn.
+Draw a new random number, cause 137442 is already in drawn.
+Draw a new random number, cause 117161 is already in drawn.
+Draw a new random number, cause 171858 is already in drawn.
+Draw a new random number, cause 215573 is already in drawn.
+Draw a new random number, cause 16524 is already in drawn.
+Draw a new random number, cause 184156 is already in drawn.
+Draw a new random number, cause 138311 is already in drawn.
+Draw a new random number, cause 80855 is already in drawn.
+Draw a new random number, cause 123536 is already in drawn.
+Draw a new random number, cause 213686 is already in drawn.
+Draw a new random number, cause 140880 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

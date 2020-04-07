@@ -1,0 +1,33 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+Configs with too large deviation: 0
+1152 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_71/sampledConfigurations_divDistBased_t1.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:12 NumberOfConfigurationsValidation:12
+Learning progress:
+1;442.235833333334 * no_asm + -172.502083333334 * ref_1;4.45169270529248;4.45169270529248;4.45169270529248;4.45169270529248;0.045943;2;-172.502083333334 * ref_1;1;18.1892004223431;
+2;428.501060606061 * no_asm + -167.923825757576 * ref_1 + 18.3130303030301 * no_mixed_refs;2.47442331142526;2.47442331142526;2.47442331142526;2.47442331142526;0.052907;3;18.3130303030301 * no_mixed_refs;1;1.97726939386723;
+3;438.265416666667 * no_asm + -180.129270833334 * ref_1 + -30.50875 * no_mixed_refs + 53.7039583333334 * no_mixed_refs * no_fast_pskip;1.18732895731825;1.18732895731825;1.18732895731825;1.18732895731825;0.064225;5;53.7039583333334 * no_mixed_refs * no_fast_pskip;2;0.643547177053502;
+4;439.103424657534 * no_asm + -177.824748858448 * ref_1 + -24.642694063927 * no_mixed_refs + 49.9329223744293 * no_mixed_refs * no_fast_pskip + -6.70406392694032 * no_cabac;0.88279542351455;0.88279542351455;0.88279542351455;0.88279542351455;0.079531;6;-6.70406392694032 * no_cabac;1;0.304533533803703;
+Elapsed=00:00:00.0815185
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: abortError
+1;442.235833333334 * no_asm + -172.502083333334 * ref_1;4.45169270529248;4.45169270529248;4.45169270529248;4.45169270529248;0.045943;2;-172.502083333334 * ref_1;1;18.1892004223431;15.2856460281726
+2;428.501060606061 * no_asm + -167.923825757576 * ref_1 + 18.3130303030301 * no_mixed_refs;2.47442331142526;2.47442331142526;2.47442331142526;2.47442331142526;0.052907;3;18.3130303030301 * no_mixed_refs;1;1.97726939386723;16.041919118764
+3;438.265416666667 * no_asm + -180.129270833334 * ref_1 + -30.50875 * no_mixed_refs + 53.7039583333334 * no_mixed_refs * no_fast_pskip;1.18732895731825;1.18732895731825;1.18732895731825;1.18732895731825;0.064225;5;53.7039583333334 * no_mixed_refs * no_fast_pskip;2;0.643547177053502;16.4337867216579
+4;439.103424657534 * no_asm + -177.824748858448 * ref_1 + -24.642694063927 * no_mixed_refs + 49.9329223744293 * no_mixed_refs * no_fast_pskip + -6.70406392694032 * no_cabac;0.88279542351455;0.88279542351455;0.88279542351455;0.88279542351455;0.079531;6;-6.70406392694032 * no_cabac;1;0.304533533803703;16.3052773830628
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_divDistBased_t2.a
+command: log ./out_divDistBased_t2Predictions.log

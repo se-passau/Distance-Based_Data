@@ -1,0 +1,146 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/measurements.xml
+Configs with too large deviation: 0
+432 configurations loaded.
+command: binary grammar-based numConfigs:250 seed:33  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 250; Number of Configurations in Grammar: 432
+Draw a new random number, cause 245 is already in drawn.
+Draw a new random number, cause 431 is already in drawn.
+Draw a new random number, cause 132 is already in drawn.
+Draw a new random number, cause 260 is already in drawn.
+Draw a new random number, cause 39 is already in drawn.
+Draw a new random number, cause 118 is already in drawn.
+Draw a new random number, cause 137 is already in drawn.
+Draw a new random number, cause 407 is already in drawn.
+Draw a new random number, cause 242 is already in drawn.
+Draw a new random number, cause 39 is already in drawn.
+Draw a new random number, cause 87 is already in drawn.
+Draw a new random number, cause 276 is already in drawn.
+Draw a new random number, cause 260 is already in drawn.
+Draw a new random number, cause 83 is already in drawn.
+Draw a new random number, cause 26 is already in drawn.
+Draw a new random number, cause 216 is already in drawn.
+Draw a new random number, cause 33 is already in drawn.
+Draw a new random number, cause 159 is already in drawn.
+Draw a new random number, cause 132 is already in drawn.
+Draw a new random number, cause 285 is already in drawn.
+Draw a new random number, cause 270 is already in drawn.
+Draw a new random number, cause 121 is already in drawn.
+Draw a new random number, cause 332 is already in drawn.
+Draw a new random number, cause 352 is already in drawn.
+Draw a new random number, cause 31 is already in drawn.
+Draw a new random number, cause 204 is already in drawn.
+Draw a new random number, cause 211 is already in drawn.
+Draw a new random number, cause 276 is already in drawn.
+Draw a new random number, cause 402 is already in drawn.
+Draw a new random number, cause 382 is already in drawn.
+Draw a new random number, cause 196 is already in drawn.
+Draw a new random number, cause 426 is already in drawn.
+Draw a new random number, cause 263 is already in drawn.
+Draw a new random number, cause 279 is already in drawn.
+Draw a new random number, cause 113 is already in drawn.
+Draw a new random number, cause 317 is already in drawn.
+Draw a new random number, cause 149 is already in drawn.
+Draw a new random number, cause 208 is already in drawn.
+Draw a new random number, cause 145 is already in drawn.
+Draw a new random number, cause 178 is already in drawn.
+Draw a new random number, cause 395 is already in drawn.
+Draw a new random number, cause 429 is already in drawn.
+Draw a new random number, cause 421 is already in drawn.
+Draw a new random number, cause 264 is already in drawn.
+Draw a new random number, cause 393 is already in drawn.
+Draw a new random number, cause 217 is already in drawn.
+Draw a new random number, cause 429 is already in drawn.
+Draw a new random number, cause 327 is already in drawn.
+Draw a new random number, cause 58 is already in drawn.
+Draw a new random number, cause 303 is already in drawn.
+Draw a new random number, cause 211 is already in drawn.
+Draw a new random number, cause 117 is already in drawn.
+Draw a new random number, cause 276 is already in drawn.
+Draw a new random number, cause 134 is already in drawn.
+Draw a new random number, cause 64 is already in drawn.
+Draw a new random number, cause 401 is already in drawn.
+Draw a new random number, cause 221 is already in drawn.
+Draw a new random number, cause 35 is already in drawn.
+Draw a new random number, cause 277 is already in drawn.
+Draw a new random number, cause 277 is already in drawn.
+Draw a new random number, cause 160 is already in drawn.
+Draw a new random number, cause 143 is already in drawn.
+Draw a new random number, cause 392 is already in drawn.
+Draw a new random number, cause 407 is already in drawn.
+Draw a new random number, cause 278 is already in drawn.
+Draw a new random number, cause 200 is already in drawn.
+Draw a new random number, cause 243 is already in drawn.
+Draw a new random number, cause 393 is already in drawn.
+Draw a new random number, cause 236 is already in drawn.
+Draw a new random number, cause 430 is already in drawn.
+Draw a new random number, cause 176 is already in drawn.
+Draw a new random number, cause 253 is already in drawn.
+Draw a new random number, cause 247 is already in drawn.
+Draw a new random number, cause 253 is already in drawn.
+Draw a new random number, cause 401 is already in drawn.
+Draw a new random number, cause 419 is already in drawn.
+Draw a new random number, cause 309 is already in drawn.
+Draw a new random number, cause 133 is already in drawn.
+Draw a new random number, cause 206 is already in drawn.
+Draw a new random number, cause 330 is already in drawn.
+Draw a new random number, cause 330 is already in drawn.
+Draw a new random number, cause 105 is already in drawn.
+Draw a new random number, cause 46 is already in drawn.
+Draw a new random number, cause 352 is already in drawn.
+Draw a new random number, cause 393 is already in drawn.
+Draw a new random number, cause 268 is already in drawn.
+Draw a new random number, cause 360 is already in drawn.
+Draw a new random number, cause 45 is already in drawn.
+Draw a new random number, cause 317 is already in drawn.
+Draw a new random number, cause 7 is already in drawn.
+Draw a new random number, cause 321 is already in drawn.
+Draw a new random number, cause 385 is already in drawn.
+Draw a new random number, cause 384 is already in drawn.
+Draw a new random number, cause 170 is already in drawn.
+Draw a new random number, cause 33 is already in drawn.
+Draw a new random number, cause 164 is already in drawn.
+Draw a new random number, cause 366 is already in drawn.
+Draw a new random number, cause 364 is already in drawn.
+Draw a new random number, cause 407 is already in drawn.
+Draw a new random number, cause 327 is already in drawn.
+Draw a new random number, cause 8 is already in drawn.
+Draw a new random number, cause 423 is already in drawn.
+Draw a new random number, cause 384 is already in drawn.
+Draw a new random number, cause 266 is already in drawn.
+Draw a new random number, cause 255 is already in drawn.
+Draw a new random number, cause 292 is already in drawn.
+Draw a new random number, cause 243 is already in drawn.
+Draw a new random number, cause 248 is already in drawn.
+Draw a new random number, cause 208 is already in drawn.
+Draw a new random number, cause 172 is already in drawn.
+Draw a new random number, cause 221 is already in drawn.
+Draw a new random number, cause 21 is already in drawn.
+Draw a new random number, cause 243 is already in drawn.
+Draw a new random number, cause 373 is already in drawn.
+Draw a new random number, cause 282 is already in drawn.
+Draw a new random number, cause 254 is already in drawn.
+Draw a new random number, cause 160 is already in drawn.
+Draw a new random number, cause 183 is already in drawn.
+Draw a new random number, cause 80 is already in drawn.
+Draw a new random number, cause 217 is already in drawn.
+Draw a new random number, cause 72 is already in drawn.
+Draw a new random number, cause 228 is already in drawn.
+Draw a new random number, cause 253 is already in drawn.
+Draw a new random number, cause 384 is already in drawn.
+Draw a new random number, cause 171 is already in drawn.
+Draw a new random number, cause 55 is already in drawn.
+Draw a new random number, cause 54 is already in drawn.
+Draw a new random number, cause 40 is already in drawn.
+Draw a new random number, cause 141 is already in drawn.
+Draw a new random number, cause 102 is already in drawn.
+Draw a new random number, cause 330 is already in drawn.
+Draw a new random number, cause 248 is already in drawn.
+Draw a new random number, cause 216 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

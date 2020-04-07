@@ -1,0 +1,134 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/measurements.xml
+Configs with too large deviation: 0
+68640 configurations loaded.
+command: binary grammar-based numConfigs:4091 seed:59  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 4091; Number of Configurations in Grammar: 68640
+Draw a new random number, cause 61948 is already in drawn.
+Draw a new random number, cause 2852 is already in drawn.
+Draw a new random number, cause 45528 is already in drawn.
+Draw a new random number, cause 60836 is already in drawn.
+Draw a new random number, cause 53914 is already in drawn.
+Draw a new random number, cause 10485 is already in drawn.
+Draw a new random number, cause 59798 is already in drawn.
+Draw a new random number, cause 53914 is already in drawn.
+Draw a new random number, cause 48533 is already in drawn.
+Draw a new random number, cause 54856 is already in drawn.
+Draw a new random number, cause 530 is already in drawn.
+Draw a new random number, cause 11904 is already in drawn.
+Draw a new random number, cause 42769 is already in drawn.
+Draw a new random number, cause 14576 is already in drawn.
+Draw a new random number, cause 177 is already in drawn.
+Draw a new random number, cause 32728 is already in drawn.
+Draw a new random number, cause 55055 is already in drawn.
+Draw a new random number, cause 63961 is already in drawn.
+Draw a new random number, cause 65412 is already in drawn.
+Draw a new random number, cause 8569 is already in drawn.
+Draw a new random number, cause 40642 is already in drawn.
+Draw a new random number, cause 16965 is already in drawn.
+Draw a new random number, cause 17767 is already in drawn.
+Draw a new random number, cause 15805 is already in drawn.
+Draw a new random number, cause 14941 is already in drawn.
+Draw a new random number, cause 14619 is already in drawn.
+Draw a new random number, cause 45312 is already in drawn.
+Draw a new random number, cause 65738 is already in drawn.
+Draw a new random number, cause 62897 is already in drawn.
+Draw a new random number, cause 59582 is already in drawn.
+Draw a new random number, cause 12537 is already in drawn.
+Draw a new random number, cause 47142 is already in drawn.
+Draw a new random number, cause 4523 is already in drawn.
+Draw a new random number, cause 1805 is already in drawn.
+Draw a new random number, cause 7012 is already in drawn.
+Draw a new random number, cause 48769 is already in drawn.
+Draw a new random number, cause 65847 is already in drawn.
+Draw a new random number, cause 48191 is already in drawn.
+Draw a new random number, cause 3821 is already in drawn.
+Draw a new random number, cause 50627 is already in drawn.
+Draw a new random number, cause 47275 is already in drawn.
+Draw a new random number, cause 49662 is already in drawn.
+Draw a new random number, cause 23299 is already in drawn.
+Draw a new random number, cause 16812 is already in drawn.
+Draw a new random number, cause 63696 is already in drawn.
+Draw a new random number, cause 10697 is already in drawn.
+Draw a new random number, cause 61241 is already in drawn.
+Draw a new random number, cause 7242 is already in drawn.
+Draw a new random number, cause 20662 is already in drawn.
+Draw a new random number, cause 8825 is already in drawn.
+Draw a new random number, cause 44501 is already in drawn.
+Draw a new random number, cause 34933 is already in drawn.
+Draw a new random number, cause 27149 is already in drawn.
+Draw a new random number, cause 48925 is already in drawn.
+Draw a new random number, cause 68455 is already in drawn.
+Draw a new random number, cause 45531 is already in drawn.
+Draw a new random number, cause 40459 is already in drawn.
+Draw a new random number, cause 1493 is already in drawn.
+Draw a new random number, cause 6871 is already in drawn.
+Draw a new random number, cause 20901 is already in drawn.
+Draw a new random number, cause 43158 is already in drawn.
+Draw a new random number, cause 9354 is already in drawn.
+Draw a new random number, cause 56472 is already in drawn.
+Draw a new random number, cause 9325 is already in drawn.
+Draw a new random number, cause 56429 is already in drawn.
+Draw a new random number, cause 47221 is already in drawn.
+Draw a new random number, cause 55979 is already in drawn.
+Draw a new random number, cause 63853 is already in drawn.
+Draw a new random number, cause 56168 is already in drawn.
+Draw a new random number, cause 36733 is already in drawn.
+Draw a new random number, cause 37490 is already in drawn.
+Draw a new random number, cause 58452 is already in drawn.
+Draw a new random number, cause 32397 is already in drawn.
+Draw a new random number, cause 56035 is already in drawn.
+Draw a new random number, cause 53708 is already in drawn.
+Draw a new random number, cause 49870 is already in drawn.
+Draw a new random number, cause 56564 is already in drawn.
+Draw a new random number, cause 50668 is already in drawn.
+Draw a new random number, cause 12468 is already in drawn.
+Draw a new random number, cause 177 is already in drawn.
+Draw a new random number, cause 56487 is already in drawn.
+Draw a new random number, cause 47915 is already in drawn.
+Draw a new random number, cause 61160 is already in drawn.
+Draw a new random number, cause 14582 is already in drawn.
+Draw a new random number, cause 22533 is already in drawn.
+Draw a new random number, cause 40523 is already in drawn.
+Draw a new random number, cause 63392 is already in drawn.
+Draw a new random number, cause 18446 is already in drawn.
+Draw a new random number, cause 47573 is already in drawn.
+Draw a new random number, cause 53654 is already in drawn.
+Draw a new random number, cause 58002 is already in drawn.
+Draw a new random number, cause 15966 is already in drawn.
+Draw a new random number, cause 51561 is already in drawn.
+Draw a new random number, cause 19574 is already in drawn.
+Draw a new random number, cause 49682 is already in drawn.
+Draw a new random number, cause 28614 is already in drawn.
+Draw a new random number, cause 10960 is already in drawn.
+Draw a new random number, cause 63592 is already in drawn.
+Draw a new random number, cause 48612 is already in drawn.
+Draw a new random number, cause 4671 is already in drawn.
+Draw a new random number, cause 58603 is already in drawn.
+Draw a new random number, cause 52863 is already in drawn.
+Draw a new random number, cause 68347 is already in drawn.
+Draw a new random number, cause 90 is already in drawn.
+Draw a new random number, cause 17702 is already in drawn.
+Draw a new random number, cause 17940 is already in drawn.
+Draw a new random number, cause 45484 is already in drawn.
+Draw a new random number, cause 20614 is already in drawn.
+Draw a new random number, cause 32190 is already in drawn.
+Draw a new random number, cause 51065 is already in drawn.
+Draw a new random number, cause 31105 is already in drawn.
+Draw a new random number, cause 27217 is already in drawn.
+Draw a new random number, cause 60044 is already in drawn.
+Draw a new random number, cause 48191 is already in drawn.
+Draw a new random number, cause 3277 is already in drawn.
+Draw a new random number, cause 26129 is already in drawn.
+Draw a new random number, cause 23235 is already in drawn.
+Draw a new random number, cause 63610 is already in drawn.
+Draw a new random number, cause 49704 is already in drawn.
+Draw a new random number, cause 57987 is already in drawn.
+Draw a new random number, cause 4438 is already in drawn.
+Draw a new random number, cause 62113 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

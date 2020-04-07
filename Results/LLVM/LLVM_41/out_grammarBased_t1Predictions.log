@@ -1,0 +1,33 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/measurements.xml
+Configs with too large deviation: 0
+1024 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_41/sampledConfigurations_grammarBased_t1.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
+Learning progress:
+1;224.814 * time_passes + 21.2087777777776 * inline;4.8752942447294;4.8752942447294;4.8752942447294;4.8752942447294;0.053399;2;21.2087777777776 * inline;1;1.87983442783792;
+2;220.890520833334 * time_passes + 18.5931249999997 * inline + 19.6173958333334 * jump_threading;3.6691816866706;3.6691816866706;3.6691816866706;3.6691816866706;0.060743;3;19.6173958333334 * jump_threading;1;1.20611255805881;
+3;220.890520833333 * time_passes + 5.21034722222214 * inline + 19.6173958333334 * jump_threading + 26.7655555555555 * inline * licm;1.50546905220912;1.50546905220912;1.50546905220912;1.50546905220912;0.069312;5;26.7655555555555 * inline * licm;2;1.08185631723074;
+4;218.758333333334 * time_passes + 9.47472222222222 * inline + 30.2783333333336 * jump_threading + 26.7655555555553 * inline * licm + -17.0575000000004 * jump_threading * print_used_types;0.718657978157144;0.718657978157144;0.718657978157144;0.718657978157144;0.08438;7;-17.0575000000004 * jump_threading * print_used_types;2;0.393405537025989;
+Elapsed=00:00:00.0869739
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: abortError
+1;224.814 * time_passes + 21.2087777777776 * inline;4.8752942447294;4.8752942447294;4.8752942447294;4.8752942447294;0.053399;2;21.2087777777776 * inline;1;1.87983442783792;5.5486034034581
+2;220.890520833334 * time_passes + 18.5931249999997 * inline + 19.6173958333334 * jump_threading;3.6691816866706;3.6691816866706;3.6691816866706;3.6691816866706;0.060743;3;19.6173958333334 * jump_threading;1;1.20611255805881;6.38343820982117
+3;220.890520833333 * time_passes + 5.21034722222214 * inline + 19.6173958333334 * jump_threading + 26.7655555555555 * inline * licm;1.50546905220912;1.50546905220912;1.50546905220912;1.50546905220912;0.069312;5;26.7655555555555 * inline * licm;2;1.08185631723074;5.83292649211613
+4;218.758333333334 * time_passes + 9.47472222222222 * inline + 30.2783333333336 * jump_threading + 26.7655555555553 * inline * licm + -17.0575000000004 * jump_threading * print_used_types;0.718657978157144;0.718657978157144;0.718657978157144;0.718657978157144;0.08438;7;-17.0575000000004 * jump_threading * print_used_types;2;0.393405537025989;6.45443321899488
+Analyze finished
+command: clean-sampling
+command: clean-global
+command: script ./learn_grammarBased_t2.a
+command: log ./out_grammarBased_t2Predictions.log
