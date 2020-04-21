@@ -9,25 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_89/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;210.44 * time_passes + 35.4929999999997 * gvn;2.87162354924413;2.87162354924413;2.87162354924413;2.87162354924413;0.056386;2;35.4929999999997 * gvn;1;1.25729875213205;
-2;210.44 * time_passes + 29.0483333333331 * gvn + 16.1116666666666 * iv_users;1.74882299867568;1.74882299867568;1.74882299867568;1.74882299867568;0.064201;3;16.1116666666666 * iv_users;1;1.12280055056846;
-3;210.44 * time_passes + 23.25 * gvn + 13.2125000000001 * iv_users + 8.69749999999999 * inline;1.13104585973348;1.13104585973348;1.13104585973348;1.13104585973348;0.07312;4;8.69749999999999 * inline;1;0.6177771389422;
-4;210.44 * time_passes + 23.25 * gvn + 14.4816666666668 * iv_users + 9.96666666666664 * inline + -2.53833333333343 * print_used_types;1.01179255510789;1.01179255510789;1.01179255510789;1.01179255510789;0.089574;5;-2.53833333333343 * print_used_types;1;0.119253304625589;
-Elapsed=00:00:00.0916313
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;210.44 * time_passes + 35.4929999999997 * gvn;2.87162354924413;2.87162354924413;2.87162354924413;2.87162354924413;0.056386;2;35.4929999999997 * gvn;1;1.25729875213205;6.05490182997831
-2;210.44 * time_passes + 29.0483333333331 * gvn + 16.1116666666666 * iv_users;1.74882299867568;1.74882299867568;1.74882299867568;1.74882299867568;0.064201;3;16.1116666666666 * iv_users;1;1.12280055056846;6.15773235893955
-3;210.44 * time_passes + 23.25 * gvn + 13.2125000000001 * iv_users + 8.69749999999999 * inline;1.13104585973348;1.13104585973348;1.13104585973348;1.13104585973348;0.07312;4;8.69749999999999 * inline;1;0.6177771389422;5.33476394307546
-4;210.44 * time_passes + 23.25 * gvn + 14.4816666666668 * iv_users + 9.96666666666664 * inline + -2.53833333333343 * print_used_types;1.01179255510789;1.01179255510789;1.01179255510789;1.01179255510789;0.089574;5;-2.53833333333343 * print_used_types;1;0.119253304625589;5.44134443911994
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

@@ -8,29 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_87/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;28.7338888888889 * polly_vectorizer + -10.3805555555556 * pollyoptmaxcoefficient_10;7.70224448326398;7.70224448326398;7.70224448326398;7.70224448326398;0.049421;2;-10.3805555555556 * pollyoptmaxcoefficient_10;1;8.37241969267817;
-2;28.7338888888889 * polly_vectorizer + -13.9605555555555 * pollyoptmaxcoefficient_10 + 14.32 * pollyoptmaxcoefficient_10 * polly;4.3077805433489;4.3077805433489;4.3077805433489;4.3077805433489;0.073612;4;14.32 * pollyoptmaxcoefficient_10 * polly;2;1.69723196995754;
-3;28.0685663082437 * polly_vectorizer + -14.1823297491039 * pollyoptmaxcoefficient_10 + 15.2070967741936 * pollyoptmaxcoefficient_10 * polly + 2.66129032258065 * parallel;3.18088619014397;3.18088619014397;3.18088619014397;3.18088619014397;0.115021;5;2.66129032258065 * parallel;1;1.12689435320493;
-4;28.5110052910053 * polly_vectorizer + -14.492037037037 * pollyoptmaxcoefficient_10 + 15.0743650793651 * pollyoptmaxcoefficient_10 * polly + 2.26309523809525 * parallel + -1.37156084656083 * pollyoptmaxconstantterm_10000;2.75045553393023;2.75045553393023;2.75045553393023;2.75045553393023;0.1817;6;-1.37156084656083 * pollyoptmaxconstantterm_10000;1;0.430430656213738;
-5;28.5110052910053 * polly_vectorizer + -14.492037037037 * pollyoptmaxcoefficient_10 + 15.0743650793651 * pollyoptmaxcoefficient_10 * polly + 2.26309523809525 * parallel + 0.1356613756614 * pollyoptmaxconstantterm_10000 + -4.52166666666668 * pollyoptmaxconstantterm_10000 * polly;1.23691145748595;1.23691145748595;1.23691145748595;1.23691145748595;0.277917;8;-4.52166666666668 * pollyoptmaxconstantterm_10000 * polly;2;0.75677203822214;
-6;28.4836111111111 * polly_vectorizer + -14.3002777777778 * pollyoptmaxcoefficient_10 + 14.91 * pollyoptmaxcoefficient_10 * polly + 2.3452777777778 * parallel + 0.163055555555566 * pollyoptmaxconstantterm_10000 + -4.52166666666668 * pollyoptmaxconstantterm_10000 * polly + -0.575277777777788 * pollyoptmaxcoefficient_10 * parallel;1.12906558672531;1.12906558672531;1.12906558672531;1.12906558672531;0.41048;10;-0.575277777777788 * pollyoptmaxcoefficient_10 * parallel;2;0.0539229353803192;
-Elapsed=00:00:00.4130432
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;28.7338888888889 * polly_vectorizer + -10.3805555555556 * pollyoptmaxcoefficient_10;7.70224448326398;7.70224448326398;7.70224448326398;7.70224448326398;0.049421;2;-10.3805555555556 * pollyoptmaxcoefficient_10;1;8.37241969267817;33.3299500851251
-2;28.7338888888889 * polly_vectorizer + -13.9605555555555 * pollyoptmaxcoefficient_10 + 14.32 * pollyoptmaxcoefficient_10 * polly;4.3077805433489;4.3077805433489;4.3077805433489;4.3077805433489;0.073612;4;14.32 * pollyoptmaxcoefficient_10 * polly;2;1.69723196995754;33.160249496766
-3;28.0685663082437 * polly_vectorizer + -14.1823297491039 * pollyoptmaxcoefficient_10 + 15.2070967741936 * pollyoptmaxcoefficient_10 * polly + 2.66129032258065 * parallel;3.18088619014397;3.18088619014397;3.18088619014397;3.18088619014397;0.115021;5;2.66129032258065 * parallel;1;1.12689435320493;32.7956200337369
-4;28.5110052910053 * polly_vectorizer + -14.492037037037 * pollyoptmaxcoefficient_10 + 15.0743650793651 * pollyoptmaxcoefficient_10 * polly + 2.26309523809525 * parallel + -1.37156084656083 * pollyoptmaxconstantterm_10000;2.75045553393023;2.75045553393023;2.75045553393023;2.75045553393023;0.1817;6;-1.37156084656083 * pollyoptmaxconstantterm_10000;1;0.430430656213738;32.7905969926999
-5;28.5110052910053 * polly_vectorizer + -14.492037037037 * pollyoptmaxcoefficient_10 + 15.0743650793651 * pollyoptmaxcoefficient_10 * polly + 2.26309523809525 * parallel + 0.1356613756614 * pollyoptmaxconstantterm_10000 + -4.52166666666668 * pollyoptmaxconstantterm_10000 * polly;1.23691145748595;1.23691145748595;1.23691145748595;1.23691145748595;0.277917;8;-4.52166666666668 * pollyoptmaxconstantterm_10000 * polly;2;0.75677203822214;32.6896240760402
-6;28.4836111111111 * polly_vectorizer + -14.3002777777778 * pollyoptmaxcoefficient_10 + 14.91 * pollyoptmaxcoefficient_10 * polly + 2.3452777777778 * parallel + 0.163055555555566 * pollyoptmaxconstantterm_10000 + -4.52166666666668 * pollyoptmaxconstantterm_10000 * polly + -0.575277777777788 * pollyoptmaxcoefficient_10 * parallel;1.12906558672531;1.12906558672531;1.12906558672531;1.12906558672531;0.41048;10;-0.575277777777788 * pollyoptmaxcoefficient_10 * parallel;2;0.0539229353803192;32.6605909786776
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

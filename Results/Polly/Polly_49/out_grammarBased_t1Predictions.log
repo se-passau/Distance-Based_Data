@@ -8,27 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_49/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;29.6666666666666 * polly_vectorizer + -7.27948717948719 * value_based;30.4126091459414;30.4126091459414;30.4126091459414;30.4126091459414;0.080058;2;-7.27948717948719 * value_based;1;7.93826401720973;
-2;29.6666666666666 * polly_vectorizer + -19.304 * value_based + 19.5398333333333 * value_based * max;4.62799807778364;4.62799807778364;4.62799807778364;4.62799807778364;0.144164;4;19.5398333333333 * value_based * max;2;12.8923055340789;
-3;29.1197916666667 * polly_vectorizer + -18.757125 * value_based + 18.7195208333333 * value_based * max + 1.64062500000002 * parallel;3.12378519198018;3.12378519198018;3.12378519198018;3.12378519198018;0.226769;5;1.64062500000002 * parallel;1;1.50421288580345;
-4;29.2224654832347 * polly_vectorizer + -18.5312426035503 * value_based + 18.9556706114398 * value_based * max + 1.33260355029586 * parallel + -1.64278106508881 * value_based * polly;2.53329348766007;2.53329348766007;2.53329348766007;2.53329348766007;0.315941;7;-1.64278106508881 * value_based * polly;2;0.295245852160056;
-5;29.1361904761905 * polly_vectorizer + -17.9920238095238 * value_based + 18.0282142857143 * value_based * max + 1.59142857142859 * parallel + -0.262380952381005 * value_based * polly + -3.64511904761898 * value_based * polly * min;0.939321365337251;0.939321365337251;0.939321365337251;0.939321365337251;0.441006;10;-3.64511904761898 * value_based * polly * min;3;0.531324040774274;
-Elapsed=00:00:00.4443699
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;29.6666666666666 * polly_vectorizer + -7.27948717948719 * value_based;30.4126091459414;30.4126091459414;30.4126091459414;30.4126091459414;0.080058;2;-7.27948717948719 * value_based;1;7.93826401720973;28.19593987662
-2;29.6666666666666 * polly_vectorizer + -19.304 * value_based + 19.5398333333333 * value_based * max;4.62799807778364;4.62799807778364;4.62799807778364;4.62799807778364;0.144164;4;19.5398333333333 * value_based * max;2;12.8923055340789;15.0218464130931
-3;29.1197916666667 * polly_vectorizer + -18.757125 * value_based + 18.7195208333333 * value_based * max + 1.64062500000002 * parallel;3.12378519198018;3.12378519198018;3.12378519198018;3.12378519198018;0.226769;5;1.64062500000002 * parallel;1;1.50421288580345;13.5344181869092
-4;29.2224654832347 * polly_vectorizer + -18.5312426035503 * value_based + 18.9556706114398 * value_based * max + 1.33260355029586 * parallel + -1.64278106508881 * value_based * polly;2.53329348766007;2.53329348766007;2.53329348766007;2.53329348766007;0.315941;7;-1.64278106508881 * value_based * polly;2;0.295245852160056;13.1805193876132
-5;29.1361904761905 * polly_vectorizer + -17.9920238095238 * value_based + 18.0282142857143 * value_based * max + 1.59142857142859 * parallel + -0.262380952381005 * value_based * polly + -3.64511904761898 * value_based * polly * min;0.939321365337251;0.939321365337251;0.939321365337251;0.939321365337251;0.441006;10;-3.64511904761898 * value_based * polly * min;3;0.531324040774274;11.4083607576857
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

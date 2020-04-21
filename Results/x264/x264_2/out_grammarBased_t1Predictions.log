@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1152 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_2/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:12 NumberOfConfigurationsValidation:12
-Learning progress:
-1;655.110666666667 * no_asm + -387.238761904762 * ref_1;7.51968435760105;7.51968435760105;7.51968435760105;7.51968435760105;0.055736;2;-387.238761904762 * ref_1;1;41.4980619190536;
-2;675.449166666667 * no_asm + -407.577261904762 * ref_1 + -101.6925 * ref_5;6.48293051588288;6.48293051588288;6.48293051588288;6.48293051588288;0.064156;3;-101.6925 * ref_5;1;1.03675384171817;
-3;675.449166666667 * no_asm + -411.4565 * ref_1 + -101.6925 * ref_5 + 13.5773333333336 * ref_1 * no_mbtree;5.99254685662757;5.99254685662757;5.99254685662757;5.99254685662757;0.075598;5;13.5773333333336 * ref_1 * no_mbtree;2;0.245191829627657;
-Elapsed=00:00:00.0781883
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;655.110666666667 * no_asm + -387.238761904762 * ref_1;7.51968435760105;7.51968435760105;7.51968435760105;7.51968435760105;0.055736;2;-387.238761904762 * ref_1;1;41.4980619190536;20.6659497342562
-2;675.449166666667 * no_asm + -407.577261904762 * ref_1 + -101.6925 * ref_5;6.48293051588288;6.48293051588288;6.48293051588288;6.48293051588288;0.064156;3;-101.6925 * ref_5;1;1.03675384171817;15.0032788399715
-3;675.449166666667 * no_asm + -411.4565 * ref_1 + -101.6925 * ref_5 + 13.5773333333336 * ref_1 * no_mbtree;5.99254685662757;5.99254685662757;5.99254685662757;5.99254685662757;0.075598;5;13.5773333333336 * ref_1 * no_mbtree;2;0.245191829627657;14.4029539536877
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

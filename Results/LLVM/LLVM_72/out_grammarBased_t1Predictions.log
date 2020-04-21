@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_72/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;225.078333333333 * time_passes + 18.1626190476192 * instcombine;3.66159515575415;3.66159515575415;3.66159515575415;3.66159515575415;0.04301;2;18.1626190476192 * instcombine;1;1.27593667378641;
-2;217.85798245614 * time_passes + 17.1311403508773 * instcombine + 14.440701754386 * gvn;1.51075543764452;1.51075543764452;1.51075543764452;1.51075543764452;0.048998;3;14.440701754386 * gvn;1;2.15083971810963;
-3;216.541666666667 * time_passes + 19.3250000000002 * instcombine + 17.0733333333334 * gvn + -4.16833333333331 * instcombine * gvn;1.47524173383901;1.47524173383901;1.47524173383901;1.47524173383901;0.056471;5;-4.16833333333331 * instcombine * gvn;2;0.0177568519027557;
-Elapsed=00:00:00.0586363
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;225.078333333333 * time_passes + 18.1626190476192 * instcombine;3.66159515575415;3.66159515575415;3.66159515575415;3.66159515575415;0.04301;2;18.1626190476192 * instcombine;1;1.27593667378641;5.76333971263557
-2;217.85798245614 * time_passes + 17.1311403508773 * instcombine + 14.440701754386 * gvn;1.51075543764452;1.51075543764452;1.51075543764452;1.51075543764452;0.048998;3;14.440701754386 * gvn;1;2.15083971810963;4.13605588197997
-3;216.541666666667 * time_passes + 19.3250000000002 * instcombine + 17.0733333333334 * gvn + -4.16833333333331 * instcombine * gvn;1.47524173383901;1.47524173383901;1.47524173383901;1.47524173383901;0.056471;5;-4.16833333333331 * instcombine * gvn;2;0.0177568519027557;4.09636631744488
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

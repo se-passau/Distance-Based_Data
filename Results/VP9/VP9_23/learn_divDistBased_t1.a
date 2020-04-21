@@ -5,6 +5,6 @@ vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerforman
 all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
 nfp Performance
 setsampleset /scratch/kallistos/Distance-Based_Data/Results/VP9/VP9_23/sampledConfigurations_divDistBased_t1.csv
-learn-splconqueror
+learn-splconqueror-opt
 analyze-learning
 clean-sampling

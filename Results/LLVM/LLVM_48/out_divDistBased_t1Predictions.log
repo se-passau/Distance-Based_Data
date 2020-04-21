@@ -9,21 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_48/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;232.7 * time_passes + 22.8600000000001 * inline;2.16784647584044;2.16784647584044;2.16784647584044;2.16784647584044;0.039284;2;22.8600000000001 * inline;1;0.921679525289393;
-2;232.7 * time_passes + 17.9526666666665 * inline + 9.8146666666668 * licm;1.93233805971052;1.93233805971052;1.93233805971052;1.93233805971052;0.045689;3;9.8146666666668 * licm;1;0.235508416129912;
-Elapsed=00:00:00.0472739
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;232.7 * time_passes + 22.8600000000001 * inline;2.16784647584044;2.16784647584044;2.16784647584044;2.16784647584044;0.039284;2;22.8600000000001 * inline;1;0.921679525289393;5.95127086058649
-2;232.7 * time_passes + 17.9526666666665 * inline + 9.8146666666668 * licm;1.93233805971052;1.93233805971052;1.93233805971052;1.93233805971052;0.045689;3;9.8146666666668 * licm;1;0.235508416129912;5.88311505392595
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

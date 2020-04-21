@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_56/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;231.338333333333 * time_passes + 27.0116666666668 * instcombine;3.58512484214767;3.58512484214767;3.58512484214767;3.58512484214767;0.052529;2;27.0116666666668 * instcombine;1;3.03238888866925;
-2;211.804444444444 * time_passes + 24.2211111111113 * instcombine + 26.045185185185 * licm;1.73008036282342;1.73008036282342;1.73008036282342;1.73008036282342;0.059482;3;26.045185185185 * licm;1;1.85504447932424;
-3;201.576111111111 * time_passes + 10.5833333333339 * instcombine + 34.0005555555552 * licm + 17.0472222222217 * inline;0.951367071720415;0.951367071720415;0.951367071720415;0.951367071720415;0.068787;4;17.0472222222217 * inline;1;0.77871329110301;
-Elapsed=00:00:00.0705104
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;231.338333333333 * time_passes + 27.0116666666668 * instcombine;3.58512484214767;3.58512484214767;3.58512484214767;3.58512484214767;0.052529;2;27.0116666666668 * instcombine;1;3.03238888866925;7.00682384084288
-2;211.804444444444 * time_passes + 24.2211111111113 * instcombine + 26.045185185185 * licm;1.73008036282342;1.73008036282342;1.73008036282342;1.73008036282342;0.059482;3;26.045185185185 * licm;1;1.85504447932424;5.50944738303057
-3;201.576111111111 * time_passes + 10.5833333333339 * instcombine + 34.0005555555552 * licm + 17.0472222222217 * inline;0.951367071720415;0.951367071720415;0.951367071720415;0.951367071720415;0.068787;4;17.0472222222217 * inline;1;0.77871329110301;4.95529803466364
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

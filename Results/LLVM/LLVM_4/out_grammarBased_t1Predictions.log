@@ -9,21 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_4/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;221.812222222222 * time_passes + 24.4823611111112 * jump_threading;4.90912524754167;4.90912524754167;4.90912524754167;4.90912524754167;0.057618;2;24.4823611111112 * jump_threading;1;2.23222932677569;
-2;216.324791666667 * time_passes + 21.7386458333334 * jump_threading + 16.4622916666665 * instcombine;4.66798348033945;4.66798348033945;4.66798348033945;4.66798348033945;0.065529;3;16.4622916666665 * instcombine;1;0.241141767202215;
-Elapsed=00:00:00.0676338
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;221.812222222222 * time_passes + 24.4823611111112 * jump_threading;4.90912524754167;4.90912524754167;4.90912524754167;4.90912524754167;0.057618;2;24.4823611111112 * jump_threading;1;2.23222932677569;7.28865340366117
-2;216.324791666667 * time_passes + 21.7386458333334 * jump_threading + 16.4622916666665 * instcombine;4.66798348033945;4.66798348033945;4.66798348033945;4.66798348033945;0.065529;3;16.4622916666665 * instcombine;1;0.241141767202215;6.60150392559388
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

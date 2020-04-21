@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_4/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;210.44 * time_passes + 36.787333333333 * gvn;2.46216190184971;2.46216190184971;2.46216190184971;2.46216190184971;0.054928;2;36.787333333333 * gvn;1;1.39528998406892;
-2;210.44 * time_passes + 32.5038095238092 * gvn + 14.2784126984128 * licm;1.38544849965911;1.38544849965911;1.38544849965911;1.38544849965911;0.062636;3;14.2784126984128 * licm;1;1.0767134021906;
-3;210.44 * time_passes + 22.2599999999996 * gvn + 12.5711111111112 * licm + 11.9511111111111 * inline;0.975817003208997;0.975817003208997;0.975817003208997;0.975817003208997;0.071536;4;11.9511111111111 * inline;1;0.409631496450117;
-Elapsed=00:00:00.0737496
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;210.44 * time_passes + 36.787333333333 * gvn;2.46216190184971;2.46216190184971;2.46216190184971;2.46216190184971;0.054928;2;36.787333333333 * gvn;1;1.39528998406892;6.07581616523561
-2;210.44 * time_passes + 32.5038095238092 * gvn + 14.2784126984128 * licm;1.38544849965911;1.38544849965911;1.38544849965911;1.38544849965911;0.062636;3;14.2784126984128 * licm;1;1.0767134021906;5.03055276242352
-3;210.44 * time_passes + 22.2599999999996 * gvn + 12.5711111111112 * licm + 11.9511111111111 * inline;0.975817003208997;0.975817003208997;0.975817003208997;0.975817003208997;0.071536;4;11.9511111111111 * inline;1;0.409631496450117;4.00255145442565
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

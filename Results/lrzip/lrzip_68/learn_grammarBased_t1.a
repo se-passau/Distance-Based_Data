@@ -1,7 +1,10 @@
-log ./out_grammarBased_t1FailureReport.log
+log ./out_grammarBased_t1Predictions.log
+mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
 solver z3
 vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/FeatureModel.xml
 all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/measurements.xml
-binary grammar-based numConfigs:18 seed:68  confFaultsReport:./out_grammarBasedFailureReport_t1.log
-printconfigs ./sampledConfigurations_grammarBased_t1FailureReport.csv
+nfp Performance
+setsampleset /scratch/kallistos/Distance-Based_Data/Results/lrzip/lrzip_68/sampledConfigurations_grammarBased_t1.csv
+learn-splconqueror-opt
+analyze-learning
 clean-sampling

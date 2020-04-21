@@ -8,23 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_79/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;28.335 * polly_vectorizer + -6.67666666666667 * pollyoptmaxcoefficient_100;11.3178729671605;11.3178729671605;11.3178729671605;11.3178729671605;0.058692;2;-6.67666666666667 * pollyoptmaxcoefficient_100;1;2.39940330005098;
-2;28.335 * polly_vectorizer + 0.641666666666673 * pollyoptmaxcoefficient_100 + -14.6366666666667 * pollyoptmaxcoefficient_100 * value_based;8.5932174075489;8.5932174075489;8.5932174075489;8.5932174075489;0.085946;4;-14.6366666666667 * pollyoptmaxcoefficient_100 * value_based;2;1.3623277798058;
-3;28.2595 * polly_vectorizer + 0.717166666666656 * pollyoptmaxcoefficient_100 + -14.6366666666667 * pollyoptmaxcoefficient_100 * value_based + 0.327166666666674 * pollyoptmaxconstantterm_10000;8.57757525929426;8.57757525929426;8.57757525929426;8.57757525929426;0.13396;5;0.327166666666674 * pollyoptmaxconstantterm_10000;1;0.0156421482546421;
-Elapsed=00:00:00.1370261
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;28.335 * polly_vectorizer + -6.67666666666667 * pollyoptmaxcoefficient_100;11.3178729671605;11.3178729671605;11.3178729671605;11.3178729671605;0.058692;2;-6.67666666666667 * pollyoptmaxcoefficient_100;1;2.39940330005098;32.3843627780447
-2;28.335 * polly_vectorizer + 0.641666666666673 * pollyoptmaxcoefficient_100 + -14.6366666666667 * pollyoptmaxcoefficient_100 * value_based;8.5932174075489;8.5932174075489;8.5932174075489;8.5932174075489;0.085946;4;-14.6366666666667 * pollyoptmaxcoefficient_100 * value_based;2;1.3623277798058;30.0335062578705
-3;28.2595 * polly_vectorizer + 0.717166666666656 * pollyoptmaxcoefficient_100 + -14.6366666666667 * pollyoptmaxcoefficient_100 * value_based + 0.327166666666674 * pollyoptmaxconstantterm_10000;8.57757525929426;8.57757525929426;8.57757525929426;8.57757525929426;0.13396;5;0.327166666666674 * pollyoptmaxconstantterm_10000;1;0.0156421482546421;30.0526573044943
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

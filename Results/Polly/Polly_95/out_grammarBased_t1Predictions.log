@@ -8,27 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_95/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;28.7570833333333 * polly_vectorizer + -8.59208333333334 * pollydefaulttilesize_1024;15.6836228726554;15.6836228726554;15.6836228726554;15.6836228726554;0.060449;2;-8.59208333333334 * pollydefaulttilesize_1024;1;6.44604700873299;
-2;28.7570833333333 * polly_vectorizer + -17.99875 * pollydefaulttilesize_1024 + 18.8133333333333 * pollydefaulttilesize_1024 * memory_based;8.4091878240157;8.4091878240157;8.4091878240157;8.4091878240157;0.091458;4;18.8133333333333 * pollydefaulttilesize_1024 * memory_based;2;3.63721752431984;
-3;28.7570833333333 * polly_vectorizer + -14.52375 * pollydefaulttilesize_1024 + 15.3383333333333 * pollydefaulttilesize_1024 * memory_based + -6.95 * pollydefaulttilesize_1024 * polly;5.83325245305598;5.83325245305598;5.83325245305598;5.83325245305598;0.142174;6;-6.95 * pollydefaulttilesize_1024 * polly;2;1.28796768547986;
-4;28.5390666666666 * polly_vectorizer + -16.0498666666667 * pollydefaulttilesize_1024 + 16.2104 * pollydefaulttilesize_1024 * memory_based + -6.95000000000001 * pollydefaulttilesize_1024 * polly + 1.74413333333332 * pollyrtcmaxparameters_1;5.47357424279177;5.47357424279177;5.47357424279177;5.47357424279177;0.220572;7;1.74413333333332 * pollyrtcmaxparameters_1;1;0.359678210264208;
-5;28.5497196261682 * polly_vectorizer + -14.91 * pollydefaulttilesize_1024 + 14.8361682242991 * pollydefaulttilesize_1024 * memory_based + -6.95000000000001 * pollydefaulttilesize_1024 * polly + 0.593613707165094 * pollyrtcmaxparameters_1 + 1.59794392523366 * pollyrtcmaxparameters_1 * parallel;5.24941424945566;5.24941424945566;5.24941424945566;5.24941424945566;0.338449;9;1.59794392523366 * pollyrtcmaxparameters_1 * parallel;2;0.112079996668057;
-Elapsed=00:00:00.3417084
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;28.7570833333333 * polly_vectorizer + -8.59208333333334 * pollydefaulttilesize_1024;15.6836228726554;15.6836228726554;15.6836228726554;15.6836228726554;0.060449;2;-8.59208333333334 * pollydefaulttilesize_1024;1;6.44604700873299;32.937553682514
-2;28.7570833333333 * polly_vectorizer + -17.99875 * pollydefaulttilesize_1024 + 18.8133333333333 * pollydefaulttilesize_1024 * memory_based;8.4091878240157;8.4091878240157;8.4091878240157;8.4091878240157;0.091458;4;18.8133333333333 * pollydefaulttilesize_1024 * memory_based;2;3.63721752431984;30.793307203224
-3;28.7570833333333 * polly_vectorizer + -14.52375 * pollydefaulttilesize_1024 + 15.3383333333333 * pollydefaulttilesize_1024 * memory_based + -6.95 * pollydefaulttilesize_1024 * polly;5.83325245305598;5.83325245305598;5.83325245305598;5.83325245305598;0.142174;6;-6.95 * pollydefaulttilesize_1024 * polly;2;1.28796768547986;31.0729388453951
-4;28.5390666666666 * polly_vectorizer + -16.0498666666667 * pollydefaulttilesize_1024 + 16.2104 * pollydefaulttilesize_1024 * memory_based + -6.95000000000001 * pollydefaulttilesize_1024 * polly + 1.74413333333332 * pollyrtcmaxparameters_1;5.47357424279177;5.47357424279177;5.47357424279177;5.47357424279177;0.220572;7;1.74413333333332 * pollyrtcmaxparameters_1;1;0.359678210264208;32.3019079606276
-5;28.5497196261682 * polly_vectorizer + -14.91 * pollydefaulttilesize_1024 + 14.8361682242991 * pollydefaulttilesize_1024 * memory_based + -6.95000000000001 * pollydefaulttilesize_1024 * polly + 0.593613707165094 * pollyrtcmaxparameters_1 + 1.59794392523366 * pollyrtcmaxparameters_1 * parallel;5.24941424945566;5.24941424945566;5.24941424945566;5.24941424945566;0.338449;9;1.59794392523366 * pollyrtcmaxparameters_1 * parallel;2;0.112079996668057;31.3358568107308
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

@@ -8,33 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_4/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;21.6583333333333 * polly_vectorizer + 7.80722222222224 * polly_no_tiling;24.000839999818;24.000839999818;24.000839999818;24.000839999818;0.055446;2;7.80722222222224 * polly_no_tiling;1;8.80406187463348;
-2;29.0133333333333 * polly_vectorizer + 12.2202222222222 * polly_no_tiling + -11.768 * value_based;11.2850733194872;11.2850733194872;11.2850733194872;11.2850733194872;0.08716;3;-11.768 * value_based;1;12.7157666803308;
-3;29.0133333333333 * polly_vectorizer + 13.8887739463602 * polly_no_tiling + -10.655632183908 * value_based + -3.70789272030653 * parallel_force;9.64795866886363;9.64795866886363;9.64795866886363;9.64795866886363;0.139924;4;-3.70789272030653 * parallel_force;1;1.63711465062359;
-4;29.0133333333333 * polly_vectorizer + 14.0438262910798 * polly_no_tiling + -12.051103286385 * value_based + -3.55284037558684 * parallel_force + 6.74477699530518 * value_based * polly;8.74751143277452;8.74751143277452;8.74751143277452;8.74751143277452;0.219992;6;6.74477699530518 * value_based * polly;2;0.450223618044551;
-5;29.0133333333333 * polly_vectorizer + 15.7803144654088 * polly_no_tiling + -13.980534591195 * value_based + -15.5153144654088 * parallel_force + 13.7872012578617 * value_based * polly + 13.698962264151 * parallel_force * none;4.45951307761422;4.45951307761422;4.45951307761422;4.45951307761422;0.335044;8;13.698962264151 * parallel_force * none;2;2.14399917758015;
-6;29.0133333333333 * polly_vectorizer + 15.1267592592593 * polly_no_tiling + -16.3333333333333 * value_based + -18.3256018518518 * parallel_force + 16.14 * value_based * polly + 15.8556944444445 * parallel_force * none + 3.46384259259256 * polly_parallel;3.58429874328181;3.58429874328181;3.58429874328181;3.58429874328181;0.500855;9;3.46384259259256 * polly_parallel;1;0.875214334332413;
-7;29.0133333333333 * polly_vectorizer + 14.4690303030303 * polly_no_tiling + -16.3333333333333 * value_based + -17.9967373737373 * parallel_force + 16.14 * value_based * polly + 15.9966363636364 * parallel_force * none + 3.79270707070705 * polly_parallel + -3.38260606060605 * parallel_force * pollydefaulttilesize_4;2.46347202189813;2.46347202189813;2.46347202189813;2.46347202189813;0.7218;11;-3.38260606060605 * parallel_force * pollydefaulttilesize_4;2;0.560413360691838;
-8;29.0133333333333 * polly_vectorizer + 14.8523924731183 * polly_no_tiling + -16.3333333333333 * value_based + -17.7979569892473 * parallel_force + 16.14 * value_based * polly + 16.0818279569893 * parallel_force * none + 3.210564516129 * polly_parallel + -5.42720430107528 * parallel_force * pollydefaulttilesize_4 + 2.34276881720434 * polly_parallel * pollydefaulttilesize_4;1.97128433900733;1.97128433900733;1.97128433900733;1.97128433900733;0.996193;13;2.34276881720434 * polly_parallel * pollydefaulttilesize_4;2;0.246093841445402;
-Elapsed=00:00:00.9997682
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;21.6583333333333 * polly_vectorizer + 7.80722222222224 * polly_no_tiling;24.000839999818;24.000839999818;24.000839999818;24.000839999818;0.055446;2;7.80722222222224 * polly_no_tiling;1;8.80406187463348;29.4311844503659
-2;29.0133333333333 * polly_vectorizer + 12.2202222222222 * polly_no_tiling + -11.768 * value_based;11.2850733194872;11.2850733194872;11.2850733194872;11.2850733194872;0.08716;3;-11.768 * value_based;1;12.7157666803308;28.5446819140073
-3;29.0133333333333 * polly_vectorizer + 13.8887739463602 * polly_no_tiling + -10.655632183908 * value_based + -3.70789272030653 * parallel_force;9.64795866886363;9.64795866886363;9.64795866886363;9.64795866886363;0.139924;4;-3.70789272030653 * parallel_force;1;1.63711465062359;30.5217643718607
-4;29.0133333333333 * polly_vectorizer + 14.0438262910798 * polly_no_tiling + -12.051103286385 * value_based + -3.55284037558684 * parallel_force + 6.74477699530518 * value_based * polly;8.74751143277452;8.74751143277452;8.74751143277452;8.74751143277452;0.219992;6;6.74477699530518 * value_based * polly;2;0.450223618044551;36.1544317722693
-5;29.0133333333333 * polly_vectorizer + 15.7803144654088 * polly_no_tiling + -13.980534591195 * value_based + -15.5153144654088 * parallel_force + 13.7872012578617 * value_based * polly + 13.698962264151 * parallel_force * none;4.45951307761422;4.45951307761422;4.45951307761422;4.45951307761422;0.335044;8;13.698962264151 * parallel_force * none;2;2.14399917758015;39.3992909113768
-6;29.0133333333333 * polly_vectorizer + 15.1267592592593 * polly_no_tiling + -16.3333333333333 * value_based + -18.3256018518518 * parallel_force + 16.14 * value_based * polly + 15.8556944444445 * parallel_force * none + 3.46384259259256 * polly_parallel;3.58429874328181;3.58429874328181;3.58429874328181;3.58429874328181;0.500855;9;3.46384259259256 * polly_parallel;1;0.875214334332413;41.1779537217938
-7;29.0133333333333 * polly_vectorizer + 14.4690303030303 * polly_no_tiling + -16.3333333333333 * value_based + -17.9967373737373 * parallel_force + 16.14 * value_based * polly + 15.9966363636364 * parallel_force * none + 3.79270707070705 * polly_parallel + -3.38260606060605 * parallel_force * pollydefaulttilesize_4;2.46347202189813;2.46347202189813;2.46347202189813;2.46347202189813;0.7218;11;-3.38260606060605 * parallel_force * pollydefaulttilesize_4;2;0.560413360691838;41.4245192176855
-8;29.0133333333333 * polly_vectorizer + 14.8523924731183 * polly_no_tiling + -16.3333333333333 * value_based + -17.7979569892473 * parallel_force + 16.14 * value_based * polly + 16.0818279569893 * parallel_force * none + 3.210564516129 * polly_parallel + -5.42720430107528 * parallel_force * pollydefaulttilesize_4 + 2.34276881720434 * polly_parallel * pollydefaulttilesize_4;1.97128433900733;1.97128433900733;1.97128433900733;1.97128433900733;0.996193;13;2.34276881720434 * polly_parallel * pollydefaulttilesize_4;2;0.246093841445402;41.440491382106
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

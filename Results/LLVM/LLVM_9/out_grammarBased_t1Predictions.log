@@ -9,25 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_9/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;242.851904761905 * time_passes + -23.1594047619043 * print_used_types;3.98090754093701;3.98090754093701;3.98090754093701;3.98090754093701;0.053389;2;-23.1594047619043 * print_used_types;1;1.24278592548162;
-2;236.399710144927 * time_passes + -27.9985507246373 * print_used_types + 15.0551207729471 * jump_threading;2.21250560470499;2.21250560470499;2.21250560470499;2.21250560470499;0.060474;3;15.0551207729471 * jump_threading;1;1.76840193623202;
-3;233.60375 * time_passes + -24.7365972222217 * print_used_types + 10.8611805555558 * jump_threading + 10.7178472222222 * gvn;1.76748446224835;1.76748446224835;1.76748446224835;1.76748446224835;0.070154;4;10.7178472222222 * gvn;1;0.445021142456637;
-4;231.035333333333 * time_passes + -25.1646666666663 * print_used_types + 17.2822222222225 * jump_threading + 23.9880000000001 * gvn + -20.5473333333333 * jump_threading * gvn;0.74613898972357;0.74613898972357;0.74613898972357;0.74613898972357;0.083076;6;-20.5473333333333 * jump_threading * gvn;2;0.510672736262392;
-Elapsed=00:00:00.0856539
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;242.851904761905 * time_passes + -23.1594047619043 * print_used_types;3.98090754093701;3.98090754093701;3.98090754093701;3.98090754093701;0.053389;2;-23.1594047619043 * print_used_types;1;1.24278592548162;7.43561673506318
-2;236.399710144927 * time_passes + -27.9985507246373 * print_used_types + 15.0551207729471 * jump_threading;2.21250560470499;2.21250560470499;2.21250560470499;2.21250560470499;0.060474;3;15.0551207729471 * jump_threading;1;1.76840193623202;8.32269798253211
-3;233.60375 * time_passes + -24.7365972222217 * print_used_types + 10.8611805555558 * jump_threading + 10.7178472222222 * gvn;1.76748446224835;1.76748446224835;1.76748446224835;1.76748446224835;0.070154;4;10.7178472222222 * gvn;1;0.445021142456637;7.14927705626528
-4;231.035333333333 * time_passes + -25.1646666666663 * print_used_types + 17.2822222222225 * jump_threading + 23.9880000000001 * gvn + -20.5473333333333 * jump_threading * gvn;0.74613898972357;0.74613898972357;0.74613898972357;0.74613898972357;0.083076;6;-20.5473333333333 * jump_threading * gvn;2;0.510672736262392;7.10630952790214
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

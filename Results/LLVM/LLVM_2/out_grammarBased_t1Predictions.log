@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_2/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;249.257777777778 * time_passes + -25.0031111111111 * iv_users;3.66215654909618;3.66215654909618;3.66215654909618;3.66215654909618;0.046091;2;-25.0031111111111 * iv_users;1;2.91451325874177;
-2;249.257777777778 * time_passes + -31.4994444444444 * iv_users + 32.4816666666668 * iv_users * gvn;1.89766086103852;1.89766086103852;1.89766086103852;1.89766086103852;0.052058;4;32.4816666666668 * iv_users * gvn;2;0.882247844028832;
-3;252.1248 * time_passes + -33.2913333333334 * iv_users + 31.4065333333334 * iv_users * gvn + -4.30053333333348 * inline;1.6623852958479;1.6623852958479;1.6623852958479;1.6623852958479;0.059204;5;-4.30053333333348 * inline;1;0.235275565190616;
-Elapsed=00:00:00.0616090
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;249.257777777778 * time_passes + -25.0031111111111 * iv_users;3.66215654909618;3.66215654909618;3.66215654909618;3.66215654909618;0.046091;2;-25.0031111111111 * iv_users;1;2.91451325874177;7.24244700040487
-2;249.257777777778 * time_passes + -31.4994444444444 * iv_users + 32.4816666666668 * iv_users * gvn;1.89766086103852;1.89766086103852;1.89766086103852;1.89766086103852;0.052058;4;32.4816666666668 * iv_users * gvn;2;0.882247844028832;6.38444688739464
-3;252.1248 * time_passes + -33.2913333333334 * iv_users + 31.4065333333334 * iv_users * gvn + -4.30053333333348 * inline;1.6623852958479;1.6623852958479;1.6623852958479;1.6623852958479;0.059204;5;-4.30053333333348 * inline;1;0.235275565190616;6.74875096943979
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

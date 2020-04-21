@@ -8,23 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_48/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;28.5509722222222 * polly_vectorizer + -5.10430555555555 * pollyoptmaxconstantterm_10000;19.7053772132732;19.7053772132732;19.7053772132732;19.7053772132732;0.048533;2;-5.10430555555555 * pollyoptmaxconstantterm_10000;1;2.63619420173838;
-2;28.5509722222222 * polly_vectorizer + -22.0776388888889 * pollyoptmaxconstantterm_10000 + 22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling;8.41723210847844;8.41723210847844;8.41723210847844;8.41723210847844;0.072375;4;22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling;2;5.64407255239739;
-3;29.444 * polly_vectorizer + -22.9706666666667 * pollyoptmaxconstantterm_10000 + 22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling + -5.35816666666665 * pollydefaulttilesize_64;8.34044050410007;8.34044050410007;8.34044050410007;8.34044050410007;0.114072;5;-5.35816666666665 * pollydefaulttilesize_64;1;0.0767916043783661;
-Elapsed=00:00:00.1165261
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;28.5509722222222 * polly_vectorizer + -5.10430555555555 * pollyoptmaxconstantterm_10000;19.7053772132732;19.7053772132732;19.7053772132732;19.7053772132732;0.048533;2;-5.10430555555555 * pollyoptmaxconstantterm_10000;1;2.63619420173838;31.6622133827491
-2;28.5509722222222 * polly_vectorizer + -22.0776388888889 * pollyoptmaxconstantterm_10000 + 22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling;8.41723210847844;8.41723210847844;8.41723210847844;8.41723210847844;0.072375;4;22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling;2;5.64407255239739;31.4151082456402
-3;29.444 * polly_vectorizer + -22.9706666666667 * pollyoptmaxconstantterm_10000 + 22.6311111111111 * pollyoptmaxconstantterm_10000 * polly_no_tiling + -5.35816666666665 * pollydefaulttilesize_64;8.34044050410007;8.34044050410007;8.34044050410007;8.34044050410007;0.114072;5;-5.35816666666665 * pollydefaulttilesize_64;1;0.0767916043783661;33.3225248064922
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

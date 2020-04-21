@@ -8,33 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_72/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;29.606862745098 * polly_vectorizer + -11.526559714795 * min;24.0371001764309;24.0371001764309;24.0371001764309;24.0371001764309;0.053338;2;-11.526559714795 * min;1;20.20348769743;
-2;29.606862745098 * polly_vectorizer + -17.5501960784314 * min + 16.565 * min * polly_no_tiling;9.65741596405934;9.65741596405934;9.65741596405934;9.65741596405934;0.082105;4;16.565 * min * polly_no_tiling;2;7.18984210618579;
-3;29.606862745098 * polly_vectorizer + -16.3407971713275 * min + 16.413825136612 * min * polly_no_tiling + -4.23289617486339 * pollyoptmaxconstantterm_10;7.25051913277369;7.25051913277369;7.25051913277369;7.25051913277369;0.129145;5;-4.23289617486339 * pollyoptmaxconstantterm_10;1;2.40689683128566;
-4;28.9073038156947 * polly_vectorizer + -16.0636495080393 * min + 16.2188660907128 * min * polly_no_tiling + -5.72758219342454 * pollyoptmaxconstantterm_10 + 1.98208363330934 * parallel;5.87994189183135;5.87994189183135;5.87994189183135;5.87994189183135;0.198645;6;1.98208363330934 * parallel;1;1.37057724094234;
-5;28.7117925170068 * polly_vectorizer + -15.6489285714286 * min + 16.6365493197279 * min * polly_no_tiling + -5.26842687074829 * pollyoptmaxconstantterm_10 + 2.53603231292518 * parallel + -4.11462414965987 * min * pollydefaulttilesize_64;4.37692519001832;4.37692519001832;4.37692519001832;4.37692519001832;0.300951;8;-4.11462414965987 * min * pollydefaulttilesize_64;2;0.751508350906514;
-6;28.7465336039693 * polly_vectorizer + -15.3787201172756 * min + 15.5306247180875 * min * polly_no_tiling + -2.94270410464594 * pollyoptmaxconstantterm_10 + 2.43759923319802 * parallel + -3.03958051420841 * min * pollydefaulttilesize_64 + -3.78291835814162 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps;3.41718067454527;3.41718067454527;3.41718067454527;3.41718067454527;0.439804;10;-3.78291835814162 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps;2;0.479872257736525;
-7;28.7871009540082 * polly_vectorizer + -14.8252655560301 * min + 14.9530229246761 * min * polly_no_tiling + -2.84418339740852 * pollyoptmaxconstantterm_10 + 2.32265840808772 * parallel + -2.9739000427168 * min * pollydefaulttilesize_64 + -4.39336038729885 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps + -2.8551687313114 * min * pollyoptmaxcoefficient_100;2.47389985808758;2.47389985808758;2.47389985808758;2.47389985808758;0.628142;12;-2.8551687313114 * min * pollyoptmaxcoefficient_100;2;0.471640408228843;
-8;28.952123655914 * polly_vectorizer + -12.5738844086021 * min + 15.6694310035842 * min * polly_no_tiling + -2.44341397849462 * pollyoptmaxconstantterm_10 + 1.85509408602151 * parallel + -2.70672043010754 * min * pollydefaulttilesize_64 + -3.81054211469536 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps + -2.20555555555556 * min * pollyoptmaxcoefficient_100 + -3.06601702508958 * min * pollyrtcmaxparameters_16;2.18456673769828;2.18456673769828;2.18456673769828;2.18456673769828;0.864557;14;-3.06601702508958 * min * pollyrtcmaxparameters_16;2;0.144666560194652;
-Elapsed=00:00:00.8677848
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;29.606862745098 * polly_vectorizer + -11.526559714795 * min;24.0371001764309;24.0371001764309;24.0371001764309;24.0371001764309;0.053338;2;-11.526559714795 * min;1;20.20348769743;27.8920075719148
-2;29.606862745098 * polly_vectorizer + -17.5501960784314 * min + 16.565 * min * polly_no_tiling;9.65741596405934;9.65741596405934;9.65741596405934;9.65741596405934;0.082105;4;16.565 * min * polly_no_tiling;2;7.18984210618579;16.1204170144236
-3;29.606862745098 * polly_vectorizer + -16.3407971713275 * min + 16.413825136612 * min * polly_no_tiling + -4.23289617486339 * pollyoptmaxconstantterm_10;7.25051913277369;7.25051913277369;7.25051913277369;7.25051913277369;0.129145;5;-4.23289617486339 * pollyoptmaxconstantterm_10;1;2.40689683128566;18.1203162635577
-4;28.9073038156947 * polly_vectorizer + -16.0636495080393 * min + 16.2188660907128 * min * polly_no_tiling + -5.72758219342454 * pollyoptmaxconstantterm_10 + 1.98208363330934 * parallel;5.87994189183135;5.87994189183135;5.87994189183135;5.87994189183135;0.198645;6;1.98208363330934 * parallel;1;1.37057724094234;17.6942961448126
-5;28.7117925170068 * polly_vectorizer + -15.6489285714286 * min + 16.6365493197279 * min * polly_no_tiling + -5.26842687074829 * pollyoptmaxconstantterm_10 + 2.53603231292518 * parallel + -4.11462414965987 * min * pollydefaulttilesize_64;4.37692519001832;4.37692519001832;4.37692519001832;4.37692519001832;0.300951;8;-4.11462414965987 * min * pollydefaulttilesize_64;2;0.751508350906514;17.7743068101018
-6;28.7465336039693 * polly_vectorizer + -15.3787201172756 * min + 15.5306247180875 * min * polly_no_tiling + -2.94270410464594 * pollyoptmaxconstantterm_10 + 2.43759923319802 * parallel + -3.03958051420841 * min * pollydefaulttilesize_64 + -3.78291835814162 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps;3.41718067454527;3.41718067454527;3.41718067454527;3.41718067454527;0.439804;10;-3.78291835814162 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps;2;0.479872257736525;17.4136949959328
-7;28.7871009540082 * polly_vectorizer + -14.8252655560301 * min + 14.9530229246761 * min * polly_no_tiling + -2.84418339740852 * pollyoptmaxconstantterm_10 + 2.32265840808772 * parallel + -2.9739000427168 * min * pollydefaulttilesize_64 + -4.39336038729885 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps + -2.8551687313114 * min * pollyoptmaxcoefficient_100;2.47389985808758;2.47389985808758;2.47389985808758;2.47389985808758;0.628142;12;-2.8551687313114 * min * pollyoptmaxcoefficient_100;2;0.471640408228843;17.9370894887647
-8;28.952123655914 * polly_vectorizer + -12.5738844086021 * min + 15.6694310035842 * min * polly_no_tiling + -2.44341397849462 * pollyoptmaxconstantterm_10 + 1.85509408602151 * parallel + -2.70672043010754 * min * pollydefaulttilesize_64 + -3.81054211469536 * pollyoptmaxconstantterm_10 * polly_opt_simplify_deps + -2.20555555555556 * min * pollyoptmaxcoefficient_100 + -3.06601702508958 * min * pollyrtcmaxparameters_16;2.18456673769828;2.18456673769828;2.18456673769828;2.18456673769828;0.864557;14;-3.06601702508958 * min * pollyrtcmaxparameters_16;2;0.144666560194652;18.9223634207387
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

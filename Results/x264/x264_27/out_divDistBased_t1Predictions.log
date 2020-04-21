@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1152 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_27/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:12 NumberOfConfigurationsValidation:12
-Learning progress:
-1;638.806111111111 * no_asm + -371.965555555555 * ref_1;5.09290044145964;5.09290044145964;5.09290044145964;5.09290044145964;0.052466;2;-371.965555555555 * ref_1;1;44.3326567711003;
-2;632.494583333333 * no_asm + -378.277083333333 * ref_1 + 18.9345833333327 * no_fast_pskip;4.01028434586768;4.01028434586768;4.01028434586768;4.01028434586768;0.060004;3;18.9345833333327 * no_fast_pskip;1;1.08261609559196;
-3;631.164047619047 * no_asm + -374.285476190476 * ref_1 + 6.95976190476083 * no_fast_pskip + 15.9664285714293 * no_fast_pskip * no_mbtree;3.59004880713571;3.59004880713571;3.59004880713571;3.59004880713571;0.069468;5;15.9664285714293 * no_fast_pskip * no_mbtree;2;0.210117769365981;
-Elapsed=00:00:00.0718924
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;638.806111111111 * no_asm + -371.965555555555 * ref_1;5.09290044145964;5.09290044145964;5.09290044145964;5.09290044145964;0.052466;2;-371.965555555555 * ref_1;1;44.3326567711003;19.3647041846939
-2;632.494583333333 * no_asm + -378.277083333333 * ref_1 + 18.9345833333327 * no_fast_pskip;4.01028434586768;4.01028434586768;4.01028434586768;4.01028434586768;0.060004;3;18.9345833333327 * no_fast_pskip;1;1.08261609559196;19.5412741295869
-3;631.164047619047 * no_asm + -374.285476190476 * ref_1 + 6.95976190476083 * no_fast_pskip + 15.9664285714293 * no_fast_pskip * no_mbtree;3.59004880713571;3.59004880713571;3.59004880713571;3.59004880713571;0.069468;5;15.9664285714293 * no_fast_pskip * no_mbtree;2;0.210117769365981;18.8763522068484
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

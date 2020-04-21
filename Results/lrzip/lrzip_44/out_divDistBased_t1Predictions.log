@@ -9,33 +9,5 @@ Configs with too large deviation: 0
 432 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/lrzip/lrzip_44/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:18 NumberOfConfigurationsValidation:18
-Learning progress:
-1;210265 * level + 3031570 * compressionZpaq;119.82727846247;119.82727846247;119.82727846247;119.82727846247;0.050572;2;3031570 * compressionZpaq;1;292.116829311783;
-2;50789.9999999997 * level + 2978411.66666667 * compressionZpaq + 212633.333333334 * compression;62.7710926924321;62.7710926924321;62.7710926924321;62.7710926924321;0.062342;3;212633.333333334 * compression;1;57.0561857700383;
-3;50790.0000000005 * level + 2959145.90909091 * compressionZpaq + 231899.090909091 * compression + -231189.090909091 * compressionLzo;43.4915693758226;43.4915693758226;43.4915693758226;43.4915693758226;0.078755;4;-231189.090909091 * compressionLzo;1;19.2795233166094;
-4;50790.0000000001 * level + 5528590.90909091 * compressionZpaq + 231899.09090909 * compression + -231189.090909092 * compressionLzo + -5138890 * compressionZpaq * disableCompressibilityTesting;19.8054084197121;19.8054084197121;19.8054084197121;19.8054084197121;0.100513;6;-5138890 * compressionZpaq * disableCompressibilityTesting;2;11.8430804780552;
-5;50789.9999999993 * level + 5415325 * compressionZpaq + 167175.714285715 * compression + -344454.999999999 * compressionLzo + -4960900.71428571 * compressionZpaq * disableCompressibilityTesting + 177989.285714287 * compression * level9;15.9280915401055;15.9280915401055;15.9280915401055;15.9280915401055;0.132737;8;177989.285714287 * compression * level9;2;1.9386584398033;
-6;50790.0000000008 * level + 5560890 * compressionZpaq + 167175.714285714 * compression + -198890 * compressionLzo + -5106465.71428571 * compressionZpaq * disableCompressibilityTesting + 32424.2857142857 * compression * level9 + 582259.999999999 * compression * level9 * compressionLrzip;5.17649389436516;5.17649389436516;5.17649389436516;5.17649389436516;0.180862;11;582259.999999999 * compression * level9 * compressionLrzip;3;3.58386588191346;
-7;50790.0000000015 * level + 5534875 * compressionZpaq + 167175.714285713 * compression + -224904.999999995 * compressionLzo + -5080450.71428571 * compressionZpaq * disableCompressibilityTesting + 58439.2857142859 * compression * level9 + 556244.999999999 * compression * level9 * compressionLrzip + -78045.0000000017 * compressionGzip;2.74364269493806;2.74364269493806;2.74364269493806;2.74364269493806;0.240841;12;-78045.0000000017 * compressionGzip;1;2.4328511994271;
-8;46441.4705882339 * level + 5534875 * compressionZpaq + 165312.058823528 * compression + -216207.941176468 * compressionLzo + -5074238.52941176 * compressionZpaq * disableCompressibilityTesting + 55954.4117647078 * compression * level9 + 556244.999999998 * compression * level9 * compressionLrzip + -69347.9411764672 * compressionGzip + 8697.05882353047 * encryption;0.902866669709563;0.902866669709563;0.902866669709563;0.902866669709563;0.312519;13;8697.05882353047 * encryption;1;1.84077602522849;
-Elapsed=00:00:00.3154863
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;210265 * level + 3031570 * compressionZpaq;119.82727846247;119.82727846247;119.82727846247;119.82727846247;0.050572;2;3031570 * compressionZpaq;1;292.116829311783;149.845067127169
-2;50789.9999999997 * level + 2978411.66666667 * compressionZpaq + 212633.333333334 * compression;62.7710926924321;62.7710926924321;62.7710926924321;62.7710926924321;0.062342;3;212633.333333334 * compression;1;57.0561857700383;119.231066536079
-3;50790.0000000005 * level + 2959145.90909091 * compressionZpaq + 231899.090909091 * compression + -231189.090909091 * compressionLzo;43.4915693758226;43.4915693758226;43.4915693758226;43.4915693758226;0.078755;4;-231189.090909091 * compressionLzo;1;19.2795233166094;62.6485257268138
-4;50790.0000000001 * level + 5528590.90909091 * compressionZpaq + 231899.09090909 * compression + -231189.090909092 * compressionLzo + -5138890 * compressionZpaq * disableCompressibilityTesting;19.8054084197121;19.8054084197121;19.8054084197121;19.8054084197121;0.100513;6;-5138890 * compressionZpaq * disableCompressibilityTesting;2;11.8430804780552;67.9554557786296
-5;50789.9999999993 * level + 5415325 * compressionZpaq + 167175.714285715 * compression + -344454.999999999 * compressionLzo + -4960900.71428571 * compressionZpaq * disableCompressibilityTesting + 177989.285714287 * compression * level9;15.9280915401055;15.9280915401055;15.9280915401055;15.9280915401055;0.132737;8;177989.285714287 * compression * level9;2;1.9386584398033;106.098991242413
-6;50790.0000000008 * level + 5560890 * compressionZpaq + 167175.714285714 * compression + -198890 * compressionLzo + -5106465.71428571 * compressionZpaq * disableCompressibilityTesting + 32424.2857142857 * compression * level9 + 582259.999999999 * compression * level9 * compressionLrzip;5.17649389436516;5.17649389436516;5.17649389436516;5.17649389436516;0.180862;11;582259.999999999 * compression * level9 * compressionLrzip;3;3.58386588191346;65.0847763453181
-7;50790.0000000015 * level + 5534875 * compressionZpaq + 167175.714285713 * compression + -224904.999999995 * compressionLzo + -5080450.71428571 * compressionZpaq * disableCompressibilityTesting + 58439.2857142859 * compression * level9 + 556244.999999999 * compression * level9 * compressionLrzip + -78045.0000000017 * compressionGzip;2.74364269493806;2.74364269493806;2.74364269493806;2.74364269493806;0.240841;12;-78045.0000000017 * compressionGzip;1;2.4328511994271;62.2127571371187
-8;46441.4705882339 * level + 5534875 * compressionZpaq + 165312.058823528 * compression + -216207.941176468 * compressionLzo + -5074238.52941176 * compressionZpaq * disableCompressibilityTesting + 55954.4117647078 * compression * level9 + 556244.999999998 * compression * level9 * compressionLrzip + -69347.9411764672 * compressionGzip + 8697.05882353047 * encryption;0.902866669709563;0.902866669709563;0.902866669709563;0.902866669709563;0.312519;13;8697.05882353047 * encryption;1;1.84077602522849;59.7418109441753
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

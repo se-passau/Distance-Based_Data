@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_65/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;235.827407407407 * time_passes + 31.0892592592592 * licm;3.09452792644184;3.09452792644184;3.09452792644184;3.09452792644184;0.056699;2;31.0892592592592 * licm;1;1.96875487775203;
-2;228.067333333333 * time_passes + 21.3891666666666 * licm + 17.4601666666663 * inline;1.89264069289149;1.89264069289149;1.89264069289149;1.89264069289149;0.063747;3;17.4601666666663 * inline;1;1.20188723355035;
-3;228.067333333333 * time_passes + 20.1733333333334 * licm + 16.244333333333 * inline + 4.86333333333346 * ipsccp;1.70928100618384;1.70928100618384;1.70928100618384;1.70928100618384;0.071931;4;4.86333333333346 * ipsccp;1;0.183359686707645;
-Elapsed=00:00:00.0741315
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;235.827407407407 * time_passes + 31.0892592592592 * licm;3.09452792644184;3.09452792644184;3.09452792644184;3.09452792644184;0.056699;2;31.0892592592592 * licm;1;1.96875487775203;7.74477278240568
-2;228.067333333333 * time_passes + 21.3891666666666 * licm + 17.4601666666663 * inline;1.89264069289149;1.89264069289149;1.89264069289149;1.89264069289149;0.063747;3;17.4601666666663 * inline;1;1.20188723355035;6.05317263659619
-3;228.067333333333 * time_passes + 20.1733333333334 * licm + 16.244333333333 * inline + 4.86333333333346 * ipsccp;1.70928100618384;1.70928100618384;1.70928100618384;1.70928100618384;0.071931;4;4.86333333333346 * ipsccp;1;0.183359686707645;6.3809761945378
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

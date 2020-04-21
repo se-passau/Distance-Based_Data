@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_51/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;225.387916666667 * time_passes + 23.2931944444447 * gvn;4.05927006654687;4.05927006654687;4.05927006654687;4.05927006654687;0.048424;2;23.2931944444447 * gvn;1;2.70233620833798;
-2;219.945520833333 * time_passes + 21.4790625000001 * gvn + 10.8847916666668 * ipsccp;3.74218397678815;3.74218397678815;3.74218397678815;3.74218397678815;0.054101;3;10.8847916666668 * ipsccp;1;0.317086089758719;
-3;210.15744047619 * time_passes + 18.2163690476193 * gvn + 13.0599206349207 * ipsccp + 17.4010317460318 * simplifycfg;3.55482501264479;3.55482501264479;3.55482501264479;3.55482501264479;0.061668;4;17.4010317460318 * simplifycfg;1;0.187358964143357;
-Elapsed=00:00:00.0635185
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;225.387916666667 * time_passes + 23.2931944444447 * gvn;4.05927006654687;4.05927006654687;4.05927006654687;4.05927006654687;0.048424;2;23.2931944444447 * gvn;1;2.70233620833798;5.18046150392418
-2;219.945520833333 * time_passes + 21.4790625000001 * gvn + 10.8847916666668 * ipsccp;3.74218397678815;3.74218397678815;3.74218397678815;3.74218397678815;0.054101;3;10.8847916666668 * ipsccp;1;0.317086089758719;5.35177326557567
-3;210.15744047619 * time_passes + 18.2163690476193 * gvn + 13.0599206349207 * ipsccp + 17.4010317460318 * simplifycfg;3.55482501264479;3.55482501264479;3.55482501264479;3.55482501264479;0.061668;4;17.4010317460318 * simplifycfg;1;0.187358964143357;6.21795309647926
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

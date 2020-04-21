@@ -8,21 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_70/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;29.1529824561403 * polly_vectorizer + 1.46183235867445 * parallel;1.89372941061739;1.89372941061739;1.89372941061739;1.89372941061739;0.04282;2;1.46183235867445 * parallel;1;1.1061272334518;
-2;29.2772916666667 * polly_vectorizer + 1.33752314814816 * parallel + -0.787291666666664 * pollydefaulttilesize_16;1.69131954260709;1.69131954260709;1.69131954260709;1.69131954260709;0.066049;3;-0.787291666666664 * pollydefaulttilesize_16;1;0.202409868010297;
-Elapsed=00:00:00.0676470
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;29.1529824561403 * polly_vectorizer + 1.46183235867445 * parallel;1.89372941061739;1.89372941061739;1.89372941061739;1.89372941061739;0.04282;2;1.46183235867445 * parallel;1;1.1061272334518;30.0627743430273
-2;29.2772916666667 * polly_vectorizer + 1.33752314814816 * parallel + -0.787291666666664 * pollydefaulttilesize_16;1.69131954260709;1.69131954260709;1.69131954260709;1.69131954260709;0.066049;3;-0.787291666666664 * pollydefaulttilesize_16;1;0.202409868010297;30.1992550961617
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

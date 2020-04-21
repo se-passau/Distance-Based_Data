@@ -36,6 +36,8 @@ JOB_DIR = HOME + "Jobs/"
 JOB_FILE_PREFIX = "_jobs_"
 JOB_FILE_SUFFIX = ".txt"
 JOB_SCRIPT_PREDICTIONS = PREFIX + "runRandomHundredTimes.sh "
+JOB_SCRIPT_PREDICTIONS_DECISION_TREE = PREFIX + "runDecisionTreeRandomHundredTimes.sh "
+JOB_SCRIPT_PREDICTIONS_FOREST_REGRESSOR = PREFIX + "runForestRegressorRandomHundredTimes.sh "
 JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
 JOB_SCRIPT_FAILURE_RATE = PREFIX + "failureRateRandomHundredTimes.sh "
 
@@ -47,7 +49,7 @@ def printUsage():
     print("./JobSubmitter <cluster> <solv/semi/random/grammar-based> <sampling/predicting/failureRate>")
     print("cluster\t The cluster to use")
     print("solv/semi/random/all\t Specifies if distribution-aware (solv) sampling, semi-random sampling, random sampling should be executed or all configurations should be used.")
-    print("sampling/predicting/failureRate specifies wheter splconqueror should predict or sample")
+    print("sampling/predicting/predictingDT/predictingFR/failureRate specifies wheter splconqueror should predict or sample")
 
 
 def executeCommand(command: str) -> str:
@@ -104,7 +106,10 @@ def main():
     sampling = str(sys.argv[3]) == "sampling"
     failureRate = str(sys.argv[3]) == "failureRate"
     predicting = str(sys.argv[3]) == "predicting"
+    predictingDT = str(sys.argv[3]) == "predictingDT"
+    predictingFR = str(sys.argv[3]) == "predictingFR"
     if sampling:
+        SBATCH_OPTIONS = SBATCH_OPTIONS + " --exclusive "
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
@@ -122,6 +127,18 @@ def main():
             for run in range(RUNS_FROM, RUNS_TO + 1):
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
                 jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobs.append(jobString)
+    elif predictingDT:
+        for caseStudy in CASE_STUDIES:
+            for run in range(RUNS_FROM, RUNS_TO + 1):
+                jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
+                jobString += JOB_SCRIPT_PREDICTIONS_DECISION_TREE + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobs.append(jobString)
+    elif predictingFR:
+        for caseStudy in CASE_STUDIES:
+            for run in range(RUNS_FROM, RUNS_TO + 1):
+                jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
+                jobString += JOB_SCRIPT_PREDICTIONS_FOREST_REGRESSOR + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
     else:
         raise KeyError("The operation " + sys.argv[3] + " is not allowed!")

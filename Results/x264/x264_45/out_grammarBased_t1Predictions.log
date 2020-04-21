@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1152 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_45/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:12 NumberOfConfigurationsValidation:12
-Learning progress:
-1;531.984166666667 * no_asm + -249.311666666667 * ref_1;8.14238111507706;8.14238111507706;8.14238111507706;8.14238111507706;0.047953;2;-249.311666666667 * ref_1;1;23.0183149837883;
-2;526.034761904762 * no_asm + -243.362261904762 * ref_1 + 47.5952380952381 * rc_lookahead_40;6.99597694985092;6.99597694985092;6.99597694985092;6.99597694985092;0.055523;3;47.5952380952381 * rc_lookahead_40;1;1.14640416522615;
-3;526.034761904762 * no_asm + -236.659761904762 * ref_1 + 47.595238095238 * rc_lookahead_40 + -13.4050000000003 * ref_1 * no_mixed_refs;6.56546175793161;6.56546175793161;6.56546175793161;6.56546175793161;0.065554;5;-13.4050000000003 * ref_1 * no_mixed_refs;2;0.215257595959655;
-Elapsed=00:00:00.0677324
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;531.984166666667 * no_asm + -249.311666666667 * ref_1;8.14238111507706;8.14238111507706;8.14238111507706;8.14238111507706;0.047953;2;-249.311666666667 * ref_1;1;23.0183149837883;13.8815225596417
-2;526.034761904762 * no_asm + -243.362261904762 * ref_1 + 47.5952380952381 * rc_lookahead_40;6.99597694985092;6.99597694985092;6.99597694985092;6.99597694985092;0.055523;3;47.5952380952381 * rc_lookahead_40;1;1.14640416522615;15.7240706392458
-3;526.034761904762 * no_asm + -236.659761904762 * ref_1 + 47.595238095238 * rc_lookahead_40 + -13.4050000000003 * ref_1 * no_mixed_refs;6.56546175793161;6.56546175793161;6.56546175793161;6.56546175793161;0.065554;5;-13.4050000000003 * ref_1 * no_mixed_refs;2;0.215257595959655;15.762934477846
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

@@ -1,7 +1,10 @@
-log ./out_grammarBased_t2FailureReport.log
+log ./out_grammarBased_t2Predictions.log
+mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
 solver z3
 vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/FeatureModel.xml
 all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/measurements.xml
-binary grammar-based numConfigs:56 seed:96  confFaultsReport:./out_grammarBasedFailureReport_t2.log
-printconfigs ./sampledConfigurations_grammarBased_t2FailureReport.csv
+nfp Performance
+setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_96/sampledConfigurations_grammarBased_t2.csv
+learn-splconqueror-opt
+analyze-learning
 clean-sampling

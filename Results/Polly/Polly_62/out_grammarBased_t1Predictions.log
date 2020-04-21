@@ -8,27 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_62/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;29.3934027777778 * polly_vectorizer + -10.1767361111111 * pollyoptmaxcoefficient_10;15.9842094060984;15.9842094060984;15.9842094060984;15.9842094060984;0.062636;2;-10.1767361111111 * pollyoptmaxcoefficient_10;1;7.81854616795513;
-2;29.3934027777777 * polly_vectorizer + 0.284930555555563 * pollyoptmaxcoefficient_10 + -20.9233333333333 * pollyoptmaxcoefficient_10 * min;5.99668735296207;5.99668735296207;5.99668735296207;5.99668735296207;0.091107;4;-20.9233333333333 * pollyoptmaxcoefficient_10 * min;2;4.99376102656814;
-3;29.3934027777778 * polly_vectorizer + 5.67493055555554 * pollyoptmaxcoefficient_10 + -23.6183333333333 * pollyoptmaxcoefficient_10 * min + -5.39 * pollyoptmaxcoefficient_10 * polly_parallel;3.56779217086746;3.56779217086746;3.56779217086746;3.56779217086746;0.143045;6;-5.39 * pollyoptmaxcoefficient_10 * polly_parallel;2;1.2144475910473;
-4;28.641298185941 * polly_vectorizer + 7.42984126984127 * pollyoptmaxcoefficient_10 + -24.6211394557823 * pollyoptmaxcoefficient_10 * min + -7.39561224489794 * pollyoptmaxcoefficient_10 * polly_parallel + 2.00561224489797 * parallel;1.88934711429717;1.88934711429717;1.88934711429717;1.88934711429717;0.224275;7;2.00561224489797 * parallel;1;1.67844505657029;
-5;28.6502083333333 * polly_vectorizer + 7.55458333333336 * pollyoptmaxcoefficient_10 + -24.7547916666667 * pollyoptmaxcoefficient_10 * min + -7.66291666666668 * pollyoptmaxcoefficient_10 * polly_parallel + 2.27291666666668 * parallel + -1.30979166666668 * parallel * pollydefaulttilesize_1024;1.71781833947542;1.71781833947542;1.71781833947542;1.71781833947542;0.346275;9;-1.30979166666668 * parallel * pollydefaulttilesize_1024;2;0.0857643874108719;
-Elapsed=00:00:00.3495287
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;29.3934027777778 * polly_vectorizer + -10.1767361111111 * pollyoptmaxcoefficient_10;15.9842094060984;15.9842094060984;15.9842094060984;15.9842094060984;0.062636;2;-10.1767361111111 * pollyoptmaxcoefficient_10;1;7.81854616795513;33.6611741571737
-2;29.3934027777777 * polly_vectorizer + 0.284930555555563 * pollyoptmaxcoefficient_10 + -20.9233333333333 * pollyoptmaxcoefficient_10 * min;5.99668735296207;5.99668735296207;5.99668735296207;5.99668735296207;0.091107;4;-20.9233333333333 * pollyoptmaxcoefficient_10 * min;2;4.99376102656814;31.2828532301307
-3;29.3934027777778 * polly_vectorizer + 5.67493055555554 * pollyoptmaxcoefficient_10 + -23.6183333333333 * pollyoptmaxcoefficient_10 * min + -5.39 * pollyoptmaxcoefficient_10 * polly_parallel;3.56779217086746;3.56779217086746;3.56779217086746;3.56779217086746;0.143045;6;-5.39 * pollyoptmaxcoefficient_10 * polly_parallel;2;1.2144475910473;32.2672616221078
-4;28.641298185941 * polly_vectorizer + 7.42984126984127 * pollyoptmaxcoefficient_10 + -24.6211394557823 * pollyoptmaxcoefficient_10 * min + -7.39561224489794 * pollyoptmaxcoefficient_10 * polly_parallel + 2.00561224489797 * parallel;1.88934711429717;1.88934711429717;1.88934711429717;1.88934711429717;0.224275;7;2.00561224489797 * parallel;1;1.67844505657029;31.2776707898192
-5;28.6502083333333 * polly_vectorizer + 7.55458333333336 * pollyoptmaxcoefficient_10 + -24.7547916666667 * pollyoptmaxcoefficient_10 * min + -7.66291666666668 * pollyoptmaxcoefficient_10 * polly_parallel + 2.27291666666668 * parallel + -1.30979166666668 * parallel * pollydefaulttilesize_1024;1.71781833947542;1.71781833947542;1.71781833947542;1.71781833947542;0.346275;9;-1.30979166666668 * parallel * pollydefaulttilesize_1024;2;0.0857643874108719;31.5303727739464
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

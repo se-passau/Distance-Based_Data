@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_28/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;221.7875 * time_passes + 22.5377380952377 * instcombine;2.75053674477378;2.75053674477378;2.75053674477378;2.75053674477378;0.048466;2;22.5377380952377 * instcombine;1;2.19473037943296;
-2;213.020384615385 * time_passes + 16.2755128205123 * instcombine + 17.534230769231 * gvn;1.59558034026146;1.59558034026146;1.59558034026146;1.59558034026146;0.055609;3;17.534230769231 * gvn;1;1.15495640451233;
-3;210.7775 * time_passes + 11.3411666666663 * instcombine + 22.02 * gvn + 11.6630000000001 * licm;0.658983496524722;0.658983496524722;0.658983496524722;0.658983496524722;0.064429;4;11.6630000000001 * licm;1;0.936596843736734;
-Elapsed=00:00:00.0665215
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;221.7875 * time_passes + 22.5377380952377 * instcombine;2.75053674477378;2.75053674477378;2.75053674477378;2.75053674477378;0.048466;2;22.5377380952377 * instcombine;1;2.19473037943296;5.86263572643264
-2;213.020384615385 * time_passes + 16.2755128205123 * instcombine + 17.534230769231 * gvn;1.59558034026146;1.59558034026146;1.59558034026146;1.59558034026146;0.055609;3;17.534230769231 * gvn;1;1.15495640451233;4.23217934860121
-3;210.7775 * time_passes + 11.3411666666663 * instcombine + 22.02 * gvn + 11.6630000000001 * licm;0.658983496524722;0.658983496524722;0.658983496524722;0.658983496524722;0.064429;4;11.6630000000001 * licm;1;0.936596843736734;3.35938499052093
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

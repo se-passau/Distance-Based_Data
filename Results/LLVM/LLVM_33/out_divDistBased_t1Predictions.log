@@ -9,25 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_33/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;229.056666666667 * time_passes + 26.0441666666667 * jump_threading;3.16229904546507;3.16229904546507;3.16229904546507;3.16229904546507;0.049354;2;26.0441666666667 * jump_threading;1;1.19593858339109;
-2;229.056666666667 * time_passes + 37.2666666666663 * jump_threading + -12.825714285714 * jump_threading * gvn;2.55811899972433;2.55811899972433;2.55811899972433;2.55811899972433;0.056791;4;-12.825714285714 * jump_threading * gvn;2;0.302090022870371;
-3;210.44 * time_passes + 55.8833333333329 * jump_threading + -40.750714285714 * jump_threading * gvn + 27.925 * gvn;1.48610274818493;1.48610274818493;1.48610274818493;1.48610274818493;0.066845;5;27.925 * gvn;1;1.0720162515394;
-4;210.44 * time_passes + 55.883333333333 * jump_threading + -43.5496666666663 * jump_threading * gvn + 27.925 * gvn + 9.79633333333339 * iv_users;1.42955839491779;1.42955839491779;1.42955839491779;1.42955839491779;0.086033;6;9.79633333333339 * iv_users;1;0.0565443532671452;
-Elapsed=00:00:00.0885965
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;229.056666666667 * time_passes + 26.0441666666667 * jump_threading;3.16229904546507;3.16229904546507;3.16229904546507;3.16229904546507;0.049354;2;26.0441666666667 * jump_threading;1;1.19593858339109;7.64505351504706
-2;229.056666666667 * time_passes + 37.2666666666663 * jump_threading + -12.825714285714 * jump_threading * gvn;2.55811899972433;2.55811899972433;2.55811899972433;2.55811899972433;0.056791;4;-12.825714285714 * jump_threading * gvn;2;0.302090022870371;8.55413293034834
-3;210.44 * time_passes + 55.8833333333329 * jump_threading + -40.750714285714 * jump_threading * gvn + 27.925 * gvn;1.48610274818493;1.48610274818493;1.48610274818493;1.48610274818493;0.066845;5;27.925 * gvn;1;1.0720162515394;8.39876576692687
-4;210.44 * time_passes + 55.883333333333 * jump_threading + -43.5496666666663 * jump_threading * gvn + 27.925 * gvn + 9.79633333333339 * iv_users;1.42955839491779;1.42955839491779;1.42955839491779;1.42955839491779;0.086033;6;9.79633333333339 * iv_users;1;0.0565443532671452;8.93459164749284
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

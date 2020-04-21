@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_61/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;210.44 * time_passes + 32.816333333333 * gvn;1.75061921309619;1.75061921309619;1.75061921309619;1.75061921309619;0.054197;2;32.816333333333 * gvn;1;1.56584393130799;
-2;210.44 * time_passes + 23.2499999999999 * gvn + 11.9579166666665 * inline;1.15904044694106;1.15904044694106;1.15904044694106;1.15904044694106;0.061358;3;11.9579166666665 * inline;1;0.591578766155122;
-3;210.44 * time_passes + 23.25 * gvn + 15.8366666666667 * inline + -5.17166666666677 * jump_threading;1.04350120984664;1.04350120984664;1.04350120984664;1.04350120984664;0.070067;4;-5.17166666666677 * jump_threading;1;0.115539237094422;
-Elapsed=00:00:00.0722955
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;210.44 * time_passes + 32.816333333333 * gvn;1.75061921309619;1.75061921309619;1.75061921309619;1.75061921309619;0.054197;2;32.816333333333 * gvn;1;1.56584393130799;6.06516748315362
-2;210.44 * time_passes + 23.2499999999999 * gvn + 11.9579166666665 * inline;1.15904044694106;1.15904044694106;1.15904044694106;1.15904044694106;0.061358;3;11.9579166666665 * inline;1;0.591578766155122;5.22287771817331
-3;210.44 * time_passes + 23.25 * gvn + 15.8366666666667 * inline + -5.17166666666677 * jump_threading;1.04350120984664;1.04350120984664;1.04350120984664;1.04350120984664;0.070067;4;-5.17166666666677 * jump_threading;1;0.115539237094422;5.43679518638746
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

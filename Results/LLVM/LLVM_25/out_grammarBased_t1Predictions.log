@@ -9,23 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_25/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;215.467777777778 * time_passes + 45.2968888888885 * licm;2.96794115950099;2.96794115950099;2.96794115950099;2.96794115950099;0.042986;2;45.2968888888885 * licm;1;6.67441025494532;
-2;206.451041666667 * time_passes + 43.4935416666664 * licm + 13.5251041666667 * inline;1.92882379572508;1.92882379572508;1.92882379572508;1.92882379572508;0.04974;3;13.5251041666667 * inline;1;1.03911736377591;
-3;204.340820512821 * time_passes + 38.5696923076919 * licm + 11.0631794871793 * inline + 11.254512820513 * instcombine;0.954960377314788;0.954960377314788;0.954960377314788;0.954960377314788;0.059377;4;11.254512820513 * instcombine;1;0.973863418410295;
-Elapsed=00:00:00.0608741
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: abortError
-1;215.467777777778 * time_passes + 45.2968888888885 * licm;2.96794115950099;2.96794115950099;2.96794115950099;2.96794115950099;0.042986;2;45.2968888888885 * licm;1;6.67441025494532;7.08344992382924
-2;206.451041666667 * time_passes + 43.4935416666664 * licm + 13.5251041666667 * inline;1.92882379572508;1.92882379572508;1.92882379572508;1.92882379572508;0.04974;3;13.5251041666667 * inline;1;1.03911736377591;6.40100480139496
-3;204.340820512821 * time_passes + 38.5696923076919 * licm + 11.0631794871793 * inline + 11.254512820513 * instcombine;0.954960377314788;0.954960377314788;0.954960377314788;0.954960377314788;0.059377;4;11.254512820513 * instcombine;1;0.973863418410295;5.29553600852486
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

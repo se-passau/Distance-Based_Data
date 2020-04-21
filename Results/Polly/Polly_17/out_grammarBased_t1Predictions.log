@@ -8,25 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_17/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;29.3275757575757 * polly_vectorizer + -7.86479797979797 * pollyrtcmaxparameters_16;12.341642148796;12.341642148796;12.341642148796;12.341642148796;0.084571;2;-7.86479797979797 * pollyrtcmaxparameters_16;1;5.20611291563432;
-2;29.3275757575757 * polly_vectorizer + -16.199797979798 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based;3.63608124899751;3.63608124899751;3.63608124899751;3.63608124899751;0.1428;4;16.67 * pollyrtcmaxparameters_16 * memory_based;2;4.35278044989925;
-3;28.8727696793003 * polly_vectorizer + -16.4120408163266 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based + 2.00114674441204 * parallel;1.73338744779883;1.73338744779883;1.73338744779883;1.73338744779883;0.221986;5;2.00114674441204 * parallel;1;1.90269380119868;
-4;28.7030357142857 * polly_vectorizer + -16.49125 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based + 2.19351190476192 * parallel + 0.554464285714299 * pollydefaulttilesize_256;1.51407014771385;1.51407014771385;1.51407014771385;1.51407014771385;0.30437;6;0.554464285714299 * pollydefaulttilesize_256;1;0.219317300084979;
-Elapsed=00:00:00.3075016
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;29.3275757575757 * polly_vectorizer + -7.86479797979797 * pollyrtcmaxparameters_16;12.341642148796;12.341642148796;12.341642148796;12.341642148796;0.084571;2;-7.86479797979797 * pollyrtcmaxparameters_16;1;5.20611291563432;32.8249042042358
-2;29.3275757575757 * polly_vectorizer + -16.199797979798 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based;3.63608124899751;3.63608124899751;3.63608124899751;3.63608124899751;0.1428;4;16.67 * pollyrtcmaxparameters_16 * memory_based;2;4.35278044989925;30.5273259588278
-3;28.8727696793003 * polly_vectorizer + -16.4120408163266 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based + 2.00114674441204 * parallel;1.73338744779883;1.73338744779883;1.73338744779883;1.73338744779883;0.221986;5;2.00114674441204 * parallel;1;1.90269380119868;29.3341459780672
-4;28.7030357142857 * polly_vectorizer + -16.49125 * pollyrtcmaxparameters_16 + 16.67 * pollyrtcmaxparameters_16 * memory_based + 2.19351190476192 * parallel + 0.554464285714299 * pollydefaulttilesize_256;1.51407014771385;1.51407014771385;1.51407014771385;1.51407014771385;0.30437;6;0.554464285714299 * pollydefaulttilesize_256;1;0.219317300084979;29.4618841020816
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log

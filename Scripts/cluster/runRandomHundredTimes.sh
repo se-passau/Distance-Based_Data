@@ -65,7 +65,7 @@ createAFiles () {
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
           echo "setsampleset ${sampleFile}" >> ${file};
-          echo "learn-splconqueror" >> ${file};
+          echo "learn-splconqueror-opt" >> ${file};
           echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
 

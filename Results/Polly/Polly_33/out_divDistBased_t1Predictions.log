@@ -8,23 +8,5 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_33/sampledConfigurations_divDistBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:28 NumberOfConfigurationsValidation:28
-Learning progress:
-1;18.0563888888889 * polly_vectorizer + 10.6038194444444 * polly_no_tiling;22.0235449914722;22.0235449914722;22.0235449914722;22.0235449914722;0.044114;2;10.6038194444444 * polly_no_tiling;1;17.9714365800652;
-2;15.9396666666666 * polly_vectorizer + 12.7205416666667 * polly_no_tiling + 12.7003333333333 * pollydefaulttilesize_256;15.6902673410664;15.6902673410664;15.6902673410664;15.6902673410664;0.067166;3;12.7003333333333 * pollydefaulttilesize_256;1;6.33327765040588;
-3;14.8288130686518 * polly_vectorizer + 12.0956865177833 * polly_no_tiling + 8.25691894127375 * pollydefaulttilesize_256 + 5.55426799007445 * max;15.4429800484626;15.4429800484626;15.4429800484626;15.4429800484626;0.102302;4;5.55426799007445 * max;1;0.247287292603808;
-Elapsed=00:00:00.1040284
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;18.0563888888889 * polly_vectorizer + 10.6038194444444 * polly_no_tiling;22.0235449914722;22.0235449914722;22.0235449914722;22.0235449914722;0.044114;2;10.6038194444444 * polly_no_tiling;1;17.9714365800652;29.1117273981962
-2;15.9396666666666 * polly_vectorizer + 12.7205416666667 * polly_no_tiling + 12.7003333333333 * pollydefaulttilesize_256;15.6902673410664;15.6902673410664;15.6902673410664;15.6902673410664;0.067166;3;12.7003333333333 * pollydefaulttilesize_256;1;6.33327765040588;33.228025774865
-3;14.8288130686518 * polly_vectorizer + 12.0956865177833 * polly_no_tiling + 8.25691894127375 * pollydefaulttilesize_256 + 5.55426799007445 * max;15.4429800484626;15.4429800484626;15.4429800484626;15.4429800484626;0.102302;4;5.55426799007445 * max;1;0.247287292603808;29.3692970199022
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_divDistBased_t2.a
-command: log ./out_divDistBased_t2Predictions.log

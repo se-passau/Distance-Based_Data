@@ -9,25 +9,5 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_50/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror
+command: learn-splconqueror-opt
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
-Learning progress:
-1;240.195555555556 * time_passes + 8.51244444444423 * simplifycfg;3.41363403676494;3.41363403676494;3.41363403676494;3.41363403676494;0.048468;2;8.51244444444423 * simplifycfg;1;1.06786628294679;
-2;240.195555555556 * time_passes + -18.9355555555557 * simplifycfg + 34.3100000000001 * simplifycfg * licm;2.23993416786821;2.23993416786821;2.23993416786821;2.23993416786821;0.054667;4;34.3100000000001 * simplifycfg * licm;2;0.58684993444836;
-3;236.487466666667 * time_passes + -26.3517333333334 * simplifycfg + 42.6532000000001 * simplifycfg * licm + 11.1242666666668 * ipsccp;1.72726989243608;1.72726989243608;1.72726989243608;1.72726989243608;0.062871;5;11.1242666666668 * ipsccp;1;0.512664275432135;
-4;236.044074074074 * time_passes + -38.3233333333335 * simplifycfg + 51.9644444444447 * simplifycfg * licm + 12.4544444444446 * ipsccp + 11.084814814815 * simplifycfg * print_used_types;1.22975750239546;1.22975750239546;1.22975750239546;1.22975750239546;0.077231;7;11.084814814815 * simplifycfg * print_used_types;2;0.248756195020312;
-Elapsed=00:00:00.0796869
-average model: 
-command: analyze-learning
-Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
-Models:
-Termination reason: minImprovementPerRound
-1;240.195555555556 * time_passes + 8.51244444444423 * simplifycfg;3.41363403676494;3.41363403676494;3.41363403676494;3.41363403676494;0.048468;2;8.51244444444423 * simplifycfg;1;1.06786628294679;6.78369867703125
-2;240.195555555556 * time_passes + -18.9355555555557 * simplifycfg + 34.3100000000001 * simplifycfg * licm;2.23993416786821;2.23993416786821;2.23993416786821;2.23993416786821;0.054667;4;34.3100000000001 * simplifycfg * licm;2;0.58684993444836;6.10265362551986
-3;236.487466666667 * time_passes + -26.3517333333334 * simplifycfg + 42.6532000000001 * simplifycfg * licm + 11.1242666666668 * ipsccp;1.72726989243608;1.72726989243608;1.72726989243608;1.72726989243608;0.062871;5;11.1242666666668 * ipsccp;1;0.512664275432135;6.80686086645571
-4;236.044074074074 * time_passes + -38.3233333333335 * simplifycfg + 51.9644444444447 * simplifycfg * licm + 12.4544444444446 * ipsccp + 11.084814814815 * simplifycfg * print_used_types;1.22975750239546;1.22975750239546;1.22975750239546;1.22975750239546;0.077231;7;11.084814814815 * simplifycfg * print_used_types;2;0.248756195020312;7.61034638547484
-Analyze finished
-command: clean-sampling
-command: clean-global
-command: script ./learn_grammarBased_t2.a
-command: log ./out_grammarBased_t2Predictions.log
