@@ -1,0 +1,28 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:True learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:False candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
+Configs with too large deviation: 0
+60000 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_39/sampledConfigurations_divDistBased_t3.csv
+command: learn-splconqueror
+Learning: NumberOfConfigurationsLearning:2172 NumberOfConfigurationsValidation:2172
+Learning progress:
+1;23.0745590230664 * polly_vectorizer + 6.49317849145161 * max;24.7617020808961;24.7617020808961;24.7617020808961;24.7617020808961;0.677273;2;6.49317849145161 * max;1;5.30336870183434;
+2;22.7678729634359 * polly_vectorizer + 6.30687701451118 * max + 1.46771185680357 * parallel;23.6417731292989;23.6417731292989;23.6417731292989;23.6417731292989;2.36892;3;1.46771185680357 * parallel;1;1.11992895159724;
+3;22.9714751286449 * polly_vectorizer + 5.97872074403785 * max + 1.83853165152195 * parallel + -1.34520158536171 * parallel * min;23.5004716570423;23.5004716570423;23.5004716570423;23.5004716570423;5.158476;5;-1.34520158536171 * parallel * min;2;0.0706507361283162;
+Elapsed=00:00:05.1874742
+average model: 
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+Termination reason: minImprovementPerRound
+1;23.0745590230664 * polly_vectorizer + 6.49317849145161 * max;24.7617020808961;24.7617020808961;24.7617020808961;24.7617020808961;0.677273;2;6.49317849145161 * max;1;5.30336870183434;28.2233717874621
+2;22.7678729634359 * polly_vectorizer + 6.30687701451118 * max + 1.46771185680357 * parallel;23.6417731292989;23.6417731292989;23.6417731292989;23.6417731292989;2.36892;3;1.46771185680357 * parallel;1;1.11992895159724;27.3325764951167
+3;22.9714751286449 * polly_vectorizer + 5.97872074403785 * max + 1.83853165152195 * parallel + -1.34520158536171 * parallel * min;23.5004716570423;23.5004716570423;23.5004716570423;23.5004716570423;5.158476;5;-1.34520158536171 * parallel * min;2;0.0706507361283162;27.2712983815742
+Analyze finished
+command: clean-sampling
+command: clean-global

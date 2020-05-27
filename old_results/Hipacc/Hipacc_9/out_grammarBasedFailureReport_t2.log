@@ -1,0 +1,934 @@
+12225 - OpenCL, Ldg, bs_256x4, padding_416, pixelPerThread_2
+13083 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_192, pixelPerThread_4
+1682 - OpenCL, LocalMemory, bs_32x32, padding_384, pixelPerThread_3
+13684 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_128, pixelPerThread_1
+7694 - OpenCL, Linear2D, LocalMemory, bs_128x2, padding_64, pixelPerThread_3
+12108 - OpenCL, Ldg, bs_128x8, padding_32, pixelPerThread_1
+14101 - OpenCL, Ldg, LocalMemory, bs_64x8, padding_192, pixelPerThread_2
+23411 - CUDA, Array2D, bs_128x2, padding_128, pixelPerThread_4
+4335 - OpenCL, Linear1D, LocalMemory, bs_32x1, padding_384, pixelPerThread_4
+8051 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_192, pixelPerThread_4
+16431 - CUDA, LocalMemory, bs_128x8, padding_320, pixelPerThread_4
+5047 - OpenCL, Linear1D, LocalMemory, bs_256x4, padding_96, pixelPerThread_4
+8994 - OpenCL, Array2D, bs_64x16, padding_128, pixelPerThread_3
+7542 - OpenCL, Linear2D, LocalMemory, bs_64x4, padding_480, pixelPerThread_3
+9406 - OpenCL, Array2D, bs_512x1, padding_160, pixelPerThread_3
+23533 - CUDA, Array2D, bs_128x8, padding_32, pixelPerThread_2
+6116 - OpenCL, Linear2D, bs_64x4, padding_512, pixelPerThread_1
+4369 - OpenCL, Linear1D, LocalMemory, bs_32x8, padding_128, pixelPerThread_2
+13866 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_480, pixelPerThread_3
+25258 - CUDA, Array2D, LocalMemory, bs_1024x1, padding_224, pixelPerThread_3
+11835 - OpenCL, Ldg, bs_64x16, padding_0, pixelPerThread_4
+6180 - OpenCL, Linear2D, bs_64x16, padding_480, pixelPerThread_1
+7662 - OpenCL, Linear2D, LocalMemory, bs_128x1, padding_352, pixelPerThread_3
+8337 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_320, pixelPerThread_2
+11399 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_320, pixelPerThread_4
+11733 - OpenCL, Ldg, bs_64x1, padding_288, pixelPerThread_2
+13014 - OpenCL, Ldg, LocalMemory, bs_32x16, padding_192, pixelPerThread_3
+22134 - CUDA, Linear2D, LocalMemory, bs_128x8, padding_256, pixelPerThread_3
+4588 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_256, pixelPerThread_1
+10624 - OpenCL, Array2D, LocalMemory, bs_128x4, padding_128, pixelPerThread_1
+25194 - CUDA, Array2D, LocalMemory, bs_512x2, padding_256, pixelPerThread_3
+25622 - CUDA, Array2D, LocalMemory, bs_256x1, padding_416, pixelPerThread_3
+19262 - CUDA, Linear1D, LocalMemory, bs_128x8, padding_128, pixelPerThread_3
+2363 - OpenCL, LocalMemory, bs_512x2, padding_384, pixelPerThread_4
+10467 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_480, pixelPerThread_4
+3681 - OpenCL, Linear1D, bs_512x1, padding_64, pixelPerThread_2
+4727 - OpenCL, Linear1D, LocalMemory, bs_64x16, padding_256, pixelPerThread_4
+3744 - OpenCL, Linear1D, bs_512x2, padding_32, pixelPerThread_1
+24365 - CUDA, Array2D, LocalMemory, bs_32x8, padding_160, pixelPerThread_2
+10996 - OpenCL, Array2D, LocalMemory, bs_1024x1, padding_384, pixelPerThread_1
+6312 - OpenCL, Linear2D, bs_128x2, padding_448, pixelPerThread_1
+24603 - CUDA, Array2D, LocalMemory, bs_64x1, padding_416, pixelPerThread_4
+6797 - OpenCL, Linear2D, bs_32x2, padding_512, pixelPerThread_2
+24951 - CUDA, Array2D, LocalMemory, bs_128x4, padding_480, pixelPerThread_4
+6203 - OpenCL, Linear2D, bs_128x1, padding_96, pixelPerThread_4
+11804 - OpenCL, Ldg, bs_64x4, padding_320, pixelPerThread_1
+5936 - OpenCL, Linear2D, bs_32x32, padding_160, pixelPerThread_1
+9014 - OpenCL, Array2D, bs_64x16, padding_288, pixelPerThread_3
+8333 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_288, pixelPerThread_2
+5974 - OpenCL, Linear2D, bs_32x32, padding_448, pixelPerThread_3
+4086 - OpenCL, Linear1D, bs_64x8, padding_32, pixelPerThread_3
+6617 - OpenCL, Linear2D, bs_512x2, padding_160, pixelPerThread_2
+25623 - CUDA, Array2D, LocalMemory, bs_256x1, padding_416, pixelPerThread_4
+7006 - OpenCL, Linear2D, bs_256x1, padding_0, pixelPerThread_3
+9269 - OpenCL, Array2D, bs_128x8, padding_160, pixelPerThread_2
+2401 - OpenCL, LocalMemory, bs_1024x1, padding_160, pixelPerThread_2
+8782 - OpenCL, Array2D, bs_32x32, padding_64, pixelPerThread_3
+5729 - OpenCL, Linear2D, bs_32x1, padding_128, pixelPerThread_2
+10214 - OpenCL, Array2D, LocalMemory, bs_32x32, padding_96, pixelPerThread_3
+12464 - OpenCL, Ldg, bs_32x2, padding_160, pixelPerThread_1
+8645 - OpenCL, Array2D, bs_32x8, padding_64, pixelPerThread_2
+25361 - CUDA, Array2D, LocalMemory, bs_32x2, padding_512, pixelPerThread_2
+9940 - OpenCL, Array2D, bs_256x2, padding_96, pixelPerThread_1
+12427 - OpenCL, Ldg, bs_1024x1, padding_384, pixelPerThread_4
+11090 - OpenCL, Array2D, LocalMemory, bs_32x4, padding_32, pixelPerThread_3
+8030 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_32, pixelPerThread_3
+3489 - OpenCL, Linear1D, bs_128x4, padding_160, pixelPerThread_2
+24047 - CUDA, Array2D, bs_64x2, padding_320, pixelPerThread_4
+9734 - OpenCL, Array2D, bs_64x2, padding_64, pixelPerThread_3
+10754 - OpenCL, Array2D, LocalMemory, bs_256x4, padding_64, pixelPerThread_3
+10162 - OpenCL, Array2D, LocalMemory, bs_32x16, padding_224, pixelPerThread_3
+23679 - CUDA, Array2D, bs_512x1, padding_96, pixelPerThread_4
+13815 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_64, pixelPerThread_4
+7017 - OpenCL, Linear2D, bs_256x1, padding_96, pixelPerThread_2
+25453 - CUDA, Array2D, LocalMemory, bs_64x2, padding_160, pixelPerThread_2
+8668 - OpenCL, Array2D, bs_32x8, padding_256, pixelPerThread_1
+24594 - CUDA, Array2D, LocalMemory, bs_64x1, padding_352, pixelPerThread_3
+3386 - OpenCL, Linear1D, bs_128x1, padding_416, pixelPerThread_3
+4580 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_192, pixelPerThread_1
+11574 - OpenCL, Ldg, bs_32x16, padding_96, pixelPerThread_3
+7954 - OpenCL, Linear2D, LocalMemory, bs_256x4, padding_512, pixelPerThread_3
+27878 - CUDA, Ldg, LocalMemory, bs_128x8, padding_512, pixelPerThread_3
+19511 - CUDA, Linear1D, LocalMemory, bs_512x2, padding_480, pixelPerThread_4
+23156 - CUDA, Array2D, bs_64x1, padding_288, pixelPerThread_1
+9227 - OpenCL, Array2D, bs_128x4, padding_352, pixelPerThread_4
+8321 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_192, pixelPerThread_2
+8653 - OpenCL, Array2D, bs_32x8, padding_128, pixelPerThread_2
+11049 - OpenCL, Array2D, LocalMemory, bs_32x2, padding_256, pixelPerThread_2
+9061 - OpenCL, Array2D, bs_128x1, padding_128, pixelPerThread_2
+23886 - CUDA, Array2D, bs_32x2, padding_128, pixelPerThread_3
+9679 - OpenCL, Array2D, bs_32x4, padding_160, pixelPerThread_4
+9264 - OpenCL, Array2D, bs_128x8, padding_128, pixelPerThread_1
+10617 - OpenCL, Array2D, LocalMemory, bs_128x4, padding_64, pixelPerThread_2
+3543 - OpenCL, Linear1D, bs_128x8, padding_32, pixelPerThread_4
+12489 - OpenCL, Ldg, bs_32x2, padding_352, pixelPerThread_2
+9037 - OpenCL, Array2D, bs_64x16, padding_480, pixelPerThread_2
+24840 - CUDA, Array2D, LocalMemory, bs_128x2, padding_160, pixelPerThread_1
+9755 - OpenCL, Array2D, bs_64x2, padding_224, pixelPerThread_4
+4303 - OpenCL, Linear1D, LocalMemory, bs_32x1, padding_128, pixelPerThread_4
+24339 - CUDA, Array2D, LocalMemory, bs_32x1, padding_480, pixelPerThread_4
+10415 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_64, pixelPerThread_4
+9353 - OpenCL, Array2D, bs_256x4, padding_288, pixelPerThread_2
+10479 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_32, pixelPerThread_4
+9154 - OpenCL, Array2D, bs_128x2, padding_320, pixelPerThread_3
+24528 - CUDA, Array2D, LocalMemory, bs_32x32, padding_384, pixelPerThread_1
+7550 - OpenCL, Linear2D, LocalMemory, bs_64x16, padding_0, pixelPerThread_3
+22873 - CUDA, Array2D, bs_32x1, padding_192, pixelPerThread_2
+5939 - OpenCL, Linear2D, bs_32x32, padding_160, pixelPerThread_4
+7988 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_256, pixelPerThread_1
+4674 - OpenCL, Linear1D, LocalMemory, bs_64x4, padding_384, pixelPerThread_3
+23876 - CUDA, Array2D, bs_32x2, padding_64, pixelPerThread_1
+4411 - OpenCL, Linear1D, LocalMemory, bs_32x8, padding_448, pixelPerThread_4
+12947 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_192, pixelPerThread_4
+24840 - CUDA, Array2D, LocalMemory, bs_128x2, padding_160, pixelPerThread_1
+5156 - OpenCL, Linear1D, LocalMemory, bs_512x1, padding_448, pixelPerThread_1
+5701 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_448, pixelPerThread_2
+7792 - OpenCL, Linear2D, LocalMemory, bs_128x4, padding_320, pixelPerThread_1
+6646 - OpenCL, Linear2D, bs_512x2, padding_384, pixelPerThread_3
+10566 - OpenCL, Array2D, LocalMemory, bs_128x2, padding_192, pixelPerThread_3
+14094 - OpenCL, Ldg, LocalMemory, bs_64x8, padding_128, pixelPerThread_3
+13069 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_96, pixelPerThread_2
+25562 - CUDA, Array2D, LocalMemory, bs_64x8, padding_480, pixelPerThread_3
+3816 - OpenCL, Linear1D, bs_1024x1, padding_64, pixelPerThread_1
+12925 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_32, pixelPerThread_2
+10933 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_416, pixelPerThread_2
+23218 - CUDA, Array2D, bs_64x4, padding_224, pixelPerThread_3
+19517 - CUDA, Linear1D, LocalMemory, bs_1024x1, padding_0, pixelPerThread_2
+11682 - OpenCL, Ldg, bs_32x32, padding_416, pixelPerThread_3
+23586 - CUDA, Array2D, bs_128x8, padding_448, pixelPerThread_3
+9330 - OpenCL, Array2D, bs_256x4, padding_96, pixelPerThread_3
+24965 - CUDA, Array2D, LocalMemory, bs_128x8, padding_64, pixelPerThread_2
+11913 - OpenCL, Ldg, bs_128x1, padding_96, pixelPerThread_2
+3997 - OpenCL, Linear1D, bs_32x4, padding_416, pixelPerThread_2
+25294 - CUDA, Array2D, LocalMemory, bs_1024x1, padding_512, pixelPerThread_3
+5993 - OpenCL, Linear2D, bs_64x1, padding_64, pixelPerThread_2
+9258 - OpenCL, Array2D, bs_128x8, padding_64, pixelPerThread_3
+13625 - OpenCL, Ldg, LocalMemory, bs_256x4, padding_192, pixelPerThread_2
+23710 - CUDA, Array2D, bs_512x1, padding_352, pixelPerThread_3
+24932 - CUDA, Array2D, LocalMemory, bs_128x4, padding_352, pixelPerThread_1
+6024 - OpenCL, Linear2D, bs_64x1, padding_320, pixelPerThread_1
+23310 - CUDA, Array2D, bs_64x16, padding_416, pixelPerThread_3
+7357 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_96, pixelPerThread_2
+16410 - CUDA, LocalMemory, bs_128x8, padding_160, pixelPerThread_3
+24670 - CUDA, Array2D, LocalMemory, bs_64x4, padding_416, pixelPerThread_3
+14160 - OpenCL, Ldg, LocalMemory, bs_256x1, padding_128, pixelPerThread_1
+22203 - CUDA, Linear2D, LocalMemory, bs_256x4, padding_256, pixelPerThread_4
+13023 - OpenCL, Ldg, LocalMemory, bs_32x16, padding_256, pixelPerThread_4
+3811 - OpenCL, Linear1D, bs_1024x1, padding_0, pixelPerThread_4
+4645 - OpenCL, Linear1D, LocalMemory, bs_64x4, padding_160, pixelPerThread_2
+3426 - OpenCL, Linear1D, bs_128x2, padding_192, pixelPerThread_3
+5519 - OpenCL, Linear1D, LocalMemory, bs_64x8, padding_64, pixelPerThread_4
+7631 - OpenCL, Linear2D, LocalMemory, bs_128x1, padding_96, pixelPerThread_4
+24087 - CUDA, Array2D, bs_64x8, padding_96, pixelPerThread_4
+11926 - OpenCL, Ldg, bs_128x1, padding_192, pixelPerThread_3
+9020 - OpenCL, Array2D, bs_64x16, padding_352, pixelPerThread_1
+11766 - OpenCL, Ldg, bs_64x4, padding_0, pixelPerThread_3
+13360 - OpenCL, Ldg, LocalMemory, bs_128x1, padding_256, pixelPerThread_1
+7392 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_384, pixelPerThread_1
+8508 - OpenCL, Linear2D, LocalMemory, bs_256x2, padding_64, pixelPerThread_1
+9661 - OpenCL, Array2D, bs_32x4, padding_32, pixelPerThread_2
+24112 - CUDA, Array2D, bs_64x8, padding_320, pixelPerThread_1
+11908 - OpenCL, Ldg, bs_128x1, padding_64, pixelPerThread_1
+22151 - CUDA, Linear2D, LocalMemory, bs_128x8, padding_384, pixelPerThread_4
+12518 - OpenCL, Ldg, bs_32x4, padding_32, pixelPerThread_3
+5686 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_320, pixelPerThread_3
+4559 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_0, pixelPerThread_4
+3015 - OpenCL, Linear1D, bs_32x16, padding_160, pixelPerThread_4
+10890 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_64, pixelPerThread_3
+12980 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_480, pixelPerThread_1
+5536 - OpenCL, Linear1D, LocalMemory, bs_64x8, padding_224, pixelPerThread_1
+23280 - CUDA, Array2D, bs_64x16, padding_192, pixelPerThread_1
+13949 - OpenCL, Ldg, LocalMemory, bs_32x4, padding_64, pixelPerThread_2
+5140 - OpenCL, Linear1D, LocalMemory, bs_512x1, padding_320, pixelPerThread_1
+23756 - CUDA, Array2D, bs_512x2, padding_192, pixelPerThread_1
+14258 - OpenCL, Ldg, LocalMemory, bs_256x2, padding_352, pixelPerThread_3
+23441 - CUDA, Array2D, bs_128x2, padding_384, pixelPerThread_2
+24594 - CUDA, Array2D, LocalMemory, bs_64x1, padding_352, pixelPerThread_3
+21870 - CUDA, Linear2D, LocalMemory, bs_64x16, padding_320, pixelPerThread_3
+14249 - OpenCL, Ldg, LocalMemory, bs_256x2, padding_288, pixelPerThread_2
+25061 - CUDA, Array2D, LocalMemory, bs_256x4, padding_288, pixelPerThread_2
+12603 - OpenCL, Ldg, bs_64x2, padding_160, pixelPerThread_4
+8751 - OpenCL, Array2D, bs_32x16, padding_352, pixelPerThread_4
+2119 - OpenCL, LocalMemory, bs_128x8, padding_64, pixelPerThread_4
+7251 - OpenCL, Linear2D, LocalMemory, bs_32x8, padding_320, pixelPerThread_4
+4226 - OpenCL, Linear1D, bs_256x2, padding_64, pixelPerThread_3
+7823 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_0, pixelPerThread_4
+12671 - OpenCL, Ldg, bs_64x8, padding_160, pixelPerThread_4
+12443 - OpenCL, Ldg, bs_1024x1, padding_512, pixelPerThread_4
+24148 - CUDA, Array2D, bs_256x1, padding_64, pixelPerThread_1
+3368 - OpenCL, Linear1D, bs_128x1, padding_288, pixelPerThread_1
+11394 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_288, pixelPerThread_3
+6986 - OpenCL, Linear2D, bs_64x8, padding_384, pixelPerThread_3
+10095 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_224, pixelPerThread_4
+8340 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_352, pixelPerThread_1
+2146 - OpenCL, LocalMemory, bs_128x8, padding_288, pixelPerThread_3
+11634 - OpenCL, Ldg, bs_32x32, padding_32, pixelPerThread_3
+13879 - OpenCL, Ldg, LocalMemory, bs_32x2, padding_32, pixelPerThread_4
+5283 - OpenCL, Linear1D, LocalMemory, bs_1024x1, padding_352, pixelPerThread_4
+11887 - OpenCL, Ldg, bs_64x16, padding_416, pixelPerThread_4
+24174 - CUDA, Array2D, bs_256x1, padding_256, pixelPerThread_3
+14055 - OpenCL, Ldg, LocalMemory, bs_64x2, padding_352, pixelPerThread_4
+2434 - OpenCL, LocalMemory, bs_1024x1, padding_416, pixelPerThread_3
+14223 - OpenCL, Ldg, LocalMemory, bs_256x2, padding_64, pixelPerThread_4
+5507 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_512, pixelPerThread_4
+10939 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_448, pixelPerThread_4
+12020 - OpenCL, Ldg, bs_128x2, padding_416, pixelPerThread_1
+11922 - OpenCL, Ldg, bs_128x1, padding_160, pixelPerThread_3
+7258 - OpenCL, Linear2D, LocalMemory, bs_32x8, padding_384, pixelPerThread_3
+13267 - OpenCL, Ldg, LocalMemory, bs_64x16, padding_32, pixelPerThread_4
+7497 - OpenCL, Linear2D, LocalMemory, bs_64x4, padding_128, pixelPerThread_2
+22203 - CUDA, Linear2D, LocalMemory, bs_256x4, padding_256, pixelPerThread_4
+3031 - OpenCL, Linear1D, bs_32x16, padding_288, pixelPerThread_4
+1667 - OpenCL, LocalMemory, bs_32x32, padding_256, pixelPerThread_4
+7088 - OpenCL, Linear2D, bs_256x2, padding_128, pixelPerThread_1
+11348 - OpenCL, Array2D, LocalMemory, bs_256x1, padding_480, pixelPerThread_1
+7049 - OpenCL, Linear2D, bs_256x1, padding_352, pixelPerThread_2
+8577 - OpenCL, Array2D, bs_32x1, padding_64, pixelPerThread_2
+12980 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_480, pixelPerThread_1
+10457 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_416, pixelPerThread_2
+25676 - CUDA, Array2D, LocalMemory, bs_256x2, padding_320, pixelPerThread_1
+8172 - OpenCL, Linear2D, LocalMemory, bs_32x2, padding_96, pixelPerThread_1
+5495 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_416, pixelPerThread_4
+7388 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_352, pixelPerThread_1
+5816 - OpenCL, Linear2D, bs_32x8, padding_288, pixelPerThread_1
+10092 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_224, pixelPerThread_1
+23290 - CUDA, Array2D, bs_64x16, padding_256, pixelPerThread_3
+24311 - CUDA, Array2D, LocalMemory, bs_32x1, padding_256, pixelPerThread_4
+10820 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_64, pixelPerThread_1
+24607 - CUDA, Array2D, LocalMemory, bs_64x1, padding_448, pixelPerThread_4
+4562 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_32, pixelPerThread_3
+4136 - OpenCL, Linear1D, bs_64x8, padding_448, pixelPerThread_1
+24784 - CUDA, Array2D, LocalMemory, bs_128x1, padding_256, pixelPerThread_1
+11227 - OpenCL, Array2D, LocalMemory, bs_64x8, padding_32, pixelPerThread_4
+16638 - CUDA, LocalMemory, bs_512x2, padding_352, pixelPerThread_3
+3616 - OpenCL, Linear1D, bs_256x4, padding_96, pixelPerThread_1
+13609 - OpenCL, Ldg, LocalMemory, bs_256x4, padding_64, pixelPerThread_2
+12826 - OpenCL, Ldg, bs_256x2, padding_320, pixelPerThread_3
+7005 - OpenCL, Linear2D, bs_256x1, padding_0, pixelPerThread_2
+3766 - OpenCL, Linear1D, bs_512x2, padding_192, pixelPerThread_3
+8391 - OpenCL, Linear2D, LocalMemory, bs_64x8, padding_192, pixelPerThread_4
+5443 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_0, pixelPerThread_4
+23867 - CUDA, Array2D, bs_1024x1, padding_512, pixelPerThread_4
+4534 - OpenCL, Linear1D, LocalMemory, bs_32x32, padding_352, pixelPerThread_3
+7450 - OpenCL, Linear2D, LocalMemory, bs_64x1, padding_288, pixelPerThread_3
+5861 - OpenCL, Linear2D, bs_32x16, padding_96, pixelPerThread_2
+14226 - OpenCL, Ldg, LocalMemory, bs_256x2, padding_96, pixelPerThread_3
+8975 - OpenCL, Array2D, bs_64x4, padding_512, pixelPerThread_4
+4014 - OpenCL, Linear1D, bs_64x2, padding_0, pixelPerThread_3
+11899 - OpenCL, Ldg, bs_64x16, padding_512, pixelPerThread_4
+11948 - OpenCL, Ldg, bs_128x1, padding_384, pixelPerThread_1
+3772 - OpenCL, Linear1D, bs_512x2, padding_256, pixelPerThread_1
+25562 - CUDA, Array2D, LocalMemory, bs_64x8, padding_480, pixelPerThread_3
+4002 - OpenCL, Linear1D, bs_32x4, padding_448, pixelPerThread_3
+3087 - OpenCL, Linear1D, bs_32x32, padding_192, pixelPerThread_4
+23228 - CUDA, Array2D, bs_64x4, padding_320, pixelPerThread_1
+6297 - OpenCL, Linear2D, bs_128x2, padding_320, pixelPerThread_2
+2429 - OpenCL, LocalMemory, bs_1024x1, padding_384, pixelPerThread_2
+6581 - OpenCL, Linear2D, bs_512x1, padding_416, pixelPerThread_2
+12383 - OpenCL, Ldg, bs_1024x1, padding_32, pixelPerThread_4
+9988 - OpenCL, Array2D, bs_256x2, padding_480, pixelPerThread_1
+13468 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_32, pixelPerThread_1
+8594 - OpenCL, Array2D, bs_32x1, padding_192, pixelPerThread_3
+10777 - OpenCL, Array2D, LocalMemory, bs_256x4, padding_256, pixelPerThread_2
+12769 - OpenCL, Ldg, bs_256x1, padding_416, pixelPerThread_2
+7331 - OpenCL, Linear2D, LocalMemory, bs_32x16, padding_416, pixelPerThread_4
+24606 - CUDA, Array2D, LocalMemory, bs_64x1, padding_448, pixelPerThread_3
+6114 - OpenCL, Linear2D, bs_64x4, padding_480, pixelPerThread_3
+10748 - OpenCL, Array2D, LocalMemory, bs_256x4, padding_32, pixelPerThread_1
+8724 - OpenCL, Array2D, bs_32x16, padding_160, pixelPerThread_1
+11176 - OpenCL, Array2D, LocalMemory, bs_64x2, padding_192, pixelPerThread_1
+23793 - CUDA, Array2D, bs_512x2, padding_480, pixelPerThread_2
+13102 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_352, pixelPerThread_3
+4244 - OpenCL, Linear1D, bs_256x2, padding_224, pixelPerThread_1
+14013 - OpenCL, Ldg, LocalMemory, bs_64x2, padding_32, pixelPerThread_2
+12457 - OpenCL, Ldg, bs_32x2, padding_96, pixelPerThread_2
+13478 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_96, pixelPerThread_3
+24697 - CUDA, Array2D, LocalMemory, bs_64x16, padding_96, pixelPerThread_2
+6208 - OpenCL, Linear2D, bs_128x1, padding_160, pixelPerThread_1
+3986 - OpenCL, Linear1D, bs_32x4, padding_320, pixelPerThread_3
+28075 - CUDA, Ldg, LocalMemory, bs_512x2, padding_448, pixelPerThread_4
+11589 - OpenCL, Ldg, bs_32x16, padding_224, pixelPerThread_2
+8071 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_352, pixelPerThread_4
+3353 - OpenCL, Linear1D, bs_128x1, padding_160, pixelPerThread_2
+8934 - OpenCL, Array2D, bs_64x4, padding_192, pixelPerThread_3
+3350 - OpenCL, Linear1D, bs_128x1, padding_128, pixelPerThread_3
+19562 - CUDA, Linear1D, LocalMemory, bs_1024x1, padding_352, pixelPerThread_3
+4597 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_320, pixelPerThread_2
+6476 - OpenCL, Linear2D, bs_256x4, padding_128, pixelPerThread_1
+5056 - OpenCL, Linear1D, LocalMemory, bs_256x4, padding_192, pixelPerThread_1
+11215 - OpenCL, Array2D, LocalMemory, bs_64x2, padding_480, pixelPerThread_4
+14021 - OpenCL, Ldg, LocalMemory, bs_64x2, padding_96, pixelPerThread_2
+7987 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_224, pixelPerThread_4
+7533 - OpenCL, Linear2D, LocalMemory, bs_64x4, padding_416, pixelPerThread_2
+27826 - CUDA, Ldg, LocalMemory, bs_128x8, padding_96, pixelPerThread_3
+23304 - CUDA, Array2D, bs_64x16, padding_384, pixelPerThread_1
+24051 - CUDA, Array2D, bs_64x2, padding_352, pixelPerThread_4
+5463 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_160, pixelPerThread_4
+24352 - CUDA, Array2D, LocalMemory, bs_32x8, padding_64, pixelPerThread_1
+22413 - CUDA, Linear2D, LocalMemory, bs_1024x1, padding_320, pixelPerThread_2
+25310 - CUDA, Array2D, LocalMemory, bs_32x2, padding_96, pixelPerThread_3
+6598 - OpenCL, Linear2D, bs_512x2, padding_0, pixelPerThread_3
+7339 - OpenCL, Linear2D, LocalMemory, bs_32x16, padding_480, pixelPerThread_4
+5370 - OpenCL, Linear1D, LocalMemory, bs_32x2, padding_512, pixelPerThread_3
+12185 - OpenCL, Ldg, bs_256x4, padding_96, pixelPerThread_2
+7825 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_32, pixelPerThread_2
+5937 - OpenCL, Linear2D, bs_32x32, padding_160, pixelPerThread_2
+9759 - OpenCL, Array2D, bs_64x2, padding_256, pixelPerThread_4
+10646 - OpenCL, Array2D, LocalMemory, bs_128x4, padding_288, pixelPerThread_3
+8749 - OpenCL, Array2D, bs_32x16, padding_352, pixelPerThread_2
+8046 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_160, pixelPerThread_3
+5622 - OpenCL, Linear1D, LocalMemory, bs_256x1, padding_352, pixelPerThread_3
+13830 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_192, pixelPerThread_3
+5397 - OpenCL, Linear1D, LocalMemory, bs_32x4, padding_192, pixelPerThread_2
+16709 - CUDA, LocalMemory, bs_1024x1, padding_384, pixelPerThread_2
+4719 - OpenCL, Linear1D, LocalMemory, bs_64x16, padding_192, pixelPerThread_4
+7387 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_320, pixelPerThread_4
+9829 - OpenCL, Array2D, bs_64x8, padding_288, pixelPerThread_2
+7862 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_320, pixelPerThread_3
+19535 - CUDA, Linear1D, LocalMemory, bs_1024x1, padding_128, pixelPerThread_4
+23770 - CUDA, Array2D, bs_512x2, padding_288, pixelPerThread_3
+24378 - CUDA, Array2D, LocalMemory, bs_32x8, padding_256, pixelPerThread_3
+7846 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_192, pixelPerThread_3
+5088 - OpenCL, Linear1D, LocalMemory, bs_256x4, padding_448, pixelPerThread_1
+13235 - OpenCL, Ldg, LocalMemory, bs_64x4, padding_320, pixelPerThread_4
+6561 - OpenCL, Linear2D, bs_512x1, padding_256, pixelPerThread_2
+12056 - OpenCL, Ldg, bs_128x4, padding_160, pixelPerThread_1
+8239 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_64, pixelPerThread_4
+12658 - OpenCL, Ldg, bs_64x8, padding_64, pixelPerThread_3
+11456 - OpenCL, Ldg, bs_32x1, padding_256, pixelPerThread_1
+22953 - CUDA, Array2D, bs_32x8, padding_288, pixelPerThread_2
+13239 - OpenCL, Ldg, LocalMemory, bs_64x4, padding_352, pixelPerThread_4
+10874 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_480, pixelPerThread_3
+9937 - OpenCL, Array2D, bs_256x2, padding_64, pixelPerThread_2
+6205 - OpenCL, Linear2D, bs_128x1, padding_128, pixelPerThread_2
+3660 - OpenCL, Linear1D, bs_256x4, padding_448, pixelPerThread_1
+23371 - CUDA, Array2D, bs_128x1, padding_352, pixelPerThread_4
+6240 - OpenCL, Linear2D, bs_128x1, padding_416, pixelPerThread_1
+3561 - OpenCL, Linear1D, bs_128x8, padding_192, pixelPerThread_2
+4185 - OpenCL, Linear1D, bs_256x1, padding_288, pixelPerThread_2
+8959 - OpenCL, Array2D, bs_64x4, padding_384, pixelPerThread_4
+6254 - OpenCL, Linear2D, bs_128x1, padding_512, pixelPerThread_3
+23419 - CUDA, Array2D, bs_128x2, padding_192, pixelPerThread_4
+22932 - CUDA, Array2D, bs_32x8, padding_128, pixelPerThread_1
+10729 - OpenCL, Array2D, LocalMemory, bs_128x8, padding_416, pixelPerThread_2
+3519 - OpenCL, Linear1D, bs_128x4, padding_384, pixelPerThread_4
+12458 - OpenCL, Ldg, bs_32x2, padding_96, pixelPerThread_3
+9859 - OpenCL, Array2D, bs_64x8, padding_512, pixelPerThread_4
+12395 - OpenCL, Ldg, bs_1024x1, padding_128, pixelPerThread_4
+7893 - OpenCL, Linear2D, LocalMemory, bs_256x4, padding_32, pixelPerThread_2
+23279 - CUDA, Array2D, bs_64x16, padding_160, pixelPerThread_4
+25252 - CUDA, Array2D, LocalMemory, bs_1024x1, padding_192, pixelPerThread_1
+24628 - CUDA, Array2D, LocalMemory, bs_64x4, padding_96, pixelPerThread_1
+10488 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_128, pixelPerThread_1
+6689 - OpenCL, Linear2D, bs_1024x1, padding_192, pixelPerThread_2
+5732 - OpenCL, Linear2D, bs_32x1, padding_160, pixelPerThread_1
+5651 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_32, pixelPerThread_4
+11369 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_96, pixelPerThread_2
+3682 - OpenCL, Linear1D, bs_512x1, padding_64, pixelPerThread_3
+13730 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_480, pixelPerThread_3
+11346 - OpenCL, Array2D, LocalMemory, bs_256x1, padding_448, pixelPerThread_3
+11811 - OpenCL, Ldg, bs_64x4, padding_352, pixelPerThread_4
+3282 - OpenCL, Linear1D, bs_64x16, padding_128, pixelPerThread_3
+8398 - OpenCL, Linear2D, LocalMemory, bs_64x8, padding_256, pixelPerThread_3
+10989 - OpenCL, Array2D, LocalMemory, bs_1024x1, padding_320, pixelPerThread_2
+10443 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_288, pixelPerThread_4
+11693 - OpenCL, Ldg, bs_32x32, padding_512, pixelPerThread_2
+4824 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_512, pixelPerThread_1
+22886 - CUDA, Array2D, bs_32x1, padding_288, pixelPerThread_3
+5944 - OpenCL, Linear2D, bs_32x32, padding_224, pixelPerThread_1
+25124 - CUDA, Array2D, LocalMemory, bs_512x1, padding_256, pixelPerThread_1
+6307 - OpenCL, Linear2D, bs_128x2, padding_384, pixelPerThread_4
+28143 - CUDA, Ldg, LocalMemory, bs_1024x1, padding_448, pixelPerThread_4
+23716 - CUDA, Array2D, bs_512x1, padding_416, pixelPerThread_1
+24019 - CUDA, Array2D, bs_64x2, padding_96, pixelPerThread_4
+12444 - OpenCL, Ldg, bs_32x2, padding_0, pixelPerThread_1
+23051 - CUDA, Array2D, bs_32x16, padding_512, pixelPerThread_4
+4996 - OpenCL, Linear1D, LocalMemory, bs_128x8, padding_256, pixelPerThread_1
+12053 - OpenCL, Ldg, bs_128x4, padding_128, pixelPerThread_2
+23553 - CUDA, Array2D, bs_128x8, padding_192, pixelPerThread_2
+3997 - OpenCL, Linear1D, bs_32x4, padding_416, pixelPerThread_2
+18803 - CUDA, Linear1D, LocalMemory, bs_32x32, padding_256, pixelPerThread_4
+6183 - OpenCL, Linear2D, bs_64x16, padding_480, pixelPerThread_4
+22855 - CUDA, Array2D, bs_32x1, padding_32, pixelPerThread_4
+14185 - OpenCL, Ldg, LocalMemory, bs_256x1, padding_320, pixelPerThread_2
+5663 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_128, pixelPerThread_4
+12362 - OpenCL, Ldg, bs_512x2, padding_416, pixelPerThread_3
+6428 - OpenCL, Linear2D, bs_128x8, padding_288, pixelPerThread_1
+6499 - OpenCL, Linear2D, bs_256x4, padding_288, pixelPerThread_4
+14147 - OpenCL, Ldg, LocalMemory, bs_256x1, padding_0, pixelPerThread_4
+11206 - OpenCL, Array2D, LocalMemory, bs_64x2, padding_416, pixelPerThread_3
+16655 - CUDA, LocalMemory, bs_512x2, padding_480, pixelPerThread_4
+7823 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_0, pixelPerThread_4
+13428 - OpenCL, Ldg, LocalMemory, bs_128x2, padding_256, pixelPerThread_1
+5993 - OpenCL, Linear2D, bs_64x1, padding_64, pixelPerThread_2
+5041 - OpenCL, Linear1D, LocalMemory, bs_256x4, padding_64, pixelPerThread_2
+23359 - CUDA, Array2D, bs_128x1, padding_256, pixelPerThread_4
+11218 - OpenCL, Array2D, LocalMemory, bs_64x2, padding_512, pixelPerThread_3
+3712 - OpenCL, Linear1D, bs_512x1, padding_320, pixelPerThread_1
+3364 - OpenCL, Linear1D, bs_128x1, padding_256, pixelPerThread_1
+9871 - OpenCL, Array2D, bs_256x1, padding_64, pixelPerThread_4
+3673 - OpenCL, Linear1D, bs_512x1, padding_0, pixelPerThread_2
+23235 - CUDA, Array2D, bs_64x4, padding_352, pixelPerThread_4
+9339 - OpenCL, Array2D, bs_256x4, padding_160, pixelPerThread_4
+5847 - OpenCL, Linear2D, bs_32x8, padding_512, pixelPerThread_4
+24785 - CUDA, Array2D, LocalMemory, bs_128x1, padding_256, pixelPerThread_2
+9834 - OpenCL, Array2D, bs_64x8, padding_320, pixelPerThread_3
+6780 - OpenCL, Linear2D, bs_32x2, padding_384, pixelPerThread_1
+10689 - OpenCL, Array2D, LocalMemory, bs_128x8, padding_96, pixelPerThread_2
+5208 - OpenCL, Linear1D, LocalMemory, bs_512x2, padding_320, pixelPerThread_1
+5625 - OpenCL, Linear1D, LocalMemory, bs_256x1, padding_384, pixelPerThread_2
+12450 - OpenCL, Ldg, bs_32x2, padding_32, pixelPerThread_3
+4201 - OpenCL, Linear1D, bs_256x1, padding_416, pixelPerThread_2
+8831 - OpenCL, Array2D, bs_32x32, padding_448, pixelPerThread_4
+10088 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_192, pixelPerThread_1
+14132 - OpenCL, Ldg, LocalMemory, bs_64x8, padding_448, pixelPerThread_1
+12810 - OpenCL, Ldg, bs_256x2, padding_192, pixelPerThread_3
+13029 - OpenCL, Ldg, LocalMemory, bs_32x16, padding_320, pixelPerThread_2
+24983 - CUDA, Array2D, LocalMemory, bs_128x8, padding_192, pixelPerThread_4
+25117 - CUDA, Array2D, LocalMemory, bs_512x1, padding_192, pixelPerThread_2
+11824 - OpenCL, Ldg, bs_64x4, padding_480, pixelPerThread_1
+4807 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_352, pixelPerThread_4
+8874 - OpenCL, Array2D, bs_64x1, padding_256, pixelPerThread_3
+6647 - OpenCL, Linear2D, bs_512x2, padding_384, pixelPerThread_4
+11382 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_192, pixelPerThread_3
+10908 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_224, pixelPerThread_1
+13807 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_0, pixelPerThread_4
+6994 - OpenCL, Linear2D, bs_64x8, padding_448, pixelPerThread_3
+25418 - CUDA, Array2D, LocalMemory, bs_32x4, padding_416, pixelPerThread_3
+25089 - CUDA, Array2D, LocalMemory, bs_256x4, padding_512, pixelPerThread_2
+6351 - OpenCL, Linear2D, bs_128x4, padding_192, pixelPerThread_4
+8512 - OpenCL, Linear2D, LocalMemory, bs_256x2, padding_96, pixelPerThread_1
+11961 - OpenCL, Ldg, bs_128x1, padding_480, pixelPerThread_2
+5330 - OpenCL, Linear1D, LocalMemory, bs_32x2, padding_192, pixelPerThread_3
+4829 - OpenCL, Linear1D, LocalMemory, bs_128x2, padding_0, pixelPerThread_2
+8784 - OpenCL, Array2D, bs_32x32, padding_96, pixelPerThread_1
+9067 - OpenCL, Array2D, bs_128x1, padding_160, pixelPerThread_4
+18771 - CUDA, Linear1D, LocalMemory, bs_32x32, padding_0, pixelPerThread_4
+24026 - CUDA, Array2D, bs_64x2, padding_160, pixelPerThread_3
+4366 - OpenCL, Linear1D, LocalMemory, bs_32x8, padding_96, pixelPerThread_3
+12099 - OpenCL, Ldg, bs_128x4, padding_480, pixelPerThread_4
+25247 - CUDA, Array2D, LocalMemory, bs_1024x1, padding_128, pixelPerThread_4
+11118 - OpenCL, Array2D, LocalMemory, bs_32x4, padding_256, pixelPerThread_3
+12026 - OpenCL, Ldg, bs_128x2, padding_448, pixelPerThread_3
+6505 - OpenCL, Linear2D, bs_256x4, padding_352, pixelPerThread_2
+7544 - OpenCL, Linear2D, LocalMemory, bs_64x4, padding_512, pixelPerThread_1
+25334 - CUDA, Array2D, LocalMemory, bs_32x2, padding_288, pixelPerThread_3
+7793 - OpenCL, Linear2D, LocalMemory, bs_128x4, padding_320, pixelPerThread_2
+8277 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_384, pixelPerThread_2
+24437 - CUDA, Array2D, LocalMemory, bs_32x16, padding_192, pixelPerThread_2
+11918 - OpenCL, Ldg, bs_128x1, padding_128, pixelPerThread_3
+12113 - OpenCL, Ldg, bs_128x8, padding_64, pixelPerThread_2
+13723 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_416, pixelPerThread_4
+24314 - CUDA, Array2D, LocalMemory, bs_32x1, padding_288, pixelPerThread_3
+12592 - OpenCL, Ldg, bs_64x2, padding_96, pixelPerThread_1
+23384 - CUDA, Array2D, bs_128x1, padding_480, pixelPerThread_1
+10307 - OpenCL, Array2D, LocalMemory, bs_64x1, padding_288, pixelPerThread_4
+3349 - OpenCL, Linear1D, bs_128x1, padding_128, pixelPerThread_2
+10424 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_160, pixelPerThread_1
+13063 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_32, pixelPerThread_4
+14209 - OpenCL, Ldg, LocalMemory, bs_256x1, padding_512, pixelPerThread_2
+16685 - CUDA, LocalMemory, bs_1024x1, padding_192, pixelPerThread_2
+3691 - OpenCL, Linear1D, bs_512x1, padding_128, pixelPerThread_4
+12292 - OpenCL, Ldg, bs_512x1, padding_416, pixelPerThread_1
+3527 - OpenCL, Linear1D, bs_128x4, padding_448, pixelPerThread_4
+5337 - OpenCL, Linear1D, LocalMemory, bs_32x2, padding_256, pixelPerThread_2
+10696 - OpenCL, Array2D, LocalMemory, bs_128x8, padding_160, pixelPerThread_1
+13133 - OpenCL, Ldg, LocalMemory, bs_64x1, padding_64, pixelPerThread_2
+9299 - OpenCL, Array2D, bs_128x8, padding_384, pixelPerThread_4
+11377 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_160, pixelPerThread_2
+25010 - CUDA, Array2D, LocalMemory, bs_128x8, padding_416, pixelPerThread_3
+24758 - CUDA, Array2D, LocalMemory, bs_128x1, padding_32, pixelPerThread_3
+4111 - OpenCL, Linear1D, bs_64x8, padding_224, pixelPerThread_4
+3422 - OpenCL, Linear1D, bs_128x2, padding_160, pixelPerThread_3
+12719 - OpenCL, Ldg, bs_256x1, padding_0, pixelPerThread_4
+9091 - OpenCL, Array2D, bs_128x1, padding_352, pixelPerThread_4
+4937 - OpenCL, Linear1D, LocalMemory, bs_128x4, padding_320, pixelPerThread_2
+4444 - OpenCL, Linear1D, LocalMemory, bs_32x16, padding_192, pixelPerThread_1
+4542 - OpenCL, Linear1D, LocalMemory, bs_32x32, padding_416, pixelPerThread_3
+23774 - CUDA, Array2D, bs_512x2, padding_320, pixelPerThread_3
+4790 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_224, pixelPerThread_3
+13319 - OpenCL, Ldg, LocalMemory, bs_64x16, padding_448, pixelPerThread_4
+13288 - OpenCL, Ldg, LocalMemory, bs_64x16, padding_224, pixelPerThread_1
+13693 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_192, pixelPerThread_2
+10031 - OpenCL, Array2D, LocalMemory, bs_32x1, padding_256, pixelPerThread_4
+19318 - CUDA, Linear1D, LocalMemory, bs_256x4, padding_32, pixelPerThread_3
+6616 - OpenCL, Linear2D, bs_512x2, padding_160, pixelPerThread_1
+10351 - OpenCL, Array2D, LocalMemory, bs_64x4, padding_96, pixelPerThread_4
+6354 - OpenCL, Linear2D, bs_128x4, padding_224, pixelPerThread_3
+7254 - OpenCL, Linear2D, LocalMemory, bs_32x8, padding_352, pixelPerThread_3
+12688 - OpenCL, Ldg, bs_64x8, padding_320, pixelPerThread_1
+9153 - OpenCL, Array2D, bs_128x2, padding_320, pixelPerThread_2
+8269 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_320, pixelPerThread_2
+12211 - OpenCL, Ldg, bs_256x4, padding_288, pixelPerThread_4
+10630 - OpenCL, Array2D, LocalMemory, bs_128x4, padding_160, pixelPerThread_3
+12573 - OpenCL, Ldg, bs_32x4, padding_480, pixelPerThread_2
+3201 - OpenCL, Linear1D, bs_64x4, padding_32, pixelPerThread_2
+11788 - OpenCL, Ldg, bs_64x4, padding_192, pixelPerThread_1
+13417 - OpenCL, Ldg, LocalMemory, bs_128x2, padding_160, pixelPerThread_2
+24462 - CUDA, Array2D, LocalMemory, bs_32x16, padding_384, pixelPerThread_3
+12673 - OpenCL, Ldg, bs_64x8, padding_192, pixelPerThread_2
+13068 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_96, pixelPerThread_1
+25693 - CUDA, Array2D, LocalMemory, bs_256x2, padding_448, pixelPerThread_2
+24166 - CUDA, Array2D, bs_256x1, padding_192, pixelPerThread_3
+4760 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_0, pixelPerThread_1
+7840 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_160, pixelPerThread_1
+24204 - CUDA, Array2D, bs_256x1, padding_512, pixelPerThread_1
+25416 - CUDA, Array2D, LocalMemory, bs_32x4, padding_416, pixelPerThread_1
+10309 - OpenCL, Array2D, LocalMemory, bs_64x1, padding_320, pixelPerThread_2
+7763 - OpenCL, Linear2D, LocalMemory, bs_128x4, padding_64, pixelPerThread_4
+10394 - OpenCL, Array2D, LocalMemory, bs_64x4, padding_448, pixelPerThread_3
+23948 - CUDA, Array2D, bs_32x4, padding_96, pixelPerThread_1
+25081 - CUDA, Array2D, LocalMemory, bs_256x4, padding_448, pixelPerThread_2
+8097 - OpenCL, Linear2D, LocalMemory, bs_1024x1, padding_32, pixelPerThread_2
+16727 - CUDA, LocalMemory, bs_1024x1, padding_512, pixelPerThread_4
+9762 - OpenCL, Array2D, bs_64x2, padding_288, pixelPerThread_3
+3415 - OpenCL, Linear1D, bs_128x2, padding_96, pixelPerThread_4
+6707 - OpenCL, Linear2D, bs_1024x1, padding_320, pixelPerThread_4
+8999 - OpenCL, Array2D, bs_64x16, padding_160, pixelPerThread_4
+3508 - OpenCL, Linear1D, bs_128x4, padding_320, pixelPerThread_1
+13472 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_64, pixelPerThread_1
+3684 - OpenCL, Linear1D, bs_512x1, padding_96, pixelPerThread_1
+12842 - OpenCL, Ldg, bs_256x2, padding_448, pixelPerThread_3
+4025 - OpenCL, Linear1D, bs_64x2, padding_96, pixelPerThread_2
+4970 - OpenCL, Linear1D, LocalMemory, bs_128x8, padding_32, pixelPerThread_3
+8965 - OpenCL, Array2D, bs_64x4, padding_448, pixelPerThread_2
+23047 - CUDA, Array2D, bs_32x16, padding_480, pixelPerThread_4
+10035 - OpenCL, Array2D, LocalMemory, bs_32x1, padding_288, pixelPerThread_4
+10435 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_224, pixelPerThread_4
+11951 - OpenCL, Ldg, bs_128x1, padding_384, pixelPerThread_4
+6032 - OpenCL, Linear2D, bs_64x1, padding_384, pixelPerThread_1
+9848 - OpenCL, Array2D, bs_64x8, padding_448, pixelPerThread_1
+7093 - OpenCL, Linear2D, bs_256x2, padding_160, pixelPerThread_2
+4412 - OpenCL, Linear1D, LocalMemory, bs_32x8, padding_480, pixelPerThread_1
+10150 - OpenCL, Array2D, LocalMemory, bs_32x16, padding_128, pixelPerThread_3
+13962 - OpenCL, Ldg, LocalMemory, bs_32x4, padding_160, pixelPerThread_3
+13746 - OpenCL, Ldg, LocalMemory, bs_512x2, padding_64, pixelPerThread_3
+3467 - OpenCL, Linear1D, bs_128x2, padding_512, pixelPerThread_4
+9005 - OpenCL, Array2D, bs_64x16, padding_224, pixelPerThread_2
+23209 - CUDA, Array2D, bs_64x4, padding_160, pixelPerThread_2
+12633 - OpenCL, Ldg, bs_64x2, padding_416, pixelPerThread_2
+3955 - OpenCL, Linear1D, bs_32x4, padding_64, pixelPerThread_4
+7879 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_448, pixelPerThread_4
+22418 - CUDA, Linear2D, LocalMemory, bs_1024x1, padding_352, pixelPerThread_3
+2162 - OpenCL, LocalMemory, bs_128x8, padding_416, pixelPerThread_3
+13859 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_416, pixelPerThread_4
+5675 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_224, pixelPerThread_4
+16639 - CUDA, LocalMemory, bs_512x2, padding_352, pixelPerThread_4
+8950 - OpenCL, Array2D, bs_64x4, padding_320, pixelPerThread_3
+11996 - OpenCL, Ldg, bs_128x2, padding_224, pixelPerThread_1
+12436 - OpenCL, Ldg, bs_1024x1, padding_480, pixelPerThread_1
+11012 - OpenCL, Array2D, LocalMemory, bs_1024x1, padding_512, pixelPerThread_1
+13573 - OpenCL, Ldg, LocalMemory, bs_128x8, padding_320, pixelPerThread_2
+8805 - OpenCL, Array2D, bs_32x32, padding_256, pixelPerThread_2
+9084 - OpenCL, Array2D, bs_128x1, padding_320, pixelPerThread_1
+13283 - OpenCL, Ldg, LocalMemory, bs_64x16, padding_160, pixelPerThread_4
+10772 - OpenCL, Array2D, LocalMemory, bs_256x4, padding_224, pixelPerThread_1
+6386 - OpenCL, Linear2D, bs_128x4, padding_480, pixelPerThread_3
+12978 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_448, pixelPerThread_3
+5761 - OpenCL, Linear2D, bs_32x1, padding_384, pixelPerThread_2
+13246 - OpenCL, Ldg, LocalMemory, bs_64x4, padding_416, pixelPerThread_3
+10294 - OpenCL, Array2D, LocalMemory, bs_64x1, padding_192, pixelPerThread_3
+7995 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_288, pixelPerThread_4
+11442 - OpenCL, Ldg, bs_32x1, padding_128, pixelPerThread_3
+4475 - OpenCL, Linear1D, LocalMemory, bs_32x16, padding_416, pixelPerThread_4
+25667 - CUDA, Array2D, LocalMemory, bs_256x2, padding_224, pixelPerThread_4
+3610 - OpenCL, Linear1D, bs_256x4, padding_32, pixelPerThread_3
+18802 - CUDA, Linear1D, LocalMemory, bs_32x32, padding_256, pixelPerThread_3
+7728 - OpenCL, Linear2D, LocalMemory, bs_128x2, padding_352, pixelPerThread_1
+25128 - CUDA, Array2D, LocalMemory, bs_512x1, padding_288, pixelPerThread_1
+3317 - OpenCL, Linear1D, bs_64x16, padding_416, pixelPerThread_2
+3827 - OpenCL, Linear1D, bs_1024x1, padding_128, pixelPerThread_4
+13104 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_384, pixelPerThread_1
+23431 - CUDA, Array2D, bs_128x2, padding_288, pixelPerThread_4
+9134 - OpenCL, Array2D, bs_128x2, padding_160, pixelPerThread_3
+5583 - OpenCL, Linear1D, LocalMemory, bs_256x1, padding_32, pixelPerThread_4
+9541 - OpenCL, Array2D, bs_1024x1, padding_160, pixelPerThread_2
+4231 - OpenCL, Linear1D, bs_256x2, padding_96, pixelPerThread_4
+10878 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_512, pixelPerThread_3
+10005 - OpenCL, Array2D, LocalMemory, bs_32x1, padding_64, pixelPerThread_2
+13843 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_288, pixelPerThread_4
+25007 - CUDA, Array2D, LocalMemory, bs_128x8, padding_384, pixelPerThread_4
+2131 - OpenCL, LocalMemory, bs_128x8, padding_160, pixelPerThread_4
+12545 - OpenCL, Ldg, bs_32x4, padding_256, pixelPerThread_2
+11120 - OpenCL, Array2D, LocalMemory, bs_32x4, padding_288, pixelPerThread_1
+7162 - OpenCL, Linear2D, LocalMemory, bs_32x1, padding_160, pixelPerThread_3
+10944 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_512, pixelPerThread_1
+7769 - OpenCL, Linear2D, LocalMemory, bs_128x4, padding_128, pixelPerThread_2
+9818 - OpenCL, Array2D, bs_64x8, padding_192, pixelPerThread_3
+24355 - CUDA, Array2D, LocalMemory, bs_32x8, padding_64, pixelPerThread_4
+9660 - OpenCL, Array2D, bs_32x4, padding_32, pixelPerThread_1
+11669 - OpenCL, Ldg, bs_32x32, padding_320, pixelPerThread_2
+9419 - OpenCL, Array2D, bs_512x1, padding_256, pixelPerThread_4
+13124 - OpenCL, Ldg, LocalMemory, bs_64x1, padding_0, pixelPerThread_1
+9066 - OpenCL, Array2D, bs_128x1, padding_160, pixelPerThread_3
+6854 - OpenCL, Linear2D, bs_32x4, padding_416, pixelPerThread_3
+5858 - OpenCL, Linear2D, bs_32x16, padding_64, pixelPerThread_3
+5187 - OpenCL, Linear1D, LocalMemory, bs_512x2, padding_128, pixelPerThread_4
+7412 - OpenCL, Linear2D, LocalMemory, bs_64x1, padding_0, pixelPerThread_1
+6187 - OpenCL, Linear2D, bs_64x16, padding_512, pixelPerThread_4
+10105 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_320, pixelPerThread_2
+9882 - OpenCL, Array2D, bs_256x1, padding_160, pixelPerThread_3
+12786 - OpenCL, Ldg, bs_256x2, padding_0, pixelPerThread_3
+5758 - OpenCL, Linear2D, bs_32x1, padding_352, pixelPerThread_3
+6849 - OpenCL, Linear2D, bs_32x4, padding_384, pixelPerThread_2
+13745 - OpenCL, Ldg, LocalMemory, bs_512x2, padding_64, pixelPerThread_2
+23130 - CUDA, Array2D, bs_64x1, padding_64, pixelPerThread_3
+25441 - CUDA, Array2D, LocalMemory, bs_64x2, padding_64, pixelPerThread_2
+4776 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_128, pixelPerThread_1
+24832 - CUDA, Array2D, LocalMemory, bs_128x2, padding_96, pixelPerThread_1
+5933 - OpenCL, Linear2D, bs_32x32, padding_128, pixelPerThread_2
+13276 - OpenCL, Ldg, LocalMemory, bs_64x16, padding_128, pixelPerThread_1
+5828 - OpenCL, Linear2D, bs_32x8, padding_384, pixelPerThread_1
+8238 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_64, pixelPerThread_3
+13222 - OpenCL, Ldg, LocalMemory, bs_64x4, padding_224, pixelPerThread_3
+9697 - OpenCL, Array2D, bs_32x4, padding_320, pixelPerThread_2
+24286 - CUDA, Array2D, LocalMemory, bs_32x1, padding_64, pixelPerThread_3
+8474 - OpenCL, Linear2D, LocalMemory, bs_256x1, padding_320, pixelPerThread_3
+23766 - CUDA, Array2D, bs_512x2, padding_256, pixelPerThread_3
+10382 - OpenCL, Array2D, LocalMemory, bs_64x4, padding_352, pixelPerThread_3
+7620 - OpenCL, Linear2D, LocalMemory, bs_128x1, padding_32, pixelPerThread_1
+13896 - OpenCL, Ldg, LocalMemory, bs_32x2, padding_192, pixelPerThread_1
+3500 - OpenCL, Linear1D, bs_128x4, padding_256, pixelPerThread_1
+22227 - CUDA, Linear2D, LocalMemory, bs_256x4, padding_448, pixelPerThread_4
+3791 - OpenCL, Linear1D, bs_512x2, padding_384, pixelPerThread_4
+8477 - OpenCL, Linear2D, LocalMemory, bs_256x1, padding_352, pixelPerThread_2
+10527 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_416, pixelPerThread_4
+7929 - OpenCL, Linear2D, LocalMemory, bs_256x4, padding_320, pixelPerThread_2
+4913 - OpenCL, Linear1D, LocalMemory, bs_128x4, padding_128, pixelPerThread_2
+16403 - CUDA, LocalMemory, bs_128x8, padding_96, pixelPerThread_4
+16179 - CUDA, LocalMemory, bs_64x16, padding_480, pixelPerThread_4
+24610 - CUDA, Array2D, LocalMemory, bs_64x1, padding_480, pixelPerThread_3
+12167 - OpenCL, Ldg, bs_128x8, padding_480, pixelPerThread_4
+6958 - OpenCL, Linear2D, bs_64x8, padding_160, pixelPerThread_3
+5267 - OpenCL, Linear1D, LocalMemory, bs_1024x1, padding_224, pixelPerThread_4
+8333 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_288, pixelPerThread_2
+21879 - CUDA, Linear2D, LocalMemory, bs_64x16, padding_384, pixelPerThread_4
+6259 - OpenCL, Linear2D, bs_128x2, padding_0, pixelPerThread_4
+4256 - OpenCL, Linear1D, bs_256x2, padding_320, pixelPerThread_1
+5465 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_192, pixelPerThread_2
+24732 - CUDA, Array2D, LocalMemory, bs_64x16, padding_384, pixelPerThread_1
+14047 - OpenCL, Ldg, LocalMemory, bs_64x2, padding_288, pixelPerThread_4
+12381 - OpenCL, Ldg, bs_1024x1, padding_32, pixelPerThread_2
+3560 - OpenCL, Linear1D, bs_128x8, padding_192, pixelPerThread_1
+13720 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_416, pixelPerThread_1
+11916 - OpenCL, Ldg, bs_128x1, padding_128, pixelPerThread_1
+24013 - CUDA, Array2D, bs_64x2, padding_64, pixelPerThread_2
+8276 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_384, pixelPerThread_1
+16685 - CUDA, LocalMemory, bs_1024x1, padding_192, pixelPerThread_2
+7383 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_288, pixelPerThread_4
+4208 - OpenCL, Linear1D, bs_256x1, padding_480, pixelPerThread_1
+12421 - OpenCL, Ldg, bs_1024x1, padding_352, pixelPerThread_2
+4255 - OpenCL, Linear1D, bs_256x2, padding_288, pixelPerThread_4
+6270 - OpenCL, Linear2D, bs_128x2, padding_96, pixelPerThread_3
+8741 - OpenCL, Array2D, bs_32x16, padding_288, pixelPerThread_2
+5833 - OpenCL, Linear2D, bs_32x8, padding_416, pixelPerThread_2
+5763 - OpenCL, Linear2D, bs_32x1, padding_384, pixelPerThread_4
+9606 - OpenCL, Array2D, bs_32x2, padding_128, pixelPerThread_3
+7961 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_32, pixelPerThread_2
+5096 - OpenCL, Linear1D, LocalMemory, bs_256x4, padding_512, pixelPerThread_1
+9164 - OpenCL, Array2D, bs_128x2, padding_416, pixelPerThread_1
+11096 - OpenCL, Array2D, LocalMemory, bs_32x4, padding_96, pixelPerThread_1
+12484 - OpenCL, Ldg, bs_32x2, padding_320, pixelPerThread_1
+9962 - OpenCL, Array2D, bs_256x2, padding_256, pixelPerThread_3
+7103 - OpenCL, Linear2D, bs_256x2, padding_224, pixelPerThread_4
+10491 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_128, pixelPerThread_4
+12183 - OpenCL, Ldg, bs_256x4, padding_64, pixelPerThread_4
+11393 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_288, pixelPerThread_2
+24912 - CUDA, Array2D, LocalMemory, bs_128x4, padding_192, pixelPerThread_1
+24991 - CUDA, Array2D, LocalMemory, bs_128x8, padding_256, pixelPerThread_4
+10753 - OpenCL, Array2D, LocalMemory, bs_256x4, padding_64, pixelPerThread_2
+5696 - OpenCL, Linear1D, LocalMemory, bs_256x2, padding_416, pixelPerThread_1
+24474 - CUDA, Array2D, LocalMemory, bs_32x16, padding_480, pixelPerThread_3
+13894 - OpenCL, Ldg, LocalMemory, bs_32x2, padding_160, pixelPerThread_3
+23379 - CUDA, Array2D, bs_128x1, padding_416, pixelPerThread_4
+24606 - CUDA, Array2D, LocalMemory, bs_64x1, padding_448, pixelPerThread_3
+21882 - CUDA, Linear2D, LocalMemory, bs_64x16, padding_416, pixelPerThread_3
+23178 - CUDA, Array2D, bs_64x1, padding_448, pixelPerThread_3
+11639 - OpenCL, Ldg, bs_32x32, padding_64, pixelPerThread_4
+11589 - OpenCL, Ldg, bs_32x16, padding_224, pixelPerThread_2
+6598 - OpenCL, Linear2D, bs_512x2, padding_0, pixelPerThread_3
+5451 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_64, pixelPerThread_4
+5194 - OpenCL, Linear1D, LocalMemory, bs_512x2, padding_192, pixelPerThread_3
+5317 - OpenCL, Linear1D, LocalMemory, bs_32x2, padding_96, pixelPerThread_2
+24339 - CUDA, Array2D, LocalMemory, bs_32x1, padding_480, pixelPerThread_4
+5274 - OpenCL, Linear1D, LocalMemory, bs_1024x1, padding_288, pixelPerThread_3
+8819 - OpenCL, Array2D, bs_32x32, padding_352, pixelPerThread_4
+3686 - OpenCL, Linear1D, bs_512x1, padding_96, pixelPerThread_3
+22999 - CUDA, Array2D, bs_32x16, padding_96, pixelPerThread_4
+11572 - OpenCL, Ldg, bs_32x16, padding_96, pixelPerThread_1
+9332 - OpenCL, Array2D, bs_256x4, padding_128, pixelPerThread_1
+24965 - CUDA, Array2D, LocalMemory, bs_128x8, padding_64, pixelPerThread_2
+13915 - OpenCL, Ldg, LocalMemory, bs_32x2, padding_320, pixelPerThread_4
+13780 - OpenCL, Ldg, LocalMemory, bs_512x2, padding_352, pixelPerThread_1
+4368 - OpenCL, Linear1D, LocalMemory, bs_32x8, padding_128, pixelPerThread_1
+5742 - OpenCL, Linear2D, bs_32x1, padding_224, pixelPerThread_3
+13174 - OpenCL, Ldg, LocalMemory, bs_64x1, padding_384, pixelPerThread_3
+12855 - OpenCL, Ldg, LocalMemory, bs_32x1, padding_0, pixelPerThread_4
+19539 - CUDA, Linear1D, LocalMemory, bs_1024x1, padding_160, pixelPerThread_4
+5558 - OpenCL, Linear1D, LocalMemory, bs_64x8, padding_384, pixelPerThread_3
+6398 - OpenCL, Linear2D, bs_128x8, padding_32, pixelPerThread_3
+25678 - CUDA, Array2D, LocalMemory, bs_256x2, padding_320, pixelPerThread_3
+8619 - OpenCL, Array2D, bs_32x1, padding_384, pixelPerThread_4
+8230 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_0, pixelPerThread_3
+7258 - OpenCL, Linear2D, LocalMemory, bs_32x8, padding_384, pixelPerThread_3
+10930 - OpenCL, Array2D, LocalMemory, bs_512x2, padding_384, pixelPerThread_3
+24126 - CUDA, Array2D, bs_64x8, padding_416, pixelPerThread_3
+7230 - OpenCL, Linear2D, LocalMemory, bs_32x8, padding_160, pixelPerThread_3
+2407 - OpenCL, LocalMemory, bs_1024x1, padding_192, pixelPerThread_4
+10512 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_320, pixelPerThread_1
+1850 - OpenCL, LocalMemory, bs_64x16, padding_96, pixelPerThread_3
+6754 - OpenCL, Linear2D, bs_32x2, padding_160, pixelPerThread_3
+16175 - CUDA, LocalMemory, bs_64x16, padding_448, pixelPerThread_4
+3077 - OpenCL, Linear1D, bs_32x32, padding_128, pixelPerThread_2
+3091 - OpenCL, Linear1D, bs_32x32, padding_224, pixelPerThread_4
+9824 - OpenCL, Array2D, bs_64x8, padding_256, pixelPerThread_1
+12012 - OpenCL, Ldg, bs_128x2, padding_352, pixelPerThread_1
+21854 - CUDA, Linear2D, LocalMemory, bs_64x16, padding_192, pixelPerThread_3
+1886 - OpenCL, LocalMemory, bs_64x16, padding_384, pixelPerThread_3
+13862 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_448, pixelPerThread_3
+7707 - OpenCL, Linear2D, LocalMemory, bs_128x2, padding_160, pixelPerThread_4
+8046 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_160, pixelPerThread_3
+8801 - OpenCL, Array2D, bs_32x32, padding_224, pixelPerThread_2
+6619 - OpenCL, Linear2D, bs_512x2, padding_160, pixelPerThread_4
+10493 - OpenCL, Array2D, LocalMemory, bs_128x1, padding_160, pixelPerThread_2
+14279 - OpenCL, Ldg, LocalMemory, bs_256x2, padding_512, pixelPerThread_4
+23828 - CUDA, Array2D, bs_1024x1, padding_224, pixelPerThread_1
+4181 - OpenCL, Linear1D, bs_256x1, padding_256, pixelPerThread_2
+12213 - OpenCL, Ldg, bs_256x4, padding_320, pixelPerThread_2
+12113 - OpenCL, Ldg, bs_128x8, padding_64, pixelPerThread_2
+6522 - OpenCL, Linear2D, bs_256x4, padding_480, pixelPerThread_3
+19027 - CUDA, Linear1D, LocalMemory, bs_64x16, padding_416, pixelPerThread_4
+6076 - OpenCL, Linear2D, bs_64x4, padding_192, pixelPerThread_1
+7072 - OpenCL, Linear2D, bs_256x2, padding_0, pixelPerThread_1
+10835 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_160, pixelPerThread_4
+5200 - OpenCL, Linear1D, LocalMemory, bs_512x2, padding_256, pixelPerThread_1
+8051 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_192, pixelPerThread_4
+9555 - OpenCL, Array2D, bs_1024x1, padding_256, pixelPerThread_4
+4904 - OpenCL, Linear1D, LocalMemory, bs_128x4, padding_64, pixelPerThread_1
+7162 - OpenCL, Linear2D, LocalMemory, bs_32x1, padding_160, pixelPerThread_3
+12580 - OpenCL, Ldg, bs_64x2, padding_0, pixelPerThread_1
+7859 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_288, pixelPerThread_4
+7574 - OpenCL, Linear2D, LocalMemory, bs_64x16, padding_192, pixelPerThread_3
+23879 - CUDA, Array2D, bs_32x2, padding_64, pixelPerThread_4
+5841 - OpenCL, Linear2D, bs_32x8, padding_480, pixelPerThread_2
+13525 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_480, pixelPerThread_2
+3726 - OpenCL, Linear1D, bs_512x1, padding_416, pixelPerThread_3
+5612 - OpenCL, Linear1D, LocalMemory, bs_256x1, padding_288, pixelPerThread_1
+25248 - CUDA, Array2D, LocalMemory, bs_1024x1, padding_160, pixelPerThread_1
+8286 - OpenCL, Linear2D, LocalMemory, bs_32x4, padding_448, pixelPerThread_3
+11600 - OpenCL, Ldg, bs_32x16, padding_320, pixelPerThread_1
+11296 - OpenCL, Array2D, LocalMemory, bs_256x1, padding_64, pixelPerThread_1
+19562 - CUDA, Linear1D, LocalMemory, bs_1024x1, padding_352, pixelPerThread_3
+3640 - OpenCL, Linear1D, bs_256x4, padding_288, pixelPerThread_1
+12776 - OpenCL, Ldg, bs_256x1, padding_480, pixelPerThread_1
+5791 - OpenCL, Linear2D, bs_32x8, padding_64, pixelPerThread_4
+8676 - OpenCL, Array2D, bs_32x8, padding_320, pixelPerThread_1
+22373 - CUDA, Linear2D, LocalMemory, bs_1024x1, padding_0, pixelPerThread_2
+11058 - OpenCL, Array2D, LocalMemory, bs_32x2, padding_320, pixelPerThread_3
+12924 - OpenCL, Ldg, LocalMemory, bs_32x8, padding_32, pixelPerThread_1
+10456 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_416, pixelPerThread_1
+11571 - OpenCL, Ldg, bs_32x16, padding_64, pixelPerThread_4
+28093 - CUDA, Ldg, LocalMemory, bs_1024x1, padding_64, pixelPerThread_2
+9578 - OpenCL, Array2D, bs_1024x1, padding_448, pixelPerThread_3
+7168 - OpenCL, Linear2D, LocalMemory, bs_32x1, padding_224, pixelPerThread_1
+23060 - CUDA, Array2D, bs_32x32, padding_64, pixelPerThread_1
+24605 - CUDA, Array2D, LocalMemory, bs_64x1, padding_448, pixelPerThread_2
+23403 - CUDA, Array2D, bs_128x2, padding_64, pixelPerThread_4
+6373 - OpenCL, Linear2D, bs_128x4, padding_384, pixelPerThread_2
+23117 - CUDA, Array2D, bs_32x32, padding_512, pixelPerThread_2
+7922 - OpenCL, Linear2D, LocalMemory, bs_256x4, padding_256, pixelPerThread_3
+25125 - CUDA, Array2D, LocalMemory, bs_512x1, padding_256, pixelPerThread_2
+8986 - OpenCL, Array2D, bs_64x16, padding_64, pixelPerThread_3
+24425 - CUDA, Array2D, LocalMemory, bs_32x16, padding_96, pixelPerThread_2
+9639 - OpenCL, Array2D, bs_32x2, padding_384, pixelPerThread_4
+23983 - CUDA, Array2D, bs_32x4, padding_352, pixelPerThread_4
+12028 - OpenCL, Ldg, bs_128x2, padding_480, pixelPerThread_1
+4933 - OpenCL, Linear1D, LocalMemory, bs_128x4, padding_288, pixelPerThread_2
+12781 - OpenCL, Ldg, bs_256x1, padding_512, pixelPerThread_2
+13096 - OpenCL, Ldg, LocalMemory, bs_32x32, padding_320, pixelPerThread_1
+6502 - OpenCL, Linear2D, bs_256x4, padding_320, pixelPerThread_3
+6481 - OpenCL, Linear2D, bs_256x4, padding_160, pixelPerThread_2
+4109 - OpenCL, Linear1D, bs_64x8, padding_224, pixelPerThread_2
+7369 - OpenCL, Linear2D, LocalMemory, bs_32x32, padding_192, pixelPerThread_2
+8018 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_480, pixelPerThread_3
+8206 - OpenCL, Linear2D, LocalMemory, bs_32x2, padding_352, pixelPerThread_3
+9402 - OpenCL, Array2D, bs_512x1, padding_128, pixelPerThread_3
+8315 - OpenCL, Linear2D, LocalMemory, bs_64x2, padding_128, pixelPerThread_4
+3756 - OpenCL, Linear1D, bs_512x2, padding_128, pixelPerThread_1
+24099 - CUDA, Array2D, bs_64x8, padding_192, pixelPerThread_4
+3232 - OpenCL, Linear1D, bs_64x4, padding_288, pixelPerThread_1
+7869 - OpenCL, Linear2D, LocalMemory, bs_128x8, padding_384, pixelPerThread_2
+4765 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_32, pixelPerThread_2
+9174 - OpenCL, Array2D, bs_128x2, padding_480, pixelPerThread_3
+4482 - OpenCL, Linear1D, LocalMemory, bs_32x16, padding_480, pixelPerThread_3
+23857 - CUDA, Array2D, bs_1024x1, padding_448, pixelPerThread_2
+5525 - OpenCL, Linear1D, LocalMemory, bs_64x8, padding_128, pixelPerThread_2
+24487 - CUDA, Array2D, LocalMemory, bs_32x32, padding_32, pixelPerThread_4
+10711 - OpenCL, Array2D, LocalMemory, bs_128x8, padding_256, pixelPerThread_4
+8641 - OpenCL, Array2D, bs_32x8, padding_32, pixelPerThread_2
+8892 - OpenCL, Array2D, bs_64x1, padding_416, pixelPerThread_1
+5848 - OpenCL, Linear2D, bs_32x16, padding_0, pixelPerThread_1
+3843 - OpenCL, Linear1D, bs_1024x1, padding_256, pixelPerThread_4
+4466 - OpenCL, Linear1D, LocalMemory, bs_32x16, padding_352, pixelPerThread_3
+3176 - OpenCL, Linear1D, bs_64x1, padding_384, pixelPerThread_1
+13687 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_128, pixelPerThread_4
+12425 - OpenCL, Ldg, bs_1024x1, padding_384, pixelPerThread_2
+5417 - OpenCL, Linear1D, LocalMemory, bs_32x4, padding_352, pixelPerThread_2
+10622 - OpenCL, Array2D, LocalMemory, bs_128x4, padding_96, pixelPerThread_3
+16391 - CUDA, LocalMemory, bs_128x8, padding_0, pixelPerThread_4
+8669 - OpenCL, Array2D, bs_32x8, padding_256, pixelPerThread_2
+6448 - OpenCL, Linear2D, bs_128x8, padding_448, pixelPerThread_1
+14104 - OpenCL, Ldg, LocalMemory, bs_64x8, padding_224, pixelPerThread_1
+12237 - OpenCL, Ldg, bs_256x4, padding_512, pixelPerThread_2
+4013 - OpenCL, Linear1D, bs_64x2, padding_0, pixelPerThread_2
+10412 - OpenCL, Array2D, LocalMemory, bs_64x16, padding_64, pixelPerThread_1
+4600 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_352, pixelPerThread_1
+8214 - OpenCL, Linear2D, LocalMemory, bs_32x2, padding_416, pixelPerThread_3
+24433 - CUDA, Array2D, LocalMemory, bs_32x16, padding_160, pixelPerThread_2
+3325 - OpenCL, Linear1D, bs_64x16, padding_480, pixelPerThread_2
+19298 - CUDA, Linear1D, LocalMemory, bs_128x8, padding_416, pixelPerThread_3
+9577 - OpenCL, Array2D, bs_1024x1, padding_448, pixelPerThread_2
+13353 - OpenCL, Ldg, LocalMemory, bs_128x1, padding_192, pixelPerThread_2
+12761 - OpenCL, Ldg, bs_256x1, padding_352, pixelPerThread_2
+4480 - OpenCL, Linear1D, LocalMemory, bs_32x16, padding_480, pixelPerThread_1
+13448 - OpenCL, Ldg, LocalMemory, bs_128x2, padding_416, pixelPerThread_1
+23932 - CUDA, Array2D, bs_32x2, padding_512, pixelPerThread_1
+10047 - OpenCL, Array2D, LocalMemory, bs_32x1, padding_384, pixelPerThread_4
+8096 - OpenCL, Linear2D, LocalMemory, bs_1024x1, padding_32, pixelPerThread_1
+5753 - OpenCL, Linear2D, bs_32x1, padding_320, pixelPerThread_2
+24939 - CUDA, Array2D, LocalMemory, bs_128x4, padding_384, pixelPerThread_4
+2443 - OpenCL, LocalMemory, bs_1024x1, padding_480, pixelPerThread_4
+13668 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_0, pixelPerThread_1
+11424 - OpenCL, Ldg, bs_32x1, padding_0, pixelPerThread_1
+3274 - OpenCL, Linear1D, bs_64x16, padding_64, pixelPerThread_3
+4210 - OpenCL, Linear1D, bs_256x1, padding_480, pixelPerThread_3
+4614 - OpenCL, Linear1D, LocalMemory, bs_64x1, padding_448, pixelPerThread_3
+23822 - CUDA, Array2D, bs_1024x1, padding_160, pixelPerThread_3
+9201 - OpenCL, Array2D, bs_128x4, padding_160, pixelPerThread_2
+9624 - OpenCL, Array2D, bs_32x2, padding_288, pixelPerThread_1
+23774 - CUDA, Array2D, bs_512x2, padding_320, pixelPerThread_3
+24939 - CUDA, Array2D, LocalMemory, bs_128x4, padding_384, pixelPerThread_4
+11888 - OpenCL, Ldg, bs_64x16, padding_448, pixelPerThread_1
+25064 - CUDA, Array2D, LocalMemory, bs_256x4, padding_320, pixelPerThread_1
+24701 - CUDA, Array2D, LocalMemory, bs_64x16, padding_128, pixelPerThread_2
+13142 - OpenCL, Ldg, LocalMemory, bs_64x1, padding_128, pixelPerThread_3
+11581 - OpenCL, Ldg, bs_32x16, padding_160, pixelPerThread_2
+2406 - OpenCL, LocalMemory, bs_1024x1, padding_192, pixelPerThread_3
+25174 - CUDA, Array2D, LocalMemory, bs_512x2, padding_96, pixelPerThread_3
+12289 - OpenCL, Ldg, bs_512x1, padding_384, pixelPerThread_2
+24469 - CUDA, Array2D, LocalMemory, bs_32x16, padding_448, pixelPerThread_2
+7645 - OpenCL, Linear2D, LocalMemory, bs_128x1, padding_224, pixelPerThread_2
+10079 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_96, pixelPerThread_4
+8072 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_384, pixelPerThread_1
+23028 - CUDA, Array2D, bs_32x16, padding_352, pixelPerThread_1
+6661 - OpenCL, Linear2D, bs_512x2, padding_512, pixelPerThread_2
+5443 - OpenCL, Linear1D, LocalMemory, bs_64x2, padding_0, pixelPerThread_4
+8756 - OpenCL, Array2D, bs_32x16, padding_416, pixelPerThread_1
+10679 - OpenCL, Array2D, LocalMemory, bs_128x8, padding_0, pixelPerThread_4
+23103 - CUDA, Array2D, bs_32x32, padding_384, pixelPerThread_4
+2909 - OpenCL, Linear1D, bs_32x1, padding_416, pixelPerThread_2
+3173 - OpenCL, Linear1D, bs_64x1, padding_352, pixelPerThread_2
+25551 - CUDA, Array2D, LocalMemory, bs_64x8, padding_384, pixelPerThread_4
+7999 - OpenCL, Linear2D, LocalMemory, bs_512x1, padding_320, pixelPerThread_4
+4085 - OpenCL, Linear1D, bs_64x8, padding_32, pixelPerThread_2
+3182 - OpenCL, Linear1D, bs_64x1, padding_416, pixelPerThread_3
+24547 - CUDA, Array2D, LocalMemory, bs_32x32, padding_512, pixelPerThread_4
+1687 - OpenCL, LocalMemory, bs_32x32, padding_416, pixelPerThread_4
+1634 - OpenCL, LocalMemory, bs_32x32, padding_0, pixelPerThread_3
+24656 - CUDA, Array2D, LocalMemory, bs_64x4, padding_320, pixelPerThread_1
+3099 - OpenCL, Linear1D, bs_32x32, padding_288, pixelPerThread_4
+4783 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_160, pixelPerThread_4
+24359 - CUDA, Array2D, LocalMemory, bs_32x8, padding_96, pixelPerThread_4
+23584 - CUDA, Array2D, bs_128x8, padding_448, pixelPerThread_1
+7698 - OpenCL, Linear2D, LocalMemory, bs_128x2, padding_96, pixelPerThread_3
+13232 - OpenCL, Ldg, LocalMemory, bs_64x4, padding_320, pixelPerThread_1
+4651 - OpenCL, Linear1D, LocalMemory, bs_64x4, padding_192, pixelPerThread_4
+25181 - CUDA, Array2D, LocalMemory, bs_512x2, padding_160, pixelPerThread_2
+7170 - OpenCL, Linear2D, LocalMemory, bs_32x1, padding_224, pixelPerThread_3
+23085 - CUDA, Array2D, bs_32x32, padding_256, pixelPerThread_2
+10872 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_480, pixelPerThread_1
+7338 - OpenCL, Linear2D, LocalMemory, bs_32x16, padding_480, pixelPerThread_3
+6550 - OpenCL, Linear2D, bs_512x1, padding_160, pixelPerThread_3
+3479 - OpenCL, Linear1D, bs_128x4, padding_64, pixelPerThread_4
+13499 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_256, pixelPerThread_4
+6320 - OpenCL, Linear2D, bs_128x2, padding_512, pixelPerThread_1
+12768 - OpenCL, Ldg, bs_256x1, padding_416, pixelPerThread_1
+19319 - CUDA, Linear1D, LocalMemory, bs_256x4, padding_32, pixelPerThread_4
+24628 - CUDA, Array2D, LocalMemory, bs_64x4, padding_96, pixelPerThread_1
+6848 - OpenCL, Linear2D, bs_32x4, padding_384, pixelPerThread_1
+11945 - OpenCL, Ldg, bs_128x1, padding_352, pixelPerThread_2
+5835 - OpenCL, Linear2D, bs_32x8, padding_416, pixelPerThread_4
+13487 - OpenCL, Ldg, LocalMemory, bs_128x4, padding_160, pixelPerThread_4
+5949 - OpenCL, Linear2D, bs_32x32, padding_256, pixelPerThread_2
+7102 - OpenCL, Linear2D, bs_256x2, padding_224, pixelPerThread_3
+12318 - OpenCL, Ldg, bs_512x2, padding_64, pixelPerThread_3
+12825 - OpenCL, Ldg, bs_256x2, padding_320, pixelPerThread_2
+11378 - OpenCL, Array2D, LocalMemory, bs_256x2, padding_160, pixelPerThread_3
+12868 - OpenCL, Ldg, LocalMemory, bs_32x1, padding_128, pixelPerThread_1
+23576 - CUDA, Array2D, bs_128x8, padding_384, pixelPerThread_1
+10832 - OpenCL, Array2D, LocalMemory, bs_512x1, padding_160, pixelPerThread_1
+22856 - CUDA, Array2D, bs_32x1, padding_64, pixelPerThread_1
+8955 - OpenCL, Array2D, bs_64x4, padding_352, pixelPerThread_4
+19347 - CUDA, Linear1D, LocalMemory, bs_256x4, padding_256, pixelPerThread_4
+10084 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_160, pixelPerThread_1
+10141 - OpenCL, Array2D, LocalMemory, bs_32x16, padding_64, pixelPerThread_2
+8583 - OpenCL, Array2D, bs_32x1, padding_96, pixelPerThread_4
+2920 - OpenCL, Linear1D, bs_32x1, padding_512, pixelPerThread_1
+9215 - OpenCL, Array2D, bs_128x4, padding_256, pixelPerThread_4
+9751 - OpenCL, Array2D, bs_64x2, padding_192, pixelPerThread_4
+8696 - OpenCL, Array2D, bs_32x8, padding_480, pixelPerThread_1
+13718 - OpenCL, Ldg, LocalMemory, bs_512x1, padding_384, pixelPerThread_3
+13160 - OpenCL, Ldg, LocalMemory, bs_64x1, padding_288, pixelPerThread_1
+3326 - OpenCL, Linear1D, bs_64x16, padding_480, pixelPerThread_3
+1663 - OpenCL, LocalMemory, bs_32x32, padding_224, pixelPerThread_4
+11306 - OpenCL, Array2D, LocalMemory, bs_256x1, padding_128, pixelPerThread_3
+10081 - OpenCL, Array2D, LocalMemory, bs_32x8, padding_128, pixelPerThread_2
+24575 - CUDA, Array2D, LocalMemory, bs_64x1, padding_192, pixelPerThread_4
+25140 - CUDA, Array2D, LocalMemory, bs_512x1, padding_384, pixelPerThread_1
+11615 - OpenCL, Ldg, bs_32x16, padding_416, pixelPerThread_4
+12311 - OpenCL, Ldg, bs_512x2, padding_0, pixelPerThread_4
+24898 - CUDA, Array2D, LocalMemory, bs_128x4, padding_64, pixelPerThread_3
+13628 - OpenCL, Ldg, LocalMemory, bs_256x4, padding_224, pixelPerThread_1
+5724 - OpenCL, Linear2D, bs_32x1, padding_96, pixelPerThread_1
+11855 - OpenCL, Ldg, bs_64x16, padding_160, pixelPerThread_4
+8027 - OpenCL, Linear2D, LocalMemory, bs_512x2, padding_0, pixelPerThread_4
+4241 - OpenCL, Linear1D, bs_256x2, padding_192, pixelPerThread_2
+12528 - OpenCL, Ldg, bs_32x4, padding_128, pixelPerThread_1
+6049 - OpenCL, Linear2D, bs_64x1, padding_512, pixelPerThread_2
+12772 - OpenCL, Ldg, bs_256x1, padding_448, pixelPerThread_1
+4861 - OpenCL, Linear1D, LocalMemory, bs_128x2, padding_256, pixelPerThread_2
+4794 - OpenCL, Linear1D, LocalMemory, bs_128x1, padding_256, pixelPerThread_3
+13461 - OpenCL, Ldg, LocalMemory, bs_128x2, padding_512, pixelPerThread_2
+24174 - CUDA, Array2D, bs_256x1, padding_256, pixelPerThread_3
+13821 - OpenCL, Ldg, LocalMemory, bs_1024x1, padding_128, pixelPerThread_2

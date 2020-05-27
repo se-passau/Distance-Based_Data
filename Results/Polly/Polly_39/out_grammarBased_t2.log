@@ -6,7 +6,7 @@ Configs with too large deviation: 0
 60000 configurations loaded.
 command: binary grammar-based numConfigs:345 seed:39
 command: printconfigs ./sampledConfigurations_grammarBased_t2.csv
-ConfigurationSampling done in 3991 ms
+ConfigurationSampling done in 2874 ms
 command: clean-sampling
 command: clean-global
 command: script ./learn_grammarBased_t3.a

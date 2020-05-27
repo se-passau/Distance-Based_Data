@@ -6,6 +6,7 @@ Configs with too large deviation: 0
 68640 configurations loaded.
 command: hybrid distribution-aware distance-metric:manhattan distribution:uniform onlyBinary:true selection:SolverSelection optimization:local number-weight-optimization:1 numConfigs:600 seed:76
 command: printconfigs ./sampledConfigurations_divDistBased_t2.csv
+ConfigurationSampling done in 497443 ms
 command: clean-sampling
 command: clean-global
 command: script ./learn_divDistBased_t3.a

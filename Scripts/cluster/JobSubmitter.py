@@ -7,7 +7,7 @@ from typing import List
 
 RUNS_FROM = 1
 RUNS_TO = 100
-CLUSTERS = [("eku", "i5"), ("kine", ""), ("zeus", "")]
+CLUSTERS = [("eku", "i5"), ("kine", ""), ("zeus", ""), ("anywhere", "")]
 CASE_STUDIES = [("BerkeleyDBC", 1000),
                 ("LLVM", 1000),
                 ("lrzip", 1),
@@ -41,7 +41,7 @@ JOB_SCRIPT_PREDICTIONS_FOREST_REGRESSOR = PREFIX + "runForestRegressorRandomHund
 JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
 JOB_SCRIPT_FAILURE_RATE = PREFIX + "failureRateRandomHundredTimes.sh "
 
-ALLOWED_TYPES = ["semi", "solv", "henard", "binom", "geom", "invgeom", "twogeom", "norm", "rand", "all", "local", "global", "grammar-based", "divDistBased"]
+ALLOWED_TYPES = ["semi", "twise", "solvBased", "henard", "binom", "geom", "invgeom", "twogeom", "norm", "rand", "all", "local", "global", "grammar-based", "divDistBased"]
 
 
 def printUsage():
@@ -85,16 +85,19 @@ def main():
     cluster = sys.argv[1]
 
     found = False
-    for c in CLUSTERS:
-        if c[0] == cluster:
-            optionsToAdd = "-A ls-apel "
-            optionsToAdd += " --constraint=\"" + c[0]
-            if (len(c) == 2 and c[1] != ""):
-                optionsToAdd += "&" + c[1]
-            optionsToAdd += "\""
-            SBATCH_OPTIONS = optionsToAdd + SBATCH_OPTIONS
-            found = True
-            break
+    if (cluster == "anywhere"):
+        found = True
+    else:
+        for c in CLUSTERS:
+            if c[0] == cluster:
+                optionsToAdd = "-A ls-apel "
+                optionsToAdd += " --constraint=\"" + c[0]
+                if (len(c) == 2 and c[1] != ""):
+                    optionsToAdd += "&" + c[1]
+                optionsToAdd += "\""
+                SBATCH_OPTIONS = optionsToAdd + SBATCH_OPTIONS
+                found = True
+                break
 
     if (not found):
         raise KeyError("Could not find " + cluster + " as cluster.")
@@ -150,6 +153,7 @@ def main():
     # Submit the array job
     SBATCH_OPTIONS = SBATCH_OPTIONS + " --array=1-" + str(len(jobs)) + " "
     commandToSubmit = SBATCH + " " + SBATCH_OPTIONS + SBATCH_SCRIPT + " " + str(JOB_ID)
+    print(commandToSubmit)
     outputString = executeCommand(commandToSubmit)
     print(outputString)
 

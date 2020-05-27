@@ -5,5 +5,6 @@ command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/Measure
 216001 configurations loaded.
 command: hybrid distribution-aware distance-metric:manhattan distribution:uniform onlyBinary:true selection:SolverSelection optimization:local number-weight-optimization:1 numConfigs:3893 seed:34
 command: printconfigs ./sampledConfigurations_divDistBased_t3.csv
+ConfigurationSampling done in 33626152 ms
 command: clean-sampling
 command: clean-global

@@ -5,7 +5,7 @@ command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/Measure
 216001 configurations loaded.
 command: binary grammar-based numConfigs:483 seed:86
 command: printconfigs ./sampledConfigurations_grammarBased_t2.csv
-ConfigurationSampling done in 6171 ms
+ConfigurationSampling done in 4229 ms
 command: clean-sampling
 command: clean-global
 command: script ./learn_grammarBased_t3.a

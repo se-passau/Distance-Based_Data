@@ -1,0 +1,7 @@
+log ./out_solverBased_t1.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+binary satoutput henard:false numConfigs:12 seed:31 
+printconfigs ./sampledConfigurations_solverBased_t1.csv
+clean-sampling

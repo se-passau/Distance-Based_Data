@@ -1,0 +1,37 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: solver z3
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+Warning: Variability model contains outdated notation. Children nodes will no longer have effect on the model. Instead use the parent node to describe the parent of an configuration option. You can also use the converter providedby the Variability Model GUI in export>convert legacy model.
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+Configs with too large deviation: 0
+1152 configurations loaded.
+command: binary grammar-based numConfigs:212 seed:14  confFaultsReport:./out_grammarBasedFailureReport_t3.log
+command: printconfigs ./sampledConfigurations_grammarBased_t3FailureReport.csv
+Number to sample: 212; Number of Configurations in Grammar: 1152
+Draw a new random number, cause 611 is already in drawn.
+Draw a new random number, cause 82 is already in drawn.
+Draw a new random number, cause 391 is already in drawn.
+Draw a new random number, cause 82 is already in drawn.
+Draw a new random number, cause 891 is already in drawn.
+Draw a new random number, cause 502 is already in drawn.
+Draw a new random number, cause 1065 is already in drawn.
+Draw a new random number, cause 1067 is already in drawn.
+Draw a new random number, cause 606 is already in drawn.
+Draw a new random number, cause 817 is already in drawn.
+Draw a new random number, cause 172 is already in drawn.
+Draw a new random number, cause 435 is already in drawn.
+Draw a new random number, cause 847 is already in drawn.
+Draw a new random number, cause 206 is already in drawn.
+Draw a new random number, cause 893 is already in drawn.
+Draw a new random number, cause 480 is already in drawn.
+Draw a new random number, cause 177 is already in drawn.
+Draw a new random number, cause 667 is already in drawn.
+Draw a new random number, cause 738 is already in drawn.
+Draw a new random number, cause 7 is already in drawn.
+Draw a new random number, cause 940 is already in drawn.
+Draw a new random number, cause 779 is already in drawn.
+Draw a new random number, cause 339 is already in drawn.
+Draw a new random number, cause 555 is already in drawn.
+0 drawn configurations were invalid
+command: clean-sampling
+command: clean-global

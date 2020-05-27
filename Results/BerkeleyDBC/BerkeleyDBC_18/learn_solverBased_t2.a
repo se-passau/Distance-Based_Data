@@ -1,0 +1,7 @@
+log ./out_solverBased_t2.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/measurements.xml
+binary satoutput henard:false numConfigs:97 seed:18 
+printconfigs ./sampledConfigurations_solverBased_t2.csv
+clean-sampling

@@ -1,0 +1,7 @@
+log ./out_twise_t1.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Hipacc/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Hipacc/measurements.xml
+binary twise t:1
+printconfigs ./sampledConfigurations_twise_t1.csv
+clean-sampling

@@ -1,0 +1,7 @@
+log ./out_random_t3.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+binary random numConfigs:212 seed:50 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/x264/allConfigurations.csv
+printconfigs ./sampledConfigurations_random_t3.csv
+clean-sampling

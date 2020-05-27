@@ -1,0 +1,7 @@
+log ./out_random_t3.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
+binary random numConfigs:2172 seed:66 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/Polly/allConfigurations.csv
+printconfigs ./sampledConfigurations_random_t3.csv
+clean-sampling

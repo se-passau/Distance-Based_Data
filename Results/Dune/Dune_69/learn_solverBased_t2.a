@@ -1,0 +1,7 @@
+log ./out_solverBased_t2.log
+solver z3
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/measurements.xml
+binary satoutput henard:false numConfigs:265 seed:69 
+printconfigs ./sampledConfigurations_solverBased_t2.csv
+clean-sampling
