@@ -5,8 +5,3 @@ command: solver z3
 command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/FeatureModel.xml
 command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/measurements.xml
 Configs with too large deviation: 0
-68640 configurations loaded.
-command: nfp Performance
-command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/7z/7z_29/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror-opt
-Learning: NumberOfConfigurationsLearning:39 NumberOfConfigurationsValidation:39

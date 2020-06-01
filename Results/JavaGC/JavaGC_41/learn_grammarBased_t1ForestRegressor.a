@@ -1,0 +1,9 @@
+log ./out_grammarBased_t1PredictionsForestRegressor.log
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/measurements.xml
+nfp Performance
+setsampleset /scratch/kallistos/Distance-Based_Data/Results/JavaGC/JavaGC_41/sampledConfigurations_grammarBased_t1.csv
+define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/my-python-env/bin
+learn-python-opt RandomForestRegressor
+analyze-learning
+clean-sampling

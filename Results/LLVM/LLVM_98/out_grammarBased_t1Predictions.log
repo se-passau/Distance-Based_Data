@@ -9,5 +9,6 @@ Configs with too large deviation: 0
 1024 configurations loaded.
 command: nfp Performance
 command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_98/sampledConfigurations_grammarBased_t1.csv
-command: learn-splconqueror-opt
+command: learn-splconqueror-opt parallelization=[True] bagging=[False] abortError=[0.5,1,2,3,4,5] minImprovement=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_accumulatedLogFunction=[True,False] learn_ratioFunction=[True,False] learn_mirrowedFunction=[True,False] backwardErrorDelta=[0.5,1,2] useBackward=[True,False]  crossValidation=[True]
 Learning: NumberOfConfigurationsLearning:11 NumberOfConfigurationsValidation:11
+Invalid variable name: minImprovement. This setting will be ignored.
