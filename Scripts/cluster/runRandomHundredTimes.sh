@@ -65,7 +65,7 @@ createAFiles () {
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
           echo "setsampleset ${sampleFile}" >> ${file};
-          echo "learn-splconqueror-opt parallelization=[True] bagging=[False] abortError=[0.5,1,2,3,4,5] minImprovement=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_accumulatedLogFunction=[True,False] learn_ratioFunction=[True,False] learn_mirrowedFunction=[True,False] backwardErrorDelta=[0.5,1,2] useBackward=[True,False]  crossValidation=[True]" >> ${file};
+          echo "learn-splconqueror-opt parallelization=[True] bagging=[False] abortError=[0.5,1,2,3,4,5] minImprovementPerRound=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_accumulatedLogFunction=[True,False] learn_ratioFunction=[True,False] learn_mirrowedFunction=[True,False] backwardErrorDelta=[0.5,1,2] useBackward=[True,False]  crossValidation=[True]" >> ${file};
           echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
 
