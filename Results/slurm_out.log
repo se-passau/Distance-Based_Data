@@ -1,33 +1,6 @@
-Run 88 out of 88.
-mono /scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Debug/CommandLine.exe /scratch/kallistos/Distance-Based_Data/Results/x264/x264_88/learnAll.a >> /dev/null;
-
-Unhandled Exception:
-System.IndexOutOfRangeException: Index was outside the bounds of the array.
-  at MachineLearning.Learning.ML_SettingsGenerator.extractSettings (System.String parameter) [0x0001b] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at MachineLearning.Learning.ML_SettingsGenerator.defineParameterSpace (System.String[] parameters, System.Collections.Generic.Dictionary`2[TKey,TValue] boolSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] intSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] doubleSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] lossFuncInterval, System.Collections.Generic.Dictionary`2[TKey,TValue] scoreMeasureInterval, System.Collections.Generic.Dictionary`2[TKey,TValue] learnTimeLimitInterval) [0x00010] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at MachineLearning.Learning.ML_SettingsGenerator.generateSettings (System.String[] parameters) [0x0009a] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at CommandLine.Commands.performOneCommand (System.String line) [0x01a17] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Commands.performOneCommand (System.String line) [0x00aa8] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Script_A.start () [0x0001b] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Script_A..ctor (System.String file) [0x00053] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Program.Main (System.String[] args) [0x00031] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-[ERROR] FATAL UNHANDLED EXCEPTION: System.IndexOutOfRangeException: Index was outside the bounds of the array.
-  at MachineLearning.Learning.ML_SettingsGenerator.extractSettings (System.String parameter) [0x0001b] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at MachineLearning.Learning.ML_SettingsGenerator.defineParameterSpace (System.String[] parameters, System.Collections.Generic.Dictionary`2[TKey,TValue] boolSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] intSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] doubleSettings, System.Collections.Generic.Dictionary`2[TKey,TValue] lossFuncInterval, System.Collections.Generic.Dictionary`2[TKey,TValue] scoreMeasureInterval, System.Collections.Generic.Dictionary`2[TKey,TValue] learnTimeLimitInterval) [0x00010] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at MachineLearning.Learning.ML_SettingsGenerator.generateSettings (System.String[] parameters) [0x0009a] in <c34b25e74d0640298429321b7adfcfd6>:0 
-  at CommandLine.Commands.performOneCommand (System.String line) [0x01a17] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Commands.performOneCommand (System.String line) [0x00aa8] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Script_A.start () [0x0001b] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Script_A..ctor (System.String file) [0x00053] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-  at CommandLine.Program.Main (System.String[] args) [0x00031] in <0c067e7e108940e6ae52e7679b427d7b>:0 
-An error occurred when performing SPL Conqueror.
-slurmstepd: error: *** JOB 95190 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95191 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95192 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95193 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95194 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95196 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95195 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95197 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95198 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
-slurmstepd: error: *** JOB 95200 ON kine10 CANCELLED AT 2020-06-01T14:23:03 ***
+Run 1 out of 1.
+Run 3 out of 3.
+Run 2 out of 2.
+mono /scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Debug/CommandLine.exe /scratch/kallistos/Distance-Based_Data/Results/BerkeleyDBC/BerkeleyDBC_2/learnAll.a >> /dev/null;
+mono /scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Debug/CommandLine.exe /scratch/kallistos/Distance-Based_Data/Results/BerkeleyDBC/BerkeleyDBC_3/learnAll.a >> /dev/null;
+mono /scratch/kallistos/SPLConqueror/SPLConqueror/CommandLine/bin/Debug/CommandLine.exe /scratch/kallistos/Distance-Based_Data/Results/BerkeleyDBC/BerkeleyDBC_1/learnAll.a >> /dev/null;
