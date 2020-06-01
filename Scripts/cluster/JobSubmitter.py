@@ -6,18 +6,18 @@ import sys
 from typing import List
 
 RUNS_FROM = 1
-RUNS_TO = 3
+RUNS_TO = 100
 CLUSTERS = [("eku", "i5"), ("kine", ""), ("zeus", ""), ("anywhere", "")]
 CASE_STUDIES = [("BerkeleyDBC", 1000),
-                #("LLVM", 1000),
-                #("lrzip", 1),
-                #("x264", 1000),
-                #("Dune", 1),
-                #("7z", 1),
-                #("Hipacc", 1000),
-                #("Polly", 1000),
-                #("JavaGC", 1000),
-                #("VP9", 1000)
+                ("LLVM", 1000),
+                ("lrzip", 1),
+                ("x264", 1000),
+                ("Dune", 1),
+                ("7z", 1),
+                ("Hipacc", 1000),
+                ("Polly", 1000),
+                ("JavaGC", 1000),
+                ("VP9", 1000)
                 ]
 
 JOB_ID = int(time.time() * 1000)
