@@ -39,7 +39,7 @@ createAFiles () {
           sampleFile="${tmp}${SAMPLED_CONFIGURATION_FILE_PREFIX}${FILE_NAME}_t$((${twCounter})).csv";
 
           # Write in the super-script
-          echo "script ./learn_${FILE_NAME}_t$((${twCounter})).a" >> $scriptFile;
+          echo "script ./learn_${FILE_NAME}_t$((${twCounter}))DecisionTree.a" >> $scriptFile;
 
           echo "clean-global" >> $scriptFile;
 
@@ -63,7 +63,7 @@ createAFiles () {
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
           echo "setsampleset ${sampleFile}" >> ${file};
-	  echo "define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/my-python-env/bin" >> ${file};
+	  echo "define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin" >> ${file};
           echo "learn-python-opt DecisionTreeRegression" >> ${file};
           echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
