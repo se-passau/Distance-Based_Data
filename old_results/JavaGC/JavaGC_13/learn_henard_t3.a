@@ -1,7 +1,0 @@
-log ./out_henard_t3.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/measurements.xml
-binary satoutput henard:true numConfigs:3504 seed:13 
-printconfigs ./sampledConfigurations_henard_t3.csv
-clean-sampling

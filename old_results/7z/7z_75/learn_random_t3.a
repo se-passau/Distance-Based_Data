@@ -1,7 +1,0 @@
-log ./out_random_t3.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/measurements.xml
-binary random numConfigs:4091 seed:75 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/7z/allConfigurations.csv
-printconfigs ./sampledConfigurations_random_t3.csv
-clean-sampling

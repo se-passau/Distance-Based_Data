@@ -1,7 +1,0 @@
-log ./out_henard_t3.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
-binary satoutput henard:true numConfigs:2172 seed:66 
-printconfigs ./sampledConfigurations_henard_t3.csv
-clean-sampling

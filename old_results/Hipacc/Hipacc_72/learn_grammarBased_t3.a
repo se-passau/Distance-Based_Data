@@ -1,7 +1,0 @@
-log ./out_grammarBased_t3.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Hipacc/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Hipacc/measurements.xml
-binary grammar-based numConfigs:4601 seed:72 
-printconfigs ./sampledConfigurations_grammarBased_t3.csv
-clean-sampling

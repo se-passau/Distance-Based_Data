@@ -1,7 +1,0 @@
-log ./out_random_t2.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
-binary random numConfigs:483 seed:64 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/VP9/allConfigurations.csv
-printconfigs ./sampledConfigurations_random_t2.csv
-clean-sampling

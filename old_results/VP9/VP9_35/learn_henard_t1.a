@@ -1,7 +1,0 @@
-log ./out_henard_t1.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/VP9/measurements.csv
-binary satoutput henard:true numConfigs:31 seed:35 
-printconfigs ./sampledConfigurations_henard_t1.csv
-clean-sampling

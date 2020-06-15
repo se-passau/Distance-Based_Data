@@ -1,7 +1,0 @@
-log ./out_henard_t1.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/measurements.xml
-binary satoutput henard:true numConfigs:25 seed:63 
-printconfigs ./sampledConfigurations_henard_t1.csv
-clean-sampling

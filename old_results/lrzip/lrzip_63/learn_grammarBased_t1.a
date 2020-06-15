@@ -1,7 +1,0 @@
-log ./out_grammarBased_t1.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/lrzip/measurements.xml
-binary grammar-based numConfigs:18 seed:63 
-printconfigs ./sampledConfigurations_grammarBased_t1.csv
-clean-sampling

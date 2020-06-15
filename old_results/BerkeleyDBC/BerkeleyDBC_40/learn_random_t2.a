@@ -1,7 +1,0 @@
-log ./out_random_t2.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/measurements.xml
-binary random numConfigs:97 seed:40 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/BerkeleyDBC/allConfigurations.csv
-printconfigs ./sampledConfigurations_random_t2.csv
-clean-sampling

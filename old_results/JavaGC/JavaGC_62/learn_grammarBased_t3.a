@@ -1,7 +1,0 @@
-log ./out_grammarBased_t3.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/JavaGC/measurements.xml
-binary grammar-based numConfigs:3504 seed:62 
-printconfigs ./sampledConfigurations_grammarBased_t3.csv
-clean-sampling

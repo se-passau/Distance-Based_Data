@@ -1,7 +1,0 @@
-log ./out_random_t1.log
-solver z3
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Dune/measurements.xml
-binary random numConfigs:25 seed:30 fromFile:/scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/PerformancePredictions/Summary/Dune/allConfigurations.csv
-printconfigs ./sampledConfigurations_random_t1.csv
-clean-sampling
