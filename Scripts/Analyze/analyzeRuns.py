@@ -264,6 +264,7 @@ def main() -> None:
                 if i != 0:
                     tmp_name += "_"
                 tmp_name += split_name[i]
+
             number_run: int = int(split_name[len(split_name) - 1])
             files = get_specific_files_from_directory(run_directory + case_study + SEPARATOR + directory, prefixes,
                                                       suffix)
