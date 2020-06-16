@@ -3,10 +3,16 @@
 import sys
 import os
 import math
+import decimal
 
 # The sampling strategies that should be analyzed
-TYPES = ["distBased_", "divDistBased_", "solvBased_", "rand", "henard"]
+# TYPES = ["distBased_", "divDistBased_", "solvBased_", "rand", "henard", "grammar-based_"]
+from typing import Dict, List, Any
+
+TYPES = ["grammarBased_", "rand", "henard"]
 CASE_STUDIES = ["7z", "BerkeleyDBC", "Dune", "Hipacc", "JavaGC", "LLVM", "lrzip", "Polly", "VP9", "x264"]
+# CASE_STUDIES = ["7z", "BerkeleyDBC", "Dune", "Hipacc", "LLVM", "lrzip", "Polly"]
+# CASE_STUDIES = ["lrzip"]
 
 SEPARATOR = "/"
 SPL_CONQUEROR_PREFIX = "out_"
@@ -27,36 +33,40 @@ SAMPLED_CONFIGURATIONS_STATS_SUFFIX = "_stat"
 PERCENT = "%"
 
 
-def print_usage():
-    '''
+def print_usage() -> None:
+    """
     Prints the usage of this script.
-    '''
+    """
     print("Usage: <RunDirectory> <SummaryDirectory>")
     print("RunDirectory\t\t The directory containing the data of all runs.")
     print("SummaryDirectory\t The directory where the average run should be copied to.")
 
 
-def list_directories(path):
-    '''
+def list_directories(path: str) -> List[str]:
+    """
     Returns the subdirectories of the given path.
     :param path: the path to find the subdirectories from.
     :return: the subdirectories as list.
-    '''
+    """
     for root, dirs, files in os.walk(path):
         return dirs
 
 
-def get_specific_files_from_directory(path, prefixes, suffix, contains=None, excludes=None):
-    '''
+def get_specific_files_from_directory(path: str, prefixes: str, suffix: str, contains: List[str] = None,
+                                      excludes: List[str] = None) -> List[str]:
+    """
     Returns all files that begin with one of the given prefixes.
     :param path: the path to check the files from
     :param prefixes: the prefixes of the wanted files
+    :param suffix: the suffix of the file
+    :param contains: the string that must be included
+    :param excludes: the string that must not be included
     :return: a list containing the files
-    '''
-    result = []
+    """
+    result: List[str] = []
     for root, dirs, files in os.walk(path):
         for file in files:
-            found = False
+            found: bool = False
             for prefix in prefixes:
                 if prefix in file and file.endswith(suffix):
                     found = True
@@ -74,7 +84,7 @@ def get_specific_files_from_directory(path, prefixes, suffix, contains=None, exc
                     continue
 
             if excludes is not None:
-                skip = False
+                skip: bool = False
                 for excludedString in excludes:
                     if excludedString in file:
                         skip = True
@@ -85,46 +95,44 @@ def get_specific_files_from_directory(path, prefixes, suffix, contains=None, exc
     return result
 
 
-def add_to_dictionary(dictionary, file_name, number_run, value):
-    '''
+def add_to_dictionary(dictionary: Dict[str, Dict[int, float]], file_name: str, number_run: int, value: float) -> None:
+    """
     Adds the given data to the dictionary.
     :param dictionary: the dictionary to add to
     :param file_name: the file name
     :param number_run: the number of the random seed run
     :param value: the value to add to the dictionary
-    '''
+    """
     if file_name not in dictionary:
         dictionary[file_name] = {}
     dictionary[file_name][number_run] = value
 
 
-def add_bucket_to_dictionary(dict, bucket, numberRun, value):
-    '''
+def add_bucket_to_dictionary(dictionary: Dict[str, Dict[int, int]], bucket: str, number_run: int, value: str) -> None:
+    """
     Adds the given bucket to the dictionary
-    :param dict: the dictionary to add to
+    :param dictionary: the dictionary to add to
     :param bucket: the bucket (key)
-    :param numberRun: the number of run
+    :param number_run: the number of run
     :param value: the value to add
-    '''
-    if bucket not in dict:
-        dict[bucket] = {}
-    dict[bucket][numberRun] = int(value)
+    """
+    if bucket not in dictionary:
+        dictionary[bucket] = {}
+    dictionary[bucket][number_run] = int(value)
 
 
-def analyze_log_file(path):
-    '''
+def analyze_log_file(path: str) -> float:
+    """
     Analyzes the log files of SPL Conqueror.
     :param path: the path to the log file
     :return: the error rate
-    '''
-    error_rate = sys.float_info.max
-    python_learner = False
+    """
+    error_rate: float = sys.float_info.max
+    python_learner: bool = False
 
     file = open(path, 'r')
-    parse_lines = False
+    parse_lines: bool = False
     for line in file:
-        # if "Models:" in line:
-        #    continue;
         if "command: analyze-learning" in line:
             parse_lines = True
         elif "command: learn-python" in line:
@@ -135,8 +143,8 @@ def analyze_log_file(path):
             error_rate = float(line.strip().split(" ")[-1]) * 100
             return error_rate
         elif not python_learner and parse_lines and ";" in line and not "command" in line:
-            split_line = line.strip().split(";")
-            current_error_rate = float(split_line[len(split_line) - 1])
+            split_line: List[str] = line.strip().split(";")
+            current_error_rate: float = float(split_line[len(split_line) - 1])
             if current_error_rate < error_rate:
                 error_rate = current_error_rate
     file.close()
@@ -144,25 +152,25 @@ def analyze_log_file(path):
     return error_rate
 
 
-def add_to_sum_dict(dict, file, value):
-    '''
+def add_to_sum_dict(dictionary: Dict[str, int], file: str, value: int) -> None:
+    """
     Adds the given value to the dictionary.
-    :param dict: the dictionary to add up to
+    :param dictionary: the dictionary to add up to
     :param file: the file (key)
     :param value: the value to add
-    '''
-    if file not in dict:
-        dict[file] = 0
-    dict[file] += value
+    """
+    if file not in dictionary:
+        dictionary[file] = 0
+    dictionary[file] += value
 
 
-def copy_file_content(opened_file, target, run):
-    '''
+def copy_file_content(opened_file, target: str, run: int) -> None:
+    """
     Copies the file content
     :param opened_file: the file stream
     :param target: the targeted file to read from
     :param run: the run to write
-    '''
+    """
     target_file = open(target, 'r')
     # Skip the header
     next(target_file)
@@ -171,24 +179,24 @@ def copy_file_content(opened_file, target, run):
     target_file.close()
 
 
-def get_header_of(file):
-    '''
+def get_header_of(file: str) -> str:
+    """
     Returns the header of the file
     :param file: the file to read the header from
     :return: the header of the file
-    '''
+    """
     f = open(file, 'r')
     result = next(f)
     return result
 
 
-def add_values_from_file_to_dict(dictionary, run, file_path):
-    ''''
+def add_values_from_file_to_dict(dictionary: Dict[str, Dict[int, int]], run: int, file_path) -> None:
+    """
     Reads in the current content of the file into the dictionary
     :param dictionary: the dictionary to save the content of the file into
     :param run: the random seed run
     :param file_path: the path to the file
-    '''
+    """
     value_file = open(file_path, 'r')
 
     # Skip the header
@@ -201,12 +209,12 @@ def add_values_from_file_to_dict(dictionary, run, file_path):
         add_bucket_to_dictionary(dictionary, elements[0], run, elements[1])
 
 
-def convert_dict_to_list(dictionary):
-    '''
+def convert_dict_to_list(dictionary: Dict[Any, Any]) -> List[Any]:
+    """
     Converts the given dictionary to a list.
     :param dictionary: the dictionary to convert
     :return: the dictionary as list
-    '''
+    """
     result = []
     for key in dictionary.keys():
         result.append(dictionary[key])
@@ -216,16 +224,16 @@ def convert_dict_to_list(dictionary):
 ############
 #   MAIN   #
 ############
-def main():
-    '''
+def main() -> None:
+    """
     This is the main method, which (1) gathers and (2) processes the information of all the runs.
     The accumulated information is stored in another directory.
-    '''
+    """
     if len(sys.argv) != 3:
         print_usage()
         exit(0)
 
-    run_directory = sys.argv[1]
+    run_directory: str = sys.argv[1]
     original_directory = sys.argv[2]
 
     if not run_directory.endswith(SEPARATOR):
@@ -234,7 +242,7 @@ def main():
     if not original_directory.endswith(SEPARATOR):
         original_directory = original_directory + SEPARATOR
 
-    run_statistic = {}
+    run_statistic: Dict[str, Dict[int, float]] = {}
 
     # Precompute the prefixes of the files to analyze
     prefixes = []
@@ -242,9 +250,6 @@ def main():
         prefixes.append(SPL_CONQUEROR_PREFIX + type[:len(type) - 1])
     suffix = ".log"
     name = ""
-
-    sampled_config_contains = ["_rand_", "_uni_"]
-    sampled_exclude = ["_stat"]
 
     for case_study in CASE_STUDIES:
         print("Analyzing " + case_study + ".")
@@ -260,7 +265,6 @@ def main():
                 if i != 0:
                     tmp_name += "_"
                 tmp_name += split_name[i]
-            name = tmp_name
             number_run = int(split_name[len(split_name) - 1])
             files = get_specific_files_from_directory(run_directory + case_study + SEPARATOR + directory, prefixes,
                                                       suffix)
@@ -289,7 +293,10 @@ def main():
 
             # Save the error rates in the following file (needed for box-plots)
             mid_file_name = file[len(SPL_CONQUEROR_PREFIX):len(file) - len(suffix)]
-            error_rate_file = open(original_directory + case_study + os.path.sep + ALL_RESULTS_PREFIX + ERROR_PREFIX + mid_file_name +
+            directory = original_directory + case_study
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            error_rate_file = open(directory + os.path.sep + ALL_RESULTS_PREFIX + ERROR_PREFIX + mid_file_name +
                                    OTHER_FILE_SUFFIX, 'w')
             error_rate_file.write("Run;Error\n")
 
@@ -309,8 +316,8 @@ def main():
 
                 try:
                     standard_deviation[file] += (average_values[file] - error) ** 2
-                except:
-                    print("Error of run " + str(run) + " too high.")
+                except Exception as b:
+                    print("Error of run " + str(run) + " too high ( in case study " + case_study + ").", b)
                     continue
 
                 error_rate_file.write(str(run) + ";" + str(error) + "\n")
