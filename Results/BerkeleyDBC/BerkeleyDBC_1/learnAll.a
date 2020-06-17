@@ -1,6 +1,6 @@
-script ./learn_grammarBased_t1ForestRegressor.a
+script ./learn_solverBased_t1ForestRegressor.a
 clean-global
-script ./learn_grammarBased_t2ForestRegressor.a
+script ./learn_solverBased_t2ForestRegressor.a
 clean-global
-script ./learn_grammarBased_t3ForestRegressor.a
+script ./learn_solverBased_t3ForestRegressor.a
 clean-global
