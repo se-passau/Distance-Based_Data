@@ -36,7 +36,7 @@ JOB_DIR = HOME + "Jobs/"
 JOB_FILE_PREFIX = "_jobs_"
 JOB_FILE_SUFFIX = ".txt"
 JOB_SCRIPT_PREDICTIONS = PREFIX + "runRandomHundredTimes.sh "
-JOB_SCRIPT_PREDICTIONS_DECISION_TREE = PREFIX + "runDecisionTreeRandomHundredTimes.sh "
+JOB_SCRIPT_PREDICTIONS_SVR = PREFIX + "runSVRRandomHundredTimes.sh "
 JOB_SCRIPT_PREDICTIONS_FOREST_REGRESSOR = PREFIX + "runForestRegressorRandomHundredTimes.sh "
 JOB_SCRIPT_SAMPLING = PREFIX + "sampleRandomHundredTimes.sh "
 JOB_SCRIPT_FAILURE_RATE = PREFIX + "failureRateRandomHundredTimes.sh "
@@ -109,7 +109,7 @@ def main():
     sampling = str(sys.argv[3]) == "sampling"
     failureRate = str(sys.argv[3]) == "failureRate"
     predicting = str(sys.argv[3]) == "predicting"
-    predictingDT = str(sys.argv[3]) == "predictingDT"
+    predictingSVR = str(sys.argv[3]) == "predictingSVR"
     predictingFR = str(sys.argv[3]) == "predictingFR"
     if sampling:
         SBATCH_OPTIONS = SBATCH_OPTIONS + " --exclusive "
@@ -131,11 +131,11 @@ def main():
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
                 jobString += JOB_SCRIPT_PREDICTIONS + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
-    elif predictingDT:
+    elif predictingSVR:
         for caseStudy in CASE_STUDIES:
             for run in range(RUNS_FROM, RUNS_TO + 1):
                 jobString = "export LD_LIBRARY_PATH=/scratch/kallistos/:$LD_LIBRARY_PATH && "
-                jobString += JOB_SCRIPT_PREDICTIONS_DECISION_TREE + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
+                jobString += JOB_SCRIPT_PREDICTIONS_SVR + caseStudy[0] + " " + str(caseStudy[1]) + " " + type + " " + str(run) + " " + str(run)
                 jobs.append(jobString)
     elif predictingFR:
         for caseStudy in CASE_STUDIES:
