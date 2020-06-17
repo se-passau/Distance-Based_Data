@@ -249,27 +249,26 @@ def main() -> None:
     for type in TYPES:
         prefixes.append(SPL_CONQUEROR_PREFIX + type[:len(type) - 1])
     suffix = ".log"
-    name = ""
 
     for case_study in CASE_STUDIES:
         print("Analyzing " + case_study + ".")
 
-        directories = list_directories(run_directory + case_study + SEPARATOR)
-        average_values = {}
+        directories: List[str] = list_directories(run_directory + case_study + SEPARATOR)
+        average_values: Dict[str, float] = {}
         for directory in sorted(directories):
-            split_name = directory.split("_")
-            tmp_name = ""
+            split_name: List[str] = directory.split("_")
+            tmp_name: str = ""
             print("Scanning " + split_name[len(split_name) - 1] + ". directory.")
 
             for i in range(0, len(split_name) - 1):
                 if i != 0:
                     tmp_name += "_"
                 tmp_name += split_name[i]
-            number_run = int(split_name[len(split_name) - 1])
+            number_run: int = int(split_name[len(split_name) - 1])
             files = get_specific_files_from_directory(run_directory + case_study + SEPARATOR + directory, prefixes,
                                                       suffix)
             for file in sorted(files):
-                error = analyze_log_file(run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
+                error: float = analyze_log_file(run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
                 add_to_sum_dict(average_values, file, error)
                 add_to_dictionary(run_statistic, file, number_run, error)
 
