@@ -3,7 +3,7 @@
 import sys
 import os
 import math
-import decimal
+import re
 
 # The sampling strategies that should be analyzed
 # TYPES = ["distBased_", "divDistBased_", "solvBased_", "rand", "henard", "grammar-based_"]
@@ -121,9 +121,21 @@ def add_bucket_to_dictionary(dictionary: Dict[str, Dict[int, int]], bucket: str,
     dictionary[bucket][number_run] = int(value)
 
 
-def analyze_log_file(path: str) -> float:
+def analyze_sampling_log_file(path: str) -> int:
     """
-    Analyzes the log files of SPL Conqueror.
+    Analyzes the sampling log files of SPL Conqueror.
+    :param path: the path to the log file
+    :return: the performance in ms
+    """
+    file = open(path, 'r')
+    for line in file:
+        if "ConfigurationSampling done " in line:
+            return int(line.split()[3])
+
+
+def analyze_learning_log_file(path: str) -> float:
+    """
+    Analyzes the learning log files of SPL Conqueror.
     :param path: the path to the log file
     :return: the error rate
     """
@@ -133,20 +145,16 @@ def analyze_log_file(path: str) -> float:
     file = open(path, 'r')
     parse_lines: bool = False
     for line in file:
-        if "command: analyze-learning" in line:
-            parse_lines = True
+        if "Error of optimal parameters" in line:
+            split_line: List[str] = line.strip().split(":")
+            current_error_rate: float = float(split_line[-1])
+            if current_error_rate < error_rate:
+                error_rate = current_error_rate
         elif "command: learn-python" in line:
             python_learner = True
-        elif "command: clean-sampling" in line:
-            parse_lines = False
         elif python_learner and "Error rate" in line:
             error_rate = float(line.strip().split(" ")[-1]) * 100
             return error_rate
-        elif not python_learner and parse_lines and ";" in line and not "command" in line:
-            split_line: List[str] = line.strip().split(";")
-            current_error_rate: float = float(split_line[len(split_line) - 1])
-            if current_error_rate < error_rate:
-                error_rate = current_error_rate
     file.close()
 
     return error_rate
@@ -221,6 +229,10 @@ def convert_dict_to_list(dictionary: Dict[Any, Any]) -> List[Any]:
     return result
 
 
+def extract_name(file_name: str) -> str:
+    return file_name[0:file_name.rfind('_t') + 3]
+
+
 ############
 #   MAIN   #
 ############
@@ -242,7 +254,8 @@ def main() -> None:
     if not original_directory.endswith(SEPARATOR):
         original_directory = original_directory + SEPARATOR
 
-    run_statistic: Dict[str, Dict[int, float]] = {}
+    run_statistic: Dict[str, Dict[str, Dict[int, float]]] = {}
+    performance_statistic: Dict[str, Dict[int, int]] = {}
 
     # Precompute the prefixes of the files to analyze
     prefixes = []
@@ -254,7 +267,7 @@ def main() -> None:
         print("Analyzing " + case_study + ".")
 
         directories: List[str] = list_directories(run_directory + case_study + SEPARATOR)
-        average_values: Dict[str, float] = {}
+        average_values: Dict[str, Dict[str, float]] = {}
         for directory in sorted(directories):
             split_name: List[str] = directory.split("_")
             tmp_name: str = ""
@@ -269,9 +282,28 @@ def main() -> None:
             files = get_specific_files_from_directory(run_directory + case_study + SEPARATOR + directory, prefixes,
                                                       suffix)
             for file in sorted(files):
-                error: float = analyze_log_file(run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
-                add_to_sum_dict(average_values, file, error)
-                add_to_dictionary(run_statistic, file, number_run, error)
+                # We distinguish between two types of log files.
+                # Either the log file is related to the sampling process -> save the performance data
+                # Or the log file is related to the learning process -> save the error rate
+                # The decision whether it is of one type or another is extracted from the name
+                file_type = re.split('_t\d+', file.replace('.log', ''))[1]
+                file_name = extract_name(file)
+                if file_type == '':
+                    # In this case, the file contains the sampling results
+                    if case_study not in performance_statistic.keys():
+                        performance_statistic[case_study] = {}
+                    performance: int = analyze_sampling_log_file(
+                        run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
+                    performance_statistic[case_study][file_name] = performance
+                else:
+                    # In this case, the file contains the learning results
+                    if file_type not in average_values.keys():
+                        average_values[file_type] = {}
+                        run_statistic[file_type] = {}
+                    error: float = analyze_learning_log_file(
+                        run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
+                    add_to_sum_dict(average_values[file_type], file_name, error)
+                    add_to_dictionary(run_statistic[file_type], file_name, number_run, error)
 
         for key in average_values.keys():
             average_values[key] = average_values[key] / len(run_statistic[key])
