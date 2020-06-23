@@ -59,14 +59,12 @@ createAFiles () {
           # Write in a-file
           > ${file};
           echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))Predictions${LOG_SUFIX}" >> ${file};
-          echo "mlsettings bagging:False stopOnLongRound:False parallelization:True lossFunction:RELATIVE useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:7 quadraticFunctionSupport:True crossValidation:False learn_logFunction:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.25 withHierarchy:False" >> ${file};
           echo "solver z3" >> ${file}
           echo "vm ${path}FeatureModel.xml" >> ${file};
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
           echo "setsampleset ${sampleFile}" >> ${file};
-          echo "learn-splconqueror-opt abortError=[1] minImprovementPerRound=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_ratioFunction=[True,False] withHierarchy=[False] useBackward=[True]" >> ${file};
-          echo "analyze-learning" >> ${file};
+          echo "learn-splconqueror-opt abortError=[1] minImprovementPerRound=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_ratioFunction=[True,False] withHierarchy=[False] useBackward=[False]" >> ${file};
           echo "clean-sampling" >> ${file};
 
         done

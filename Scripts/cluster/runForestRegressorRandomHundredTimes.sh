@@ -13,7 +13,7 @@ CSV_SUFIX=".csv"
 TXT_SUFIX=".txt"
 LOG_SUFIX=".log"
 
-SUPER_SCRIPT_NAME="learnAll.a"
+SUPER_SCRIPT_NAME="${FILE_NAME}_learnAllSVR.a"
 
 createAFiles () {
         path=$1
@@ -66,7 +66,6 @@ createAFiles () {
           echo "setsampleset ${sampleFile}" >> ${file};
 	  echo "define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin" >> ${file};
           echo "learn-python-opt RandomForestRegressor" >> ${file};
-          echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
 
         done

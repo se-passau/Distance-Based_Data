@@ -1,0 +1,20 @@
+Current machine learning settings: epsilon:0 lossFunction:RELATIVE parallelization:True bagging:False baggingNumbers:3 considerEpsilonTube:False baggingTestDataFraction:50 useBackward:False abortError:1 limitFeatureSize:False featureSizeTreshold:4 quadraticFunctionSupport:True crossValidation:False crossValidation-k:5 learn-logFunction:False learn-accumulatedLogFunction:False learn-asymFunction:False learn-ratioFunction:False learn-mirrowedFunction:False learn-numeric-disabled:True numberOfRounds:70 backwardErrorDelta:1 minImprovementPerRound:0.1 withHierarchy:False bruteForceCandidates:False ignoreBadFeatures:False stopOnLongRound:True candidateSizePenalty:True learnTimeLimit:00:00:00 scoreMeasure:RELERROR outputRoundsToStdout:False debug:False pythonInfluenceAnalysis:False blacklisted: 
+command: vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/FeatureModel.xml
+command: all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/measurements.xml
+Configs with too large deviation: 0
+68640 configurations loaded.
+command: nfp Performance
+command: setsampleset /scratch/kallistos/Distance-Based_Data/Results/7z/7z_79/sampledConfigurations_divDistBased_t3.csv
+command: define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin
+command: learn-python-opt SVR
+Learning: NumberOfConfigurationsLearning:4091 NumberOfConfigurationsValidation:4091
+Starting Prediction
+Optimal parameters tol=0.1;shrinking=False;gamma=auto;epsilon=0.2;coef0=2;C=5;
+Starting Prediction
+Prediction finished, results written in /scratch/kallistos/Distance-Based_Data/Results/7z/7z_79/PreVal_SVR_FeatureModel__.csv
+Error rate: 0.89191050174678
+command: analyze-learning
+Round, Model, LearningError, LearningErrorRel, ValidationError, ValidationErrorRel, ElapsedSeconds, ModelComplexity, BestCandidate, BestCandidateSize, BestCandidateScore, TestError
+Models:
+command: clean-sampling
+command: clean-global

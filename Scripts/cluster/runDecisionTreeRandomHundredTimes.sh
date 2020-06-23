@@ -65,7 +65,6 @@ createAFiles () {
           echo "setsampleset ${sampleFile}" >> ${file};
 	  echo "define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin" >> ${file};
           echo "learn-python-opt SVR" >> ${file};
-          echo "analyze-learning" >> ${file};
           echo "clean-sampling" >> ${file};
 
         done
