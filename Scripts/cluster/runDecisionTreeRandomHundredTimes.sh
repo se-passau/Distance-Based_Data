@@ -28,7 +28,7 @@ createAFiles () {
         > $scriptFile;
         for twCounter in $TW_COUNTER
         do
-          file="${tmp}learn_${FILE_NAME}_t$((${twCounter}))DecisionTree.a";
+          file="${tmp}learn_${FILE_NAME}_t$((${twCounter}))SVR.a";
           # VP9 has a csv file
           if [[ $caseStudyPath == *"VP9"* ]]; then
             csvFile="${path}measurements.csv";
@@ -39,7 +39,7 @@ createAFiles () {
           sampleFile="${tmp}${SAMPLED_CONFIGURATION_FILE_PREFIX}${FILE_NAME}_t$((${twCounter})).csv";
 
           # Write in the super-script
-          echo "script ./learn_${FILE_NAME}_t$((${twCounter}))DecisionTree.a" >> $scriptFile;
+          echo "script ./learn_${FILE_NAME}_t$((${twCounter}))SVR.a" >> $scriptFile;
 
           echo "clean-global" >> $scriptFile;
 
@@ -58,14 +58,13 @@ createAFiles () {
 
           # Write in a-file
           > ${file};
-          echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))PredictionsDecisionTree${LOG_SUFIX}" >> ${file};
+          echo "log ${scriptPath}${OUT_PREFIX}${FILE_NAME}_t$((${twCounter}))PredictionsSVR${LOG_SUFIX}" >> ${file};
           echo "vm ${path}FeatureModel.xml" >> ${file};
           echo "all ${csvFile}" >> ${file};
           echo "nfp Performance" >> ${file};
           echo "setsampleset ${sampleFile}" >> ${file};
 	  echo "define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin" >> ${file};
-          echo "learn-python-opt DecisionTreeRegression" >> ${file};
-          echo "analyze-learning" >> ${file};
+          echo "learn-python-opt SVR" >> ${file};
           echo "clean-sampling" >> ${file};
 
         done

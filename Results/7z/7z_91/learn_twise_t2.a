@@ -5,6 +5,6 @@ vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerforman
 all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/7z/measurements.xml
 nfp Performance
 setsampleset /scratch/kallistos/Distance-Based_Data/Results/7z/7z_91/sampledConfigurations_twise_t2.csv
-learn-splconqueror-opt abortError=[1] minImprovementPerRound=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_ratioFunction=[True,False] withHierarchy=[False] useBackward=[True]
+learn-splconqueror-opt abortError=[1] minImprovementPerRound=[0.1,0.2,0.5] lossFunction=[RELATIVE] quadraticFunctionSupport=[True,False] learn_logFunction=[True,False] learn_asymFunction=[True,False] learn_ratioFunction=[True,False] withHierarchy=[False] useBackward=[False]
 analyze-learning
 clean-sampling

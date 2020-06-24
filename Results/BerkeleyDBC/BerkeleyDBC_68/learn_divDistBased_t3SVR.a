@@ -1,0 +1,9 @@
+log ./out_divDistBased_t3PredictionsSVR.log
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/BerkeleyDBC/measurements.xml
+nfp Performance
+setsampleset /scratch/kallistos/Distance-Based_Data/Results/BerkeleyDBC/BerkeleyDBC_68/sampledConfigurations_divDistBased_t3.csv
+define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin
+learn-python-opt SVR
+analyze-learning
+clean-sampling

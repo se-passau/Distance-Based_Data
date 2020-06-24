@@ -7,7 +7,7 @@ import re
 
 # The sampling strategies that should be analyzed
 # TYPES = ["distBased_", "divDistBased_", "solvBased_", "rand", "henard", "grammar-based_"]
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Tuple
 
 TYPES = ["grammarBased_", "rand", "henard"]
 CASE_STUDIES = ["7z", "BerkeleyDBC", "Dune", "Hipacc", "JavaGC", "LLVM", "lrzip", "Polly", "VP9", "x264"]
@@ -95,7 +95,7 @@ def get_specific_files_from_directory(path: str, prefixes: str, suffix: str, con
     return result
 
 
-def add_to_dictionary(dictionary: Dict[str, Dict[int, float]], file_name: str, number_run: int, value: float) -> None:
+def add_to_dictionary(dictionary: Dict[str, Dict[int, Any]], file_name: str, number_run: int, value: Any) -> None:
     """
     Adds the given data to the dictionary.
     :param dictionary: the dictionary to add to
@@ -133,31 +133,36 @@ def analyze_sampling_log_file(path: str) -> int:
             return int(line.split()[3])
 
 
-def analyze_learning_log_file(path: str) -> float:
+def analyze_learning_log_file(path: str) -> Tuple[str, float]:
     """
     Analyzes the learning log files of SPL Conqueror.
     :param path: the path to the log file
     :return: the error rate
     """
     error_rate: float = sys.float_info.max
+    optimal_parameters: str = ""
     python_learner: bool = False
 
     file = open(path, 'r')
-    parse_lines: bool = False
+
     for line in file:
         if "Error of optimal parameters" in line:
             split_line: List[str] = line.strip().split(":")
             current_error_rate: float = float(split_line[-1])
             if current_error_rate < error_rate:
                 error_rate = current_error_rate
+        elif "Optimal parameters " in line:
+            optimal_parameters = line.split()[2]
+            if not python_learner:
+                return optimal_parameters, error_rate
         elif "command: learn-python" in line:
             python_learner = True
         elif python_learner and "Error rate" in line:
             error_rate = float(line.strip().split(" ")[-1]) * 100
-            return error_rate
+            return optimal_parameters, error_rate
     file.close()
 
-    return error_rate
+    return optimal_parameters, error_rate
 
 
 def add_to_sum_dict(dictionary: Dict[str, int], file: str, value: int) -> None:
@@ -254,10 +259,7 @@ def main() -> None:
     if not original_directory.endswith(SEPARATOR):
         original_directory = original_directory + SEPARATOR
 
-    run_statistic: Dict[str, Dict[str, Dict[int, float]]] = {}
-    performance_statistic: Dict[str, Dict[int, int]] = {}
-
-    # Precompute the prefixes of the files to analyze
+        # Precompute the prefixes of the files to analyze
     prefixes = []
     for type in TYPES:
         prefixes.append(SPL_CONQUEROR_PREFIX + type[:len(type) - 1])
@@ -265,6 +267,10 @@ def main() -> None:
 
     for case_study in CASE_STUDIES:
         print("Analyzing " + case_study + ".")
+
+        run_statistic: Dict[str, Dict[str, Dict[int, float]]] = {}
+        performance_statistic: Dict[str, Dict[int, int]] = {}
+        optimal_parameters: Dict[str, Dict[int, str]] = {}
 
         directories: List[str] = list_directories(run_directory + case_study + SEPARATOR)
         average_values: Dict[str, Dict[str, float]] = {}
@@ -300,13 +306,15 @@ def main() -> None:
                     if file_type not in average_values.keys():
                         average_values[file_type] = {}
                         run_statistic[file_type] = {}
-                    error: float = analyze_learning_log_file(
+                    (optimal_parameter, error) = analyze_learning_log_file(
                         run_directory + case_study + SEPARATOR + directory + SEPARATOR + file)
                     add_to_sum_dict(average_values[file_type], file_name, error)
                     add_to_dictionary(run_statistic[file_type], file_name, number_run, error)
+                    add_to_dictionary(optimal_parameters[file_type], file_name, number_run, optimal_parameters)
 
-        for key in average_values.keys():
-            average_values[key] = average_values[key] / len(run_statistic[key])
+        for mode in average_values.keys():
+            for directory in average_values[mode].keys():
+                average_values[mode][directory] = average_values[mode][directory] / len(run_statistic[mode][directory])
 
         # Retrieve the most average runs, print the error rates into a file
         avg_runs = {}
@@ -370,6 +378,10 @@ def main() -> None:
                                            mid_file_name + OTHER_FILE_SUFFIX, 'w')
             standard_deviation_file.write(str(standard_deviation[file]) + "\n")
             standard_deviation_file.close()
+
+            # TODO: Write performance data into a csv file
+
+            # TODO: Write optimal parameters in a csv file
 
 
 if "__main__" == __name__:
