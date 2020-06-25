@@ -1,9 +1,0 @@
-log ./out_random_t2PredictionsSVR.log
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/LLVM/measurements.xml
-nfp Performance
-setsampleset /scratch/kallistos/Distance-Based_Data/Results/LLVM/LLVM_32/sampledConfigurations_random_t2.csv
-define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin
-learn-python-opt SVR
-analyze-learning
-clean-sampling

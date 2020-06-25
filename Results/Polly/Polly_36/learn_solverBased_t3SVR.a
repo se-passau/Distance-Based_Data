@@ -1,9 +1,0 @@
-log ./out_solverBased_t3PredictionsSVR.log
-vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/FeatureModel.xml
-all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/Polly/measurements.xml
-nfp Performance
-setsampleset /scratch/kallistos/Distance-Based_Data/Results/Polly/Polly_36/sampledConfigurations_solverBased_t3.csv
-define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin
-learn-python-opt SVR
-analyze-learning
-clean-sampling
