@@ -1,0 +1,9 @@
+log ./out_random_t3PredictionsForestRegressor.log
+vm /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/FeatureModel.xml
+all /scratch/kallistos/Distance-Based_Data/SupplementaryWebsite/MeasuredPerformanceValues/x264/measurements.xml
+nfp Performance
+setsampleset /scratch/kallistos/Distance-Based_Data/Results/x264/x264_21/sampledConfigurations_random_t3.csv
+define-python-path /scratch/kallistos/Distance-Based_Data/Scripts/cluster/ml-python-env/bin
+learn-python-opt RandomForestRegressor
+analyze-learning
+clean-sampling
